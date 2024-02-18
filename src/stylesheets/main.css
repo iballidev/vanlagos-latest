@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+/* minimum media query */
+/* maximum media query */
+/* maximum and minimum query */
+/* tranform effects */
+/* transition effects */
+/* form control appearance */
+/* 'before' pseudo element style */
+/* 'after' pseudo element style */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+html *:focus,
+body *:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* COLORS */
+  --clr-primary-250: rgba(0, 83, 206, .7);
+  --clr-primary-300: rgba(0, 83, 206, .8);
+  --clr-primary: rgb(0, 83, 206);
+  --clr-primary-600: rgb(0, 59, 147);
+  --clr-secondary: rgb(181, 215, 92);
+  --clr-text: #444;
+  --clr-bright: #ffffff;
+  --clr-light: #ffffff7e;
+}
+
+:root {
+  /* SIZES */
+  --size-50: 1.88em;
+  --size-100: 2.63em;
+  --size-250: 3.81em;
+  --size-300: 4.88em;
+  --size-500: 6.25em;
+}
+
+:root {
+  /* FONT WEIGHT */
+  --fw-lighter: 100;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+  /* FONT FAMILY */
+  --ff-headline: "Poppins", sans-serif;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-body: var(--ff-primary);
+  /* LINE HEIGHT*/
+  --lh-100: 40px;
+  --lh-150: 50px;
+  --lh-200: 60px;
+  --lh-section-title: 65px;
+  /* FONT SIZES */
+  --fs-nav: 0.93rem;
+}
+
+/*# sourceMappingURL=main.css.map */

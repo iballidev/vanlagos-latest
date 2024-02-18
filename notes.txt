@@ -1,0 +1,17 @@
+GIT
+---
+If you have files in your Git repository that are not being tracked due to entries in your .gitignore file, and you want to see those untracked files, you can use the git status command. The git status command shows the status of your working directory, including information about tracked and untracked files.
+
+Here's how you can use it:
+            > git status
+When you run this command, Git will provide information about changes in your working directory. Untracked files will be listed under the "Untracked files" section.
+
+If you want a more concise output to only see untracked files, you can use the following command
+            > git status --untracked-files
+This will show you only the untracked files and directories.
+
+If you want to see a complete list of untracked files, including those specified in .gitignore, you can use the following command:
+            > git ls-files --others --ignored --exclude-standard
+This will list all untracked files, including those ignored by .gitignore.
+
+Keep in mind that the --ignored flag is essential for including files that are being ignored by .gitignore. If you omit this flag, you'll only see untracked files not specified in .gitignore.
