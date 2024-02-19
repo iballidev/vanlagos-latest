@@ -1,0 +1,14 @@
+.top-header {
+    background-color: var(--clr-dark);
+    color: var(--clr-bright);
+    font-size: var(--fs-nav);
+    ul {
+        // margin: 0;
+        display: flex;
+        gap: 1em;
+
+        &:first-child{
+            gap: 4em;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* minimum media query */
 /* maximum media query */
 /* maximum and minimum query */
@@ -28,16 +28,49 @@ html {
   scroll-behavior: smooth;
 }
 
+.top-header {
+  background-color: var(--clr-dark);
+  color: var(--clr-bright);
+  font-size: var(--fs-nav);
+}
+.top-header ul {
+  display: flex;
+  gap: 1em;
+}
+.top-header ul:first-child {
+  gap: 4em;
+}
+
 :root {
   /* COLORS */
-  --clr-primary-250: rgba(0, 83, 206, .7);
-  --clr-primary-300: rgba(0, 83, 206, .8);
-  --clr-primary: rgb(0, 83, 206);
-  --clr-primary-600: rgb(0, 59, 147);
-  --clr-secondary: rgb(181, 215, 92);
-  --clr-text: #444;
+  --clr-primary: hsl(194, 81%, 60%);
+  --clr-accent: hsl(33, 100%, 50%);
+  --clr-dark: hsl(233, 20%, 32%);
   --clr-bright: #ffffff;
-  --clr-light: #ffffff7e;
+}
+
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+
+.text-primary {
+  color: var(--clr-primary);
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+
+.text-dark {
+  color: var(--clr-dark);
+}
+
+.bg-accent {
+  background-color: var(--clr-accent);
+}
+
+.text-accent {
+  color: var(--clr-accent);
 }
 
 :root {
@@ -51,15 +84,18 @@ html {
 
 :root {
   /* FONT WEIGHT */
-  --fw-lighter: 100;
+  --fw-thin: 100;
+  --fw-extralight: 200;
   --fw-light: 300;
   --fw-regular: 400;
-  --fw-semi-bold: 500;
-  --fw-bold: 600;
-  --fw-bolder: 700;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
   /* FONT FAMILY */
   --ff-headline: "Poppins", sans-serif;
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Open Sans", sans-serif;
   --ff-body: var(--ff-primary);
   /* LINE HEIGHT*/
   --lh-100: 40px;
@@ -68,6 +104,10 @@ html {
   --lh-section-title: 65px;
   /* FONT SIZES */
   --fs-nav: 0.93rem;
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
 }
 
 /*# sourceMappingURL=main.css.map */
