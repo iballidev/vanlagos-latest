@@ -8,6 +8,7 @@
     --clr-dark: hsl(233, 20%, 32%);
     --clr-bright: #ffffff;
     --clr-light: #F6F6F6;
+    --clr-light-500: hsl(0, 0%, 54%);
 }
 
 .bg-primary {
@@ -37,4 +38,16 @@
 
 .bg-light {
     background-color: var(--clr-light);
+}
+
+.text-light {
+    color: var(--clr-light);
+}
+
+.bg-light-500 {
+    background-color: var(--clr-light-500);
+}
+
+.text-light-500 {
+    color: var(--clr-light-500);
 }

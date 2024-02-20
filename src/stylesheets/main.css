@@ -60,6 +60,7 @@ html {
   background-color: var(--clr-bright);
   display: flex;
   width: 100%;
+  border-radius: 0.3rem;
 }
 .grouped-control input {
   background: transparent;
@@ -67,6 +68,7 @@ html {
   display: block;
   width: 100%;
   flex-basis: 85%;
+  padding: 8px;
 }
 .grouped-control input + .button {
   display: flex;
@@ -78,8 +80,35 @@ html {
 }
 .grouped-control input + .button::after {
   content: url("../icons/material-symbols_send-outline-rounded.svg");
-  content: url("../icons/material-symbols_send-outline-rounded.svg");
   display: block;
+  margin-top: 5px;
+}
+
+.form-tab-navs {
+  display: flex;
+  gap: 3px;
+  overflow: hidden;
+}
+.form-tab-navs button {
+  background-color: var(--clr-light);
+  display: block;
+  width: 100%;
+  padding: 0.7em 0.5em;
+}
+.form-tab-navs button.active {
+  color: var(--clr-accent);
+  position: relative;
+}
+.form-tab-navs button.active::after {
+  content: "";
+  background-color: var(--clr-accent);
+  display: block;
+  height: 3px;
+  padding-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 :root {
@@ -89,6 +118,7 @@ html {
   --clr-dark: hsl(233, 20%, 32%);
   --clr-bright: #ffffff;
   --clr-light: #F6F6F6;
+  --clr-light-500: hsl(0, 0%, 54%);
 }
 
 .bg-primary {
@@ -117,6 +147,18 @@ html {
 
 .bg-light {
   background-color: var(--clr-light);
+}
+
+.text-light {
+  color: var(--clr-light);
+}
+
+.bg-light-500 {
+  background-color: var(--clr-light-500);
+}
+
+.text-light-500 {
+  color: var(--clr-light-500);
 }
 
 :root {
