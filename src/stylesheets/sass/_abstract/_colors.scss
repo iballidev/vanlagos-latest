@@ -7,12 +7,13 @@
     --clr-accent: hsl(33, 100%, 50%);
     --clr-dark: hsl(233, 20%, 32%);
     --clr-bright: #ffffff;
-    // --clr-light: #ffffff7e;
+    --clr-light: #F6F6F6;
 }
 
 .bg-primary {
     background-color: var(--clr-primary);
 }
+
 .text-primary {
     color: var(--clr-primary);
 }
@@ -20,6 +21,7 @@
 .bg-dark {
     background-color: var(--clr-dark);
 }
+
 .text-dark {
     color: var(--clr-dark);
 }
@@ -27,6 +29,12 @@
 .bg-accent {
     background-color: var(--clr-accent);
 }
+
 .text-accent {
     color: var(--clr-accent);
+}
+
+
+.bg-light {
+    background-color: var(--clr-light);
 }
