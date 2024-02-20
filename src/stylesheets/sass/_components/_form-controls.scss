@@ -1,0 +1,32 @@
+.grouped-control {
+    background-color: var(--clr-bright);
+    display: flex;
+    width: 100%;
+    input {
+        background: transparent;
+        height: 100%;
+        display: block;
+        width: 100%;
+        flex-basis: 85%;
+        & + .button {
+            // background-color: blue;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 15%;
+            
+            // place-content: center;
+            &::after {
+                content: url("../icons/material-symbols_send-outline-rounded.svg");
+                content: url("../icons/material-symbols_send-outline-rounded.svg");
+                // content: "";
+                display: block;
+                // height: 30px;
+                // width: 30px;
+                // background-image: url(../../icons/material-symbols_send-outline-rounded.svg);
+            }
+        }
+    }
+}
