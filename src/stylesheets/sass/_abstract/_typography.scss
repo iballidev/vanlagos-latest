@@ -25,6 +25,7 @@
     --fs-nav: 0.93rem; //14px;
     // --fs-headline-500: ;
     // --fs-nav: ;
+    --fs-300: 1.5rem;
 }
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
@@ -34,4 +35,8 @@
 
 .fs-nav {
     font-size: var(--fs-nav);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
 }

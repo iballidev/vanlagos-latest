@@ -5,7 +5,8 @@
     // --clr-primary: rgb(0, 83, 206);
     // --clr-primary-600: rgb(0, 59, 147);
     --clr-accent: hsl(33, 100%, 50%);
-    --clr-dark: hsl(233, 20%, 32%);
+    --clr-dark: #414562;
+    --clr-dark-200: #424662;
     --clr-bright: #ffffff;
     --clr-light: #F6F6F6;
     --clr-light-500: hsl(0, 0%, 54%);
@@ -25,6 +26,15 @@
 
 .text-dark {
     color: var(--clr-dark);
+}
+
+
+.bg-dark-200 {
+    background-color: var(--clr-dark-200);
+}
+
+.text-dark-200 {
+    color: var(--clr-dark-200);
 }
 
 .bg-accent {
