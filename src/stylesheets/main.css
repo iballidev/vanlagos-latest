@@ -41,6 +41,7 @@ html {
   font-weight: 900;
   font-size: inherit;
   margin-left: 1em;
+  color: var(--clr-bright);
 }
 
 .top-header {
@@ -89,17 +90,21 @@ html {
   gap: 3px;
   overflow: hidden;
 }
-.form-tab-navs button {
+.form-tab-navs .tab-btn {
   background-color: var(--clr-light);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 0.7em 0.5em;
+  padding: 1.5em 1em;
+  color: var(--clr-light-500) !important;
+  border-radius: 0;
 }
-.form-tab-navs button.active {
-  color: var(--clr-accent);
+.form-tab-navs .tab-btn.active {
+  color: var(--clr-accent) !important;
   position: relative;
 }
-.form-tab-navs button.active::after {
+.form-tab-navs .tab-btn.active::after {
   content: "";
   background-color: var(--clr-accent);
   display: block;
@@ -109,6 +114,22 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.drop-select-icon {
+  position: relative;
+  display: flex;
+}
+.drop-select-icon::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: inherit;
+  display: block;
+}
+
+.mdc-theme--primary {
+  color: red;
 }
 
 :root {
@@ -196,6 +217,21 @@ html {
 
 .fs-nav {
   font-size: var(--fs-nav);
+}
+
+.hero {
+  min-height: 566px;
+  background-image: url("../images/bg-hero.png");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.mdc-button:not(:disabled) {
+  color: unset;
+}
+
+.mdc-theme--primary {
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

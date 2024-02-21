@@ -51,6 +51,36 @@
 <!-- JQuery -->
 <script src="./libs/jquery-3.7.1.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+
+<!-- material design 3 -->
+<script>
+// mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+</script>
+<!-- <script type="module" src="./libs/material-design/indes.js"></script> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const datepicker =
+        document.querySelectorAll(".datepicker");
+    console.log(datepicker);
+
+    for (let i = 0; i < datepicker.length; i++) {
+        const element = datepicker[i];
+        console.log("element: ", element);
+        var picker = new Pikaday({
+            field: element,
+            format: 'MM/DD/YYYY', // You can change the date format as per your requirements
+        });
+
+
+    }
+});
+</script>
+
 <script src="./javascripts/main.jquery.js"></script>
 <script src="./javascripts/main.js"></script>
 </body>

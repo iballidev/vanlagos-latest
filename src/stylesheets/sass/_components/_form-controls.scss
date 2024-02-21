@@ -1,3 +1,5 @@
+@use "../_partials/mixins";
+
 .grouped-control {
     background-color: var(--clr-bright);
     display: flex;
@@ -34,17 +36,18 @@
     gap: 3px;
     overflow: hidden;
 
-    button{
+    .tab-btn{
         background-color: var(--clr-light);
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        padding: .7em .5em;
-        // font-size: 1.2rem;
-        // font-weight: var(--fw-semibold);
-        // color: var(--clr-dark);
+        padding: 1.5em 1em;
+        color: var(--clr-light-500) !important;
+        border-radius: 0;
 
         &.active{
-            color: var(--clr-accent);
+            color: var(--clr-accent) !important;
             position: relative;
             &::after{
                 content: "";
@@ -58,5 +61,18 @@
                 right: 0;
             }
         }
+    }
+}
+
+.custom-select{
+    
+}
+
+.drop-select-icon{
+    position: relative;
+    display: flex;
+    &::after{
+        @include mixins.after("\f0d7", inherit);
+        display: block;
     }
 }
