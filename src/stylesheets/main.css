@@ -90,7 +90,7 @@ html {
   gap: 3px;
   overflow: hidden;
 }
-.form-tab-navs .tab-btn {
+.form-tab-navs .tab-btn, .form-tab-navs .vh-tab-btn {
   background-color: var(--clr-light);
   display: flex;
   align-items: center;
@@ -100,11 +100,11 @@ html {
   color: var(--clr-light-500) !important;
   border-radius: 0;
 }
-.form-tab-navs .tab-btn.active {
+.form-tab-navs .tab-btn.active, .form-tab-navs .vh-tab-btn.active {
   color: var(--clr-accent) !important;
   position: relative;
 }
-.form-tab-navs .tab-btn.active::after {
+.form-tab-navs .tab-btn.active::after, .form-tab-navs .vh-tab-btn.active::after {
   content: "";
   background-color: var(--clr-accent);
   display: block;
