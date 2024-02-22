@@ -173,7 +173,7 @@
 
                             </span>
                         </div>
-                        <h5 class="text-xl font-semibold">Input Destination</h5>
+                        <h5 class="ff-secondary text-xl font-medium">Input Destination</h5>
                         <p>Enter your pick-up and drop-off destination, select the time, date and amount of time(per
                             hours).</p>
                     </div>
@@ -198,7 +198,7 @@
 
                             </span>
                         </div>
-                        <h5 class="text-xl font-semibold">Create a profile</h5>
+                        <h5 class="ff-secondary text-xl font-medium">Create a profile</h5>
                         <p>Register on our platform to experience our service</p>
                     </div>
                 </li>
@@ -228,7 +228,7 @@
 
                             </span>
                         </div>
-                        <h5 class="text-xl font-semibold">Make a deal</h5>
+                        <h5 class="ff-secondary text-xl font-medium">Make a deal</h5>
                         <p>Finalize the payment Via Card, USSD or Bank transfer</p>
                     </div>
                 </li>
