@@ -15,3 +15,39 @@
     }
   }
 }
+
+/* Animation Classes*/
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+  &.appear {
+    opacity: 1;
+  }
+}
+.from-left,
+.from-right,
+.from-bottom {
+  transition: transform 1000ms ease-in-out;
+  position: absolute;
+  opacity: 0;
+  &.appear {
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.from-left {
+  transform: translateX(-5em);
+}
+.from-right {
+  transform: translateX(5em);
+}
+
+.from-top {
+  transform: translateY(-50%);
+}
+
+.from-bottom {
+  transform: translateY(50%);
+}

@@ -36,6 +36,23 @@
     gap: 3px;
     overflow: hidden;
 
+    .tab-btn{
+        &.active{
+            color: var(--clr-accent) !important;
+            &::after{
+                background-color: var(--clr-accent);
+            }
+        }
+    }
+    .vh-tab-btn{
+        &.active{
+            color: var(--clr-primary) !important;
+            &::after{
+                background-color: var(--clr-primary);
+            }
+        }
+    }
+
     .tab-btn, .vh-tab-btn{
         background-color: var(--clr-light);
         display: flex;
@@ -47,11 +64,9 @@
         border-radius: 0;
 
         &.active{
-            color: var(--clr-accent) !important;
             position: relative;
             &::after{
                 content: "";
-                background-color: var(--clr-accent);
                 display: block;
                 height: 3px;
                 padding-bottom: 0;
