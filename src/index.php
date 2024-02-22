@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-span-12 sm:col-span-6 fade-in" data-delay="400">
                         <h4 class="ff-headline font-bold text-2xl sm:text-4xl text-primary mb-2">Punctuality</h4>
-                        <p class="text-dark leading-12">At Vanlagos, we understand the value of time. That's why
+                        <p class="text-dark sm:text-lg">At Vanlagos, we understand the value of time. That's why
                             punctuality is ingrained in every
                             aspect of our service. From the moment you make a booking to the final destination, we
                             prioritize timeliness to ensure your journey is seamless and stress-free. </p>
@@ -93,7 +93,7 @@
                 <div class="grid grid-cols-12 items-center gap-4 sm:gap-8">
                     <div class="col-span-12 sm:col-span-6 order-2 sm:order-1 fade-in" data-delay="350">
                         <h4 class="ff-headline font-bold text-2xl sm:text-4xl text-primary mb-2">Air Conditioned Buses</h4>
-                        <p class="text-dark leading-12">Embark on any journey, be it work commute, sightseeing, or group
+                        <p class="text-dark sm:text-lg">Embark on any journey, be it work commute, sightseeing, or group
                             outings, and find our buses offering a cool, refreshing ambiance, even under scorching heat.
                             Bid farewell to sweltering discomfort as you embrace a relaxing ride, where you can sit
                             back, unwind, and enjoy the journey in absolute comfort.</p>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="col-span-12 sm:col-span-6 fade-in" data-delay="500">
                         <h4 class="ff-headline font-bold text-2xl sm:text-4xl text-primary mb-2">Comfortable seats & leg space</h4>
-                        <p class="text-dark leading-12">Ensuring comfort for all travelers, our buses feature spacious,
+                        <p class="text-dark sm:text-lg">Ensuring comfort for all travelers, our buses feature spacious,
                             cozy seats with ample legroom, catering to passengers of every size, whether embarking on a
                             short commute or a long-distance journey, ensuring a comfortable ride with our plush seating
                             arrangements.</p>

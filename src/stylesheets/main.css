@@ -303,6 +303,10 @@ html {
   font-family: var(--ff-secondary);
 }
 
+.ff-body {
+  font-family: var(--ff-body);
+}
+
 .fs-nav {
   font-size: var(--fs-nav);
 }
