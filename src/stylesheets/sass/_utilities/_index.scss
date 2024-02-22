@@ -1,0 +1,17 @@
+@use "../_partials/mixins";
+
+.pill {
+  border-radius: 100vmax;
+}
+
+.after-pseudo-icon {
+  display: flex;
+
+  &.caret-down {
+    &::after {
+      @include mixins.after("\f0d7", inherit);
+      margin-left: 1em;
+      color: var(--clr-bright);
+    }
+  }
+}

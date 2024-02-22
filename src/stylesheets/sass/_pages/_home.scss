@@ -1,0 +1,17 @@
+@use "../_partials/mixins";
+
+.hero{
+    // min-height: 566px;
+    // background-color: black;
+    background-image: url("../images/bg-hero-2.png");
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+.hero-height {
+    // background-color: blue;
+
+    @include mixins.minmq(50em){
+        min-height: 566px;
+    }
+}

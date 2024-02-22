@@ -2,3 +2,12 @@
 @use "./_utilities";
 @use "./_components";
 @use "./_abstract";
+@use "./_pages";
+
+.mdc-button:not(:disabled) {
+      color: unset;
+}
+    
+.mdc-theme--primary{
+    color: red;
+}

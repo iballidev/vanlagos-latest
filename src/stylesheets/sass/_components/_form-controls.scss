@@ -1,0 +1,78 @@
+@use "../_partials/mixins";
+
+.grouped-control {
+    background-color: var(--clr-bright);
+    display: flex;
+    width: 100%;
+    border-radius: .3rem;
+    input {
+        background: transparent;
+        height: 100%;
+        display: block;
+        width: 100%;
+        flex-basis: 85%;
+        padding: 8px;
+        & + .button {
+            // background-color: blue;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 15%;
+            
+            // place-content: center;
+            &::after {
+                content: url("../icons/material-symbols_send-outline-rounded.svg");
+                display: block;margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+.form-tab-navs{
+    display: flex;
+    gap: 3px;
+    overflow: hidden;
+
+    .tab-btn, .vh-tab-btn{
+        background-color: var(--clr-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1.5em 1em;
+        color: var(--clr-light-500) !important;
+        border-radius: 0;
+
+        &.active{
+            color: var(--clr-accent) !important;
+            position: relative;
+            &::after{
+                content: "";
+                background-color: var(--clr-accent);
+                display: block;
+                height: 3px;
+                padding-bottom: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.custom-select{
+    
+}
+
+.drop-select-icon{
+    position: relative;
+    display: flex;
+    &::after{
+        @include mixins.after("\f0d7", inherit);
+        display: block;
+    }
+}
