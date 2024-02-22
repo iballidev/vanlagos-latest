@@ -8,10 +8,12 @@
     <div class="p-4">
         <!-- Tab Content -->
         <div id="vh-tab1" class="vh-tab-content">
-            <p>Daily Content</p>
+            <!-- daily van hire form -->
+            <?php include_once("daily-van-hire-form.php") ;?>
         </div>
         <div id="vh-tab2" class="hidden vh-tab-content">
-            <p>Hourly Content</p>
+            <!-- hourly van hire form -->
+            <?php include_once("hourly-van-hire-form.php") ;?>
         </div>
     </div>
 </div>
