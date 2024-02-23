@@ -3,9 +3,14 @@
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="grid grid-cols-12 items-center">
         <div class="hidden lg:block col-span-12 lg:col-span-6">
-            <div class="overflow-hidden bg-dark h-full">
-                <h2 class="uppercase text-primary text-2xl text-center font-bold pt-8 pb-4">Vanlagos</h2>
-                <img class="mb-16" src="./images/pexels-cottonbro-studio-4606402.png" alt="">
+            <div class="overflow-hidden h-full relative bg-blue-400">
+                <div class="top-28 absolute text-center w-full block">
+                    <h2 class="uppercase text-primary text-4xl text-center font-bold">Vanlagos</h2>
+                </div>
+                <div class="bottom-24 absolute text-center w-full block">
+                    <p class="uppercase text-white text-2xl text-center font-bold">REGISTER WITH US TODAY TO GET THE BEST SERVICE</p>
+                </div>
+                <img class="" src="./images/pexels-cottonbro-studio-4606349.png" alt="">
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6">
@@ -16,7 +21,7 @@
                 <div class="p-6">
                     <form action="">
                         <ul class="grid grid-cols-1 gap-y-4">
-                            <li class="col-span-1">
+                            <!-- <li class="col-span-1">
                                 <label for="full_name" class="block font-semibold mb-2 cursor-pointer">Full Name</label>
                                 <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                     <span class="mdc-notched-outline">
@@ -25,7 +30,7 @@
                                     </span>
                                     <input type="text" id="full_name" name="full_name" class="mdc-text-field__input" aria-label="Label" placeholder="Input your address">
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="col-span-1">
                                 <label for="email" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
                                 <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
@@ -36,7 +41,7 @@
                                     <input type="text" id="email" name="email" class="mdc-text-field__input" aria-label="Label" placeholder="Input your address">
                                 </div>
                             </li>
-                            <li class="col-span-1">
+                            <!-- <li class="col-span-1">
                                 <label for="phone_number" class="block font-semibold mb-2 cursor-pointer">Phone number</label>
                                 <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                     <span class="mdc-notched-outline">
@@ -45,7 +50,7 @@
                                     </span>
                                     <input type="text" id="phone_number" name="phone_number" class="mdc-text-field__input" aria-label="Label" placeholder="Input your address">
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="col-span-1">
                                 <label for="password" class="block font-semibold mb-2 cursor-pointer">Password</label>
                                 <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
@@ -55,19 +60,29 @@
                                     </span>
                                     <input type="password" id="password" name="password" class="mdc-text-field__input" aria-label="Label" placeholder="Input your address">
                                 </div>
-                                <a href="#" class="text-end block text-sm text-primary font-semibold">Forgot password</a>
+                            </li>
+                            <li class="col-span-1">
+                                <label for="confirm_password" class="block font-semibold mb-2 cursor-pointer">Confirm Password</label>
+                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+                                    <span class="mdc-notched-outline">
+                                        <span class="mdc-notched-outline__leading"></span>
+                                        <span class="mdc-notched-outline__trailing"></span>
+                                    </span>
+                                    <input type="password" id="confirm_password" name="confirm_password" class="mdc-text-field__input" aria-label="Label" placeholder="Input your address">
+                                </div>
                             </li>
                             <li class="col-span-1">
                                 <!-- <input type="submit" value="Log In" class="bg-primary text-white rounded w-full p-4 mb-4"> -->
                                 <!--  -->
-                                <button class="mdc-button w-full bg-primary py-6 mdc-card">
+                                <p class="my-8 text-center">By signing up, I agree to the terms and conditions</p>
+                                <button class="mdc-button w-full max-w-sm mx-auto bg-primary py-6 mdc-card">
                                     <span class="mdc-button__ripple"></span>
                                     <span class="mdc-button__label text-white">Log In</span>
                                 </button>
                             </li>
                         </ul>
 
-                        <p class="text-center text-light-500 mt-8">If you don’t have an account click on <a href="#" class="text-primary font-semibold">Sign Up</a></p>
+                        <p class="text-center text-light-500 mt-8">If you don’t have an account click on <a href="./login.php" class="text-primary font-semibold">Sign In</a></p>
                     </form>
                 </div>
             </div>

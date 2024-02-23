@@ -3,9 +3,12 @@
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="grid grid-cols-12 items-center">
         <div class="hidden lg:block col-span-12 lg:col-span-6">
-            <div class="overflow-hidden bg-dark h-full">
-                <h2 class="uppercase text-primary text-2xl text-center font-bold pt-8 pb-4">Vanlagos</h2>
+            <div class="overflow-hidden bg-dark h-full relative">
+                <h2 class="uppercase text-primary text-4xl text-center font-bold pt-8 pb-4">Vanlagos</h2>
                 <img class="mb-16" src="./images/pexels-cottonbro-studio-4606402.png" alt="">
+                <div class=" bottom-24 absolute text-center w-full block">
+                    <p class="font-bold text-2xl max-w-lg mx-auto">VAN LAGOS WE ARE READY AND AVAILABLE AT YOUR REQUEST.</p>
+                </div>
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6">
