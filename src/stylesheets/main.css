@@ -335,4 +335,19 @@ html {
   color: red;
 }
 
+/* Default state */
+input {
+  border-bottom: 1px solid #B0BEC5; /* Default border color */
+}
+
+/* Focused state */
+input:focus {
+  border-bottom: 2px solid #2196F3; /* Focused border color */
+}
+
+/* Error state */
+input.error {
+  border-bottom: 2px solid #FF5722; /* Error border color */
+}
+
 /*# sourceMappingURL=main.css.map */
