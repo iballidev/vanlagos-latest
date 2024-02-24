@@ -14,7 +14,7 @@
         </div>
         <div class="col-span-12 lg:col-span-6">
             <div class="mdc-card fade-in max-w-lg mx-auto my-8" data-delay="300">
-                <h1 class="ff-headline uppercase text-2xl text-center bg-dark text-white p-4 rounded-t-lg">
+                <h1 class="ff-headline font-semibold uppercase text-2xl text-center bg-dark text-white p-4 rounded-t-lg">
                     Sign In
                 </h1>
                 <p class="bg-red-500 py-2 text-center text-white">Kindly fill out all informations</p>
@@ -34,8 +34,8 @@
                                         placeholder="Input your address" required>
                                 </div> -->
                                 <input type="text" id="username" name="username"
-                                    class="h-14 border rounded w-full error p-2" aria-label="Label"
-                                    placeholder="Input your address" required>
+                                    class="h-14 border rounded w-full error p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6" aria-label="Label"
+                                    placeholder="Enter your email address" required>
                             </li>
                             <li class="col-span-1">
                                 <label for="password" class="block font-semibold mb-2 cursor-pointer">Password</label>
@@ -47,10 +47,10 @@
                                     <input type="password" id="password" name="password" class="mdc-text-field__input"
                                         aria-label="Label" placeholder="Input your address" required>
                                 </div> -->
-                                <input type="password" id="password" name="password"
-                                    class="h-14 border rounded w-full error p-2" aria-label="Label"
+                                <input type="text" id="password" name="password"
+                                    class="h-14 border rounded w-full error p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6" aria-label="Label"
                                     placeholder="Input your address" required>
-                                <a href="#" class="text-end block text-sm text-primary font-semibold">Forgot
+                                <a href="./forgot-password.php" class="text-end block text-sm text-primary font-semibold">Forgot
                                     password</a>
                             </li>
                             <li class="col-span-1">
