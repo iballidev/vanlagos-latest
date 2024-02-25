@@ -201,15 +201,50 @@ html {
   color: rgb(8 145 178/var(--tw-text-opacity));
 }
 
+.pricing-card table tr td,
+.pricing-card table tr th {
+  padding: 1.1em;
+}
+.pricing-card table tr:not(tr:last-child) td,
+.pricing-card table tr:not(tr:last-child) th {
+  border-bottom: 1px solid var(--clr-dark-200);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--clr-bright);
+}
+.breadcrumb a {
+  font-weight: bold;
+}
+.breadcrumb li:not(li:last-child) {
+  display: flex;
+  gap: 5px;
+}
+.breadcrumb li:not(li:last-child)::after {
+  content: "/";
+  display: block;
+}
+
+.bg-banner-1 {
+  background-image: url(../images/bg-banner-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 :root {
   /* COLORS */
   --clr-primary: hsl(194, 81%, 60%);
   --clr-accent: hsl(33, 100%, 50%);
   --clr-dark: #414562;
   --clr-dark-200: #424662;
+  --clr-dark-600: #5B5B5B;
   --clr-bright: #ffffff;
   --clr-light: #F6F6F6;
-  --clr-light-500: hsl(0, 0%, 54%);
+  --clr-light-500: #8a8a8a;
 }
 
 .bg-primary {
@@ -236,6 +271,14 @@ html {
   color: var(--clr-dark-200);
 }
 
+.bg-dark-600 {
+  background-color: var(--clr-dark-600);
+}
+
+.text-dark-600 {
+  color: var(--clr-dark-600);
+}
+
 .bg-accent {
   background-color: var(--clr-accent);
 }
@@ -258,6 +301,10 @@ html {
 
 .text-light-500 {
   color: var(--clr-light-500);
+}
+
+.border-primary {
+  border-color: var(--clr-primary);
 }
 
 :root {

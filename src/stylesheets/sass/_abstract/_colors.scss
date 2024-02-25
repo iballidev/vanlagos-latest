@@ -7,9 +7,10 @@
     --clr-accent: hsl(33, 100%, 50%);
     --clr-dark: #414562;
     --clr-dark-200: #424662;
+    --clr-dark-600: #5B5B5B;
     --clr-bright: #ffffff;
     --clr-light: #F6F6F6;
-    --clr-light-500: hsl(0, 0%, 54%);
+    --clr-light-500: #8a8a8a;
 }
 
 .bg-primary {
@@ -37,6 +38,14 @@
     color: var(--clr-dark-200);
 }
 
+.bg-dark-600 {
+    background-color: var(--clr-dark-600);
+}
+
+.text-dark-600 {
+    color: var(--clr-dark-600);
+}
+
 .bg-accent {
     background-color: var(--clr-accent);
 }
@@ -60,4 +69,8 @@
 
 .text-light-500 {
     color: var(--clr-light-500);
+}
+
+.border-primary{
+    border-color: var(--clr-primary);
 }

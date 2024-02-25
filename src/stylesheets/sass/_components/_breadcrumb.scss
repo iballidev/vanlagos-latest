@@ -1,0 +1,19 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--clr-bright);
+    a{
+        font-weight: bold;
+    }
+    li:not(li:last-child) {
+        display: flex;
+        gap: 5px;
+        &::after {
+            content: "/";
+            display: block;
+            // height: 30px;
+            // width: 20px;
+        }
+    }
+}

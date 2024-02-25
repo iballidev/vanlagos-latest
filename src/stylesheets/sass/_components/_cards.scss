@@ -1,0 +1,16 @@
+.pricing-card {
+    table {
+        tr {
+            td,
+            th {
+                padding: 1.1em;
+            }
+            &:not(tr:last-child) {
+                td,
+                th {
+                    border-bottom: 1px solid var(--clr-dark-200);
+                }
+            }
+        }
+    }
+}
