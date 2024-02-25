@@ -818,6 +818,10 @@ video {
   height: 100%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1430,6 +1434,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:rounded-e-sm:focus {
+  border-start-end-radius: 0.125rem;
+  border-end-end-radius: 0.125rem;
 }
 
 .focus\:outline-none:focus {

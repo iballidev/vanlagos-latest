@@ -32,8 +32,8 @@
                     discounts.
                 </p>
                 <form action="">
-                    <div class="grouped-control h-8">
-                        <input type="text" class="text-dark rounded transparent">
+                    <div class="grouped-control h-10">
+                        <input type="text" class="text-dark rounded focus:rounded-e-sm transparent">
                         <!-- <input type="submit" value="Submit" class="button"> -->
                         <button class="button"></button>
                     </div>
