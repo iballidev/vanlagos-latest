@@ -82,6 +82,8 @@ main_toggleHeroForms.handleToggleHeroForms(document.querySelectorAll(".tab-btn")
 // 
 var toggle_daily_hourly_Forms = new Main();
 toggle_daily_hourly_Forms.handleToggleHeroForms(document.querySelectorAll(".vh-tab-btn"), document.querySelectorAll(".vh-tab-content"));
+var toggle_payment_methods = new Main();
+toggle_payment_methods.handleToggleHeroForms(document.querySelectorAll(".payment-tab-btn"), document.querySelectorAll(".payment-tab-content"));
 // const tabs = document.querySelectorAll('.tab-btn');
 // tabs.forEach(tab => {
 //     tab.addEventListener('click', () => {

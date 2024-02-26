@@ -1,0 +1,14 @@
+// @use "../../../node_modules/@material/theme" with (
+//   $primary: #9c27b0,
+//   $secondary: #76ff03,
+//   $background: #fff,
+// );
+// @use "material-components-web";
+
+
+@import '../../../node_modules/@material/button/mdc-button';
+@import '../../../node_modules/@material/button';
+
+.foo-button {
+  @include button.container-fill-color(darksalmon);
+}

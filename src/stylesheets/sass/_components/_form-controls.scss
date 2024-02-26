@@ -4,7 +4,7 @@
     background-color: var(--clr-bright);
     display: flex;
     width: 100%;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     input {
         background: transparent;
         height: 100%;
@@ -20,52 +20,36 @@
             align-items: center;
             justify-content: center;
             flex-basis: 15%;
-            
+
             // place-content: center;
             &::after {
                 content: url("../icons/material-symbols_send-outline-rounded.svg");
-                display: block;margin-top: 5px;
+                display: block;
+                margin-top: 5px;
             }
         }
     }
 }
 
-
-.form-tab-navs{
-    display: flex;
-    gap: 3px;
-    overflow: hidden;
-
-    .tab-btn{
-        &.active{
-            color: var(--clr-accent) !important;
-            &::after{
-                background-color: var(--clr-accent);
-            }
-        }
-    }
+.form-tab-navs {
+    
+    .tab-btn,
     .vh-tab-btn{
-        &.active{
-            color: var(--clr-primary) !important;
-            &::after{
-                background-color: var(--clr-primary);
-            }
-        }
-    }
-
-    .tab-btn, .vh-tab-btn{
         background-color: var(--clr-light);
+        color: var(--clr-light-500) !important;
+    }
+    .tab-btn,
+    .vh-tab-btn {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         padding: 1.5em 1em;
-        color: var(--clr-light-500) !important;
         border-radius: 0;
 
-        &.active{
+        &.active {
             position: relative;
-            &::after{
+            &::after {
                 content: "";
                 display: block;
                 height: 3px;
@@ -77,16 +61,38 @@
             }
         }
     }
-}
 
-.custom-select{
+    display: flex;
+    gap: 3px;
+    overflow: hidden;
+
+    .tab-btn {
+        &.active {
+            color: var(--clr-accent) !important;
+            &::after {
+                background-color: var(--clr-accent);
+            }
+        }
+    }
+    .vh-tab-btn {
+        &.active {
+            color: var(--clr-primary) !important;
+            &::after {
+                background-color: var(--clr-primary);
+            }
+        }
+    }
+
     
 }
 
-.drop-select-icon{
+.custom-select {
+}
+
+.drop-select-icon {
     position: relative;
     display: flex;
-    &::after{
+    &::after {
         @include mixins.after("\f0d7", inherit);
         display: block;
     }

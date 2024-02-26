@@ -1,0 +1,32 @@
+.table{
+    width: 100%;
+    font-size: .9rem;
+    &.style-regular{
+
+        tr{
+            th,td{
+                background-color: hsl(0, 0%, 95%);
+                border: 1px solid rgb(217, 217, 217);
+            }
+        }
+    }
+
+    tr{
+        th,td{
+            padding: .5em;
+            &:first-child{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.align-end-cells-right{    
+    tr{
+        th,td{
+            &:last-child{
+                text-align: right;
+            }
+        }
+    }
+}

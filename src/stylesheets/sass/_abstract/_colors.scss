@@ -7,10 +7,17 @@
     --clr-accent: hsl(33, 100%, 50%);
     --clr-dark: #414562;
     --clr-dark-200: #424662;
-    --clr-dark-600: #5B5B5B;
+    --clr-dark-600: #5b5b5b;
     --clr-bright: #ffffff;
-    --clr-light: #F6F6F6;
+    --clr-light: #f6f6f6;
     --clr-light-500: #8a8a8a;
+
+    --mdc-theme-primary: var(--clr-accent);
+    /* Primary color */
+    --mdc-theme-secondary: var(--clr-primary);
+    /* Secondary color */
+    --mdc-theme-background: #ffffff;
+    /* Background color */
 }
 
 .bg-primary {
@@ -28,7 +35,6 @@
 .text-dark {
     color: var(--clr-dark);
 }
-
 
 .bg-dark-200 {
     background-color: var(--clr-dark-200);
@@ -54,7 +60,6 @@
     color: var(--clr-accent);
 }
 
-
 .bg-light {
     background-color: var(--clr-light);
 }
@@ -71,6 +76,6 @@
     color: var(--clr-light-500);
 }
 
-.border-primary{
+.border-primary {
     border-color: var(--clr-primary);
 }

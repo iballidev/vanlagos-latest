@@ -22,7 +22,7 @@ class Main {
 
         const targetTabId = tab.getAttribute("data-tab");
         const tabContents = tab_content;
-        tabContents.forEach((content) => {
+        tabContents.forEach((content:any) => {
           content.classList.toggle("hidden", content.id !== targetTabId);
         });
       });
@@ -99,6 +99,15 @@ toggle_daily_hourly_Forms.handleToggleHeroForms(
   document.querySelectorAll<any>(".vh-tab-btn"),
   document.querySelectorAll<any>(".vh-tab-content")
 );
+
+const toggle_payment_methods = new Main();
+toggle_payment_methods.handleToggleHeroForms(
+  document.querySelectorAll<any>(".payment-tab-btn"),
+  document.querySelectorAll<any>(".payment-tab-content")
+);
+
+
+
 
 // const tabs = document.querySelectorAll('.tab-btn');
 // tabs.forEach(tab => {

@@ -22,8 +22,7 @@
                     <form action="">
                         <ul class="grid grid-cols-1 gap-y-4">
                             <li class="col-span-1">
-                                <label for="username" class="block font-semibold mb-2 cursor-pointer">Email Address /
-                                    Phone number</label>
+                                <label for="username" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
                                 <!-- <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                     <span class="mdc-notched-outline">
                                         <span class="mdc-notched-outline__leading"></span>
