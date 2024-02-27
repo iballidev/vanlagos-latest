@@ -3,7 +3,6 @@
 <div class="mx-auto max-w-7xl px-2 mt-4 sm:px-6 lg:px-8">
 
     <div class="grid grid-cols-12 gap-4 sm:gap-8 mb-8">
-
         <div class="col-span-12 sm:col-span-6">
             <div class="grid grid-cols-12 gap-4 sm:gap-8">
                 <div class="col-span-12">
@@ -96,9 +95,9 @@
                             Payment Method
                         </h1>
                         <div class="p-2 sm:p-6">
-<!-- bg-white rounded-md mdc-card -->
+                            <!-- bg-white rounded-md mdc-card -->
 
-<!-- form-tab-navs | mb-4 pb-4 -->
+                            <!-- form-tab-navs | mb-4 pb-4 -->
                             <div class="">
                                 <!-- Payment Method Tabs -->
                                 <div class="">
@@ -106,11 +105,31 @@
                                     <button class="mdc-button payment-tab-btn text-red-500" data-tab="payment-tab2">USE BANK TRANSFER</button>
                                 </div>
 
-                                <div class="p-4">
+                                <div class="py-4">
                                     <!-- Tab Content -->
                                     <div id="payment-tab1" class="payment-tab-content">
+
                                         <!-- card -->
-                                        <p>Card</p>
+                                        <div class="mdc-card overflow-hidden">
+                                            <h6 class="bg-light-300 text-white py-2 px-4">Enter card details</h6>
+                                            <div class="grid grid-cols-12 gap-4 p-4">
+                                                <div class="col-span-12 sm:col-span-8">
+                                                    <label for="cardNumber" class="block text-gray-600 text-sm font-medium mb-1">Card Number</label>
+                                                    <input type="text" id="cardNumber" name="cardNumber" class="form-input w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" placeholder="0000 0000 0000 0000" required maxlength="19">
+                                                </div>
+                                                <div class="col-span-12 sm:col-span-4">
+                                                    <div>
+                                                        <label for="expirationDate" class="block text-gray-600 text-sm font-medium mb-1">Expiration Date</label>
+                                                        <input type="text" id="expirationDate" name="expirationDate" class="form-input w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" placeholder="MM/YY" required maxlength="5">
+                                                    </div>
+                                                </div>
+                                                <div class="col-span-6 sm:col-span-4">
+                                                    <label for="cvc" class="block text-gray-600 text-sm font-medium mb-1">CVC</label>
+                                                    <input type="text" id="cvc" name="cvc" class="form-input w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" placeholder="123" required maxlength="3">
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div id="payment-tab2" class="hidden payment-tab-content">
                                         <!-- bank transfer -->
@@ -183,6 +202,46 @@
         </div>
 
     </div>
+    <script>
+        function configureCardNumber() {
+            document.getElementById('cardNumber').addEventListener('keyup', function(event) {
+                // Get the current input value
+                let inputValue = event.target.value;
+
+                // Remove any existing spaces
+                inputValue = inputValue.replace(/\s/g, '');
+
+                // Insert a space after every four characters
+                inputValue = inputValue.replace(/(\d{4})/g, '$1 ');
+
+                // Update the input value
+                event.target.value = inputValue.trim();
+            });
+        }
+
+        function configureCardExpiryDate() {
+            document.addEventListener("DOMContentLoaded", function() {
+                const creditCardInput = document.getElementById('expirationDate');
+
+                creditCardInput.addEventListener('keyup', function(event) {
+                    let inputValue = creditCardInput.value.replace(/\D/g, ''); // Remove non-numeric characters
+                    inputValue = inputValue.substring(0, 16); // Limit to 16 characters
+
+                    let formattedValue = '';
+                    for (let i = 0; i < inputValue.length; i += 2) {
+                        formattedValue += inputValue.slice(i, i + 2) + '/';
+                    }
+
+                    // Remove the trailing slash if it exists
+                    formattedValue = formattedValue.replace(/\/$/, '');
+
+                    creditCardInput.value = formattedValue;
+                });
+            });
+        }
+        configureCardNumber();
+        configureCardExpiryDate();
+    </script>
 </div>
 
 <?php include(__DIR__ . "./includes/footer.php"); ?>

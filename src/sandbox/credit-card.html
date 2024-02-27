@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cardjs@1.0.0/dist/card.css">
+</head>
+
+<body>
+    <!-- Your Credit Card Form -->
+    <form id="creditCardForm">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="Card Number" data-card-type="card-type">
+
+        <label for="cardName">Cardholder Name</label>
+        <input type="text" id="cardName" placeholder="Cardholder Name">
+
+        <label for="cardExpiry">Expiration Date</label>
+        <input type="text" id="cardExpiry" placeholder="MM/YY">
+
+        <label for="cardCVC">CVC</label>
+        <input type="text" id="cardCVC" placeholder="CVC">
+
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <!-- Include jQuery and card.js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cardjs@1.0.0/dist/card.js"></script>
+
+    <!-- Initialize the card.js plugin -->
+    <script>
+        // Wrap the code in the document ready function
+        $(document).ready(function () {
+            alert("hello")
+            var card = new Card({
+                form: '#creditCardForm',
+                container: '.card-wrapper',
+                formSelectors: {
+                    numberInput: '#cardNumber',
+                    nameInput: '#cardName',
+                    expiryInput: '#cardExpiry',
+                    cvcInput: '#cardCVC',
+                },
+                placeholders: {
+                    number: '•••• •••• •••• ••••',
+                    name: 'Full Name',
+                    expiry: 'MM/YY',
+                    cvc: 'CVC',
+                },
+            });
+        });
+    </script>
+
+</body>
+
+</html>

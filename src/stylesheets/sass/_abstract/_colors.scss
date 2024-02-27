@@ -10,6 +10,7 @@
     --clr-dark-600: #5b5b5b;
     --clr-bright: #ffffff;
     --clr-light: #f6f6f6;
+    --clr-light-300: #b0b0b0;
     --clr-light-500: #8a8a8a;
 
     --mdc-theme-primary: var(--clr-accent);
@@ -74,6 +75,13 @@
 
 .text-light-500 {
     color: var(--clr-light-500);
+}
+.bg-light-300 {
+    background-color: var(--clr-light-300);
+}
+
+.text-light-300 {
+    color: var(--clr-light-300);
 }
 
 .border-primary {
