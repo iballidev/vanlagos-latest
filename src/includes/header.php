@@ -74,9 +74,9 @@
                             <!-- <img class="h-8 w-auto ml-10 sm:ml-0"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                 alt="Your Company"> -->
-                            <img class="h-8 w-auto ml-10 sm:ml-0"
-                                src="./images/brand-logo-2.svg"
-                                alt="Your Company">
+                            <a href="./"><img class="h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-2.svg"
+                                    alt="Your Company">
+                            </a>
                         </div>
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
@@ -160,11 +160,13 @@
                     <a href="./" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
                         aria-current="page">Home</a>
                     <a href="./about-us.php"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Us</a>
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About
+                        Us</a>
                     <a href="./pricing.php"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Pricing</a>
                     <a href="./contact-us.php"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact Us</a>
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact
+                        Us</a>
                     <a href="./login.php"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sign
                         In / Sign Up</a>

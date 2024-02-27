@@ -207,10 +207,16 @@
                         </div>
                     </div>
                 </div>
-                <button class="mdc-button w-full bg-primary py-6 mdc-card">
-                    <span class="mdc-button__ripple"></span>
-                    <span class="mdc-button__label text-white">Pay Now</span>
-                </button>
+                <div class="flex items-center justify-between my-4">
+                    <button type="submit" class="mdc-button bg-primary py-4 px-8 mdc-card">
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label text-white capitalize">Pay Now</span>
+                    </button>
+                    <button type="button" class="mdc-button border border-primary py-4 px-8 mdc-card">
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label text-primary capitalize">Go Back</span>
+                    </button>
+                </div>
             </form>
             <!-- form ends -->
         </div>
@@ -298,7 +304,7 @@
 
             creditCardInput.addEventListener('keyup', function(event) {
                 let inputValue = creditCardInput.value.replace(/\D/g,
-                ''); // Remove non-numeric characters
+                    ''); // Remove non-numeric characters
                 inputValue = inputValue.substring(0, 16); // Limit to 16 characters
 
                 let formattedValue = '';
