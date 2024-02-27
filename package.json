@@ -9,7 +9,8 @@
     "scss": "sass src/stylesheets/sass/main.scss src/stylesheets/main.css --watch",
     "tsc": "tsc src/javascripts/main.ts --watch",
     "start": "webpack serve",
-    "sandbox-theming": "sass src/sandbox/material-design-theming/style.scss src/sandbox/material-design-theming/style.css --watch"
+    "sandbox-theming": "sass src/sandbox/material-design-theming/style.scss src/sandbox/material-design-theming/style.css --watch",    
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "material-components-web": "^14.0.0",
-    "sass": "^1.71.0"
+    "sass": "^1.71.0",
+    "ts-loader": "^9.5.1"
   }
 }

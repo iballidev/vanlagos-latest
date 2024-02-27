@@ -281,47 +281,6 @@
         </div>
 
     </div>
-    <script>
-    function configureCardNumber() {
-        document.getElementById('card_number').addEventListener('keyup', function(event) {
-            // Get the current input value
-            let inputValue = event.target.value;
-
-            // Remove any existing spaces
-            inputValue = inputValue.replace(/\s/g, '');
-
-            // Insert a space after every four characters
-            inputValue = inputValue.replace(/(\d{4})/g, '$1 ');
-
-            // Update the input value
-            event.target.value = inputValue.trim();
-        });
-    }
-
-    function configureCardExpiryDate() {
-        document.addEventListener("DOMContentLoaded", function() {
-            const creditCardInput = document.getElementById('expiration_date');
-
-            creditCardInput.addEventListener('keyup', function(event) {
-                let inputValue = creditCardInput.value.replace(/\D/g,
-                    ''); // Remove non-numeric characters
-                inputValue = inputValue.substring(0, 16); // Limit to 16 characters
-
-                let formattedValue = '';
-                for (let i = 0; i < inputValue.length; i += 2) {
-                    formattedValue += inputValue.slice(i, i + 2) + '/';
-                }
-
-                // Remove the trailing slash if it exists
-                formattedValue = formattedValue.replace(/\/$/, '');
-
-                creditCardInput.value = formattedValue;
-            });
-        });
-    }
-    configureCardNumber();
-    configureCardExpiryDate();
-    </script>
 </div>
 
 <?php include(__DIR__ . "./includes/footer.php"); ?>

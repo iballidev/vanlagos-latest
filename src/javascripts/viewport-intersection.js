@@ -1,14 +1,6 @@
-
-document.addEventListener("DOMContentLoaded", (event) => {
-
-    function Init() {
-        handleAnimateOnViewportIntercept()
-    }
-
-    /**Animate content on viewport intercept */
-
-    function handleAnimateOnViewportIntercept() {
-        /* Page Content Intersection Observer */
+class ViewportIntersection {
+    constructor() { }
+    handleAnimateOnViewportIntercept = () => {
         const faders = document.querySelectorAll(".fade-in");
         const fromLeft = document.querySelectorAll(".from-left");
         const fromRight = document.querySelectorAll(".from-right");
@@ -16,31 +8,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const fromTop = document.querySelectorAll(".from-top");
         const sliders = document.querySelectorAll(".slide-in");
 
+
         const appearOptions = {
             threshold: 0,
             rootMargin: "0px 0px -100px 0px"
         };
-        const appearOnScroll = new IntersectionObserver(
-            (entries, appearOnScroll) => {
-                entries.forEach((entry) => {
-                    // console.log("entry: ", entry.target)
-                    let dataDelay = entry.target.getAttribute("data-delay");
-                    // console.log("dataDelay: ", dataDelay)
-                    if (!entry.isIntersecting) return;
+        const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+            entries.forEach((entry) => {
+                console.log("entry: ", entry.target)
+                let dataDelay = entry.target.getAttribute("data-delay");
+                console.log("dataDelay: ", dataDelay)
+                if (!entry.isIntersecting) return;
 
-                    if (dataDelay) {
-                        setTimeout(() => {
-                            entry.target.classList.add("appear");
-                            appearOnScroll.unobserve(entry.target);
-                        }, parseInt(dataDelay));
-                    } else {
+                if (dataDelay) {
+                    setTimeout(() => {
                         entry.target.classList.add("appear");
                         appearOnScroll.unobserve(entry.target);
-                    }
-                });
-            },
-            appearOptions
-        );
+                    }, parseInt(dataDelay));
+                } else {
+                    entry.target.classList.add("appear");
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
 
         faders.forEach((fader) => {
             appearOnScroll.observe(fader);
@@ -62,8 +52,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
             appearOnScroll.observe(slider);
         });
     }
-
-
-
-    Init();
-})
+}
+export default ViewportIntersection;
