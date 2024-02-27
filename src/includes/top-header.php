@@ -3,7 +3,7 @@
         <div class="relative flex py-2 items-center justify-between">
             <ul>
                 <li>9, Tinubu Street, off Coker road, illupeju Lagos.</li>
-                <li> info@Vanlagos.com</li>
+                <li> info@vanlagos.com</li>
             </ul>
 
             <ul>

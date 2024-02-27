@@ -11,10 +11,8 @@
     </div>
 </div>
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-
-
-
-
+    <!-- car hire form -->
+    <?php include_once(__DIR__ . "./includes/car-hire-form.php"); ?>
 </div>
 
 <?php include(__DIR__ . "./includes/footer.php"); ?>
