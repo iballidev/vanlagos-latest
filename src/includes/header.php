@@ -71,8 +71,11 @@
                     </div>
                     <div class="flex flex-1 items-center justify-between sm:items-stretch">
                         <div class="flex flex-shrink-0 items-center">
-                            <img class="h-8 w-auto ml-10 sm:ml-0"
+                            <!-- <img class="h-8 w-auto ml-10 sm:ml-0"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                alt="Your Company"> -->
+                            <img class="h-8 w-auto ml-10 sm:ml-0"
+                                src="./images/brand-logo-2.svg"
                                 alt="Your Company">
                         </div>
                         <div class="hidden sm:ml-6 sm:block">
