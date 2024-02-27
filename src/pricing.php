@@ -2,7 +2,7 @@
 
 <div class="bg-banner-1">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <ul class="breadcrumb py-2">
+        <ul class="breadcrumb py-2 text-bright">
             <li><a href="#">Home</a></li>
             <li>Pricing</li>
         </ul>
@@ -39,7 +39,7 @@
                 </table>
                 <!--  -->
                 <div class="sm:px-8">
-                    <a href="#" class="mdc-button w-full bg-primary py-6 mdc-card">
+                    <a href="./van-booking.php" class="mdc-button w-full bg-primary py-6 mdc-card">
                         <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                     </a>
@@ -68,7 +68,7 @@
                     </tbody>
                 </table>
                 <!--  -->
-                <a href="#" class="mdc-button w-full bg-primary py-6 mdc-card">
+                <a href="./bus-booking.php" class="mdc-button w-full bg-primary py-6 mdc-card">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                 </a>
@@ -96,7 +96,7 @@
                     </tbody>
                 </table>
                 <!--  -->
-                <a href="#" class="mdc-button w-full bg-primary py-6 mdc-card">
+                <a href="./car-booking.php" class="mdc-button w-full bg-primary py-6 mdc-card">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                 </a>

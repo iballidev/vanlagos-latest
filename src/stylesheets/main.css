@@ -235,7 +235,6 @@ html {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--clr-bright);
 }
 .breadcrumb a {
   font-weight: bold;
@@ -332,6 +331,14 @@ html {
 
 .text-accent {
   color: var(--clr-accent);
+}
+
+.bg-bright {
+  background-color: var(--clr-bright);
+}
+
+.text-bright {
+  color: var(--clr-bright);
 }
 
 .bg-light {
