@@ -40,3 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     viewport_intersect.handleAnimateOnViewportIntercept();
 
 });
+
+
+

@@ -12,8 +12,14 @@
             <form action="">
                 <ul class="grid grid-cols-1 gap-y-4">
                     <li class="col-span-1">
-                        <label for="username" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
-                        <input type="email" id="username" name="username" class="h-14 border rounded w-full error p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6" aria-label="Label" placeholder="Enter your email address" required>
+                        <label for="email" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
+                        <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+                            <input type="text" id="email" name="email" class="border border-red-500 error mdc-text-field__input" aria-label="Label" required>
+                            <span class="mdc-notched-outline">
+                                <span class="mdc-notched-outline__leading"></span>
+                                <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+                        </div>
                     </li>
                     <li class="col-span-1">
                         <!-- <input type="submit" value="Log In" class="bg-primary text-white rounded w-full p-4 mb-4"> -->

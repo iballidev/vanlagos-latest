@@ -31,7 +31,7 @@
 /*handle error field*/
 .mdc-text-field--outlined {
     height: 45px;
-    input {
+    input, select {
         &.error {
             & + .mdc-notched-outline {
                 .mdc-notched-outline__leading,

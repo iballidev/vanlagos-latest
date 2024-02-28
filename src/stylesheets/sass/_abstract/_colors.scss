@@ -12,6 +12,7 @@
     --clr-light: #f6f6f6;
     --clr-light-300: #b0b0b0;
     --clr-light-500: #8a8a8a;
+    --clr-danger: #FF5722;
 
     --mdc-theme-primary: var(--clr-accent);
     /* Primary color */
@@ -36,6 +37,16 @@
 
 .text-dark {
     color: var(--clr-dark);
+}
+
+
+
+.bg-danger {
+    background-color: var(--clr-danger);
+}
+
+.text-danger {
+    color: var(--clr-danger);
 }
 
 .bg-dark-200 {

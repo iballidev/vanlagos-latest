@@ -51,3 +51,20 @@
 .from-bottom {
   transform: translateY(50%);
 }
+
+.required{
+  display: flex;
+  &::after{
+    content: "*";
+    display: block;
+    color: var(--clr-danger);
+  }
+}
+
+.select{
+  display: flex;
+  position: relative;
+  &::after{
+    @include mixins.after("\f0d7", inherit);
+  }
+}

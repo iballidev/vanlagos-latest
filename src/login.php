@@ -23,32 +23,26 @@
                         <ul class="grid grid-cols-1 gap-y-4">
                             <li class="col-span-1">
                                 <label for="username" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
-                                <!-- <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
-                                    <span class="mdc-notched-outline">
-                                        <span class="mdc-notched-outline__leading"></span>
-                                        <span class="mdc-notched-outline__trailing"></span>
-                                    </span>
+                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                     <input type="text" id="username" name="username"
                                         class="border border-red-500 error mdc-text-field__input" aria-label="Label"
                                         placeholder="Input your address" required>
-                                </div> -->
-                                <input type="text" id="email_address" name="email_address"
-                                    class="h-14 border rounded w-full error p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6" aria-label="Label"
-                                    placeholder="Enter your email address" required>
-                            </li>
-                            <li class="col-span-1">
-                                <label for="password" class="block font-semibold mb-2 cursor-pointer">Password</label>
-                                <!-- <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                     <span class="mdc-notched-outline">
                                         <span class="mdc-notched-outline__leading"></span>
                                         <span class="mdc-notched-outline__trailing"></span>
                                     </span>
-                                    <input type="password" id="password" name="password" class="mdc-text-field__input"
-                                        aria-label="Label" placeholder="Input your address" required>
-                                </div> -->
-                                <input type="text" id="password" name="password"
-                                    class="h-14 border rounded w-full error p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6" aria-label="Label"
-                                    placeholder="Input your address" required>
+                                </div>
+                            </li>
+                            <li class="col-span-1">
+                                <label for="password" class="block font-semibold mb-2 cursor-pointer">Password</label>
+                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+                                    <input type="password" id="password" name="password" class="mdc-text-field__input error"
+                                        aria-label="Label" required>
+                                    <span class="mdc-notched-outline">
+                                        <span class="mdc-notched-outline__leading"></span>
+                                        <span class="mdc-notched-outline__trailing"></span>
+                                    </span>
+                                </div>
                                 <a href="./forgot-password.php" class="text-end block text-sm text-primary font-semibold">Forgot
                                     password</a>
                             </li>
@@ -62,8 +56,7 @@
                             </li>
                         </ul>
 
-                        <p class="text-center text-light-500 mt-8">If you don’t have an account click on <a
-                                href="register.php" class="text-primary font-semibold">Sign Up</a></p>
+                        <p class="text-center text-light-500 mt-8">If you don’t have an account click on <a href="register.php" class="text-primary font-semibold">Sign Up</a></p>
                     </form>
                 </div>
             </div>

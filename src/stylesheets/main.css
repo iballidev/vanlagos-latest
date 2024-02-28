@@ -86,6 +86,26 @@ html {
   transform: translateY(50%);
 }
 
+.required {
+  display: flex;
+}
+.required::after {
+  content: "*";
+  display: block;
+  color: var(--clr-danger);
+}
+
+.select {
+  display: flex;
+  position: relative;
+}
+.select::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: inherit;
+}
+
 .top-header {
   background-color: var(--clr-dark);
   color: var(--clr-bright);
@@ -228,7 +248,9 @@ html {
 }
 .mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__leading,
 .mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__notch,
-.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__trailing {
+.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__trailing, .mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__leading,
+.mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__notch,
+.mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__trailing {
   border-color: red;
 }
 
@@ -295,6 +317,7 @@ html {
   --clr-light: #f6f6f6;
   --clr-light-300: #b0b0b0;
   --clr-light-500: #8a8a8a;
+  --clr-danger: #FF5722;
   --mdc-theme-primary: var(--clr-accent);
   /* Primary color */
   --mdc-theme-secondary: var(--clr-primary);
@@ -317,6 +340,14 @@ html {
 
 .text-dark {
   color: var(--clr-dark);
+}
+
+.bg-danger {
+  background-color: var(--clr-danger);
+}
+
+.text-danger {
+  color: var(--clr-danger);
 }
 
 .bg-dark-200 {
@@ -456,17 +487,17 @@ html {
 
 /* Default state */
 input {
-  border-bottom: 1px solid #B0BEC5; /* Default border color */
+  border-bottom: 1px solid #b0bec5; /* Default border color */
 }
 
 /* Focused state */
 input:focus {
-  border-bottom: 2px solid #2196F3; /* Focused border color */
+  border-bottom: 2px solid #2196f3; /* Focused border color */
 }
 
 /* Error state */
 input.error {
-  border-bottom: 2px solid #FF5722; /* Error border color */
+  border-bottom: 2px solid #ff5722; /* Error border color */
 }
 
 /*# sourceMappingURL=main.css.map */
