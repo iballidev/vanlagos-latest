@@ -1,14 +1,12 @@
-
-
 .mdc-button:not(:disabled) {
-//   color: unset;
+    //   color: unset;
 }
 
-.mdc-theme--primary{
+.mdc-theme--primary {
     color: red;
 }
 
-.material-icons{
+.material-icons {
     &.text-green-600 {
         --tw-text-opacity: 1;
         color: rgb(22 163 74 / var(--tw-text-opacity));
@@ -27,5 +25,21 @@
     &.text-cyan-600 {
         --tw-text-opacity: 1;
         color: rgb(8 145 178 / var(--tw-text-opacity));
+    }
+}
+
+/*handle error field*/
+.mdc-text-field--outlined {
+    height: 45px;
+    input {
+        &.error {
+            & + .mdc-notched-outline {
+                .mdc-notched-outline__leading,
+                .mdc-notched-outline__notch,
+                .mdc-notched-outline__trailing {
+                    border-color: red;
+                }
+            }
+        }
     }
 }

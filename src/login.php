@@ -32,7 +32,7 @@
                                         class="border border-red-500 error mdc-text-field__input" aria-label="Label"
                                         placeholder="Input your address" required>
                                 </div> -->
-                                <input type="text" id="username" name="username"
+                                <input type="text" id="email_address" name="email_address"
                                     class="h-14 border rounded w-full error p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6" aria-label="Label"
                                     placeholder="Enter your email address" required>
                             </li>

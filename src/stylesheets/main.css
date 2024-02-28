@@ -222,6 +222,16 @@ html {
   color: rgb(8 145 178/var(--tw-text-opacity));
 }
 
+/*handle error field*/
+.mdc-text-field--outlined {
+  height: 45px;
+}
+.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__leading,
+.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__notch,
+.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__trailing {
+  border-color: red;
+}
+
 .pricing-card table tr td,
 .pricing-card table tr th {
   padding: 1.1em;
