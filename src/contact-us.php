@@ -1,9 +1,20 @@
 <?php
 include(__DIR__ . "./includes/header.php");
 ?>
+<div class="bg-banner-1">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <ul class="breadcrumb py-2">
+            <li><a href="#">Home</a></li>
+            <li>Contact Us</li>
+        </ul>
+        <div class="py-16">
+            <h1 class="font-bold text-center text-4xl sm:text-5xl text-dark-200">Contact Us</h1>
+        </div>
+    </div>
+</div>
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-12 gap-4 my-8">
+    <div class="grid grid-cols-12 gap-4 my-8 gap-y-8 sm:gap-y-0">
         <div class="col-span-12 sm:col-span-5">
             <div class="mdc-card p-6">
                 <h2 class="font-semibold text-2xl mb-8 text-center capitalize">Get in touch with us today</h2>
@@ -48,21 +59,53 @@ include(__DIR__ . "./includes/header.php");
                                     <span class="mdc-notched-outline__trailing rounded-r-md"></span>
                                 </span>
                                 <span class="mdc-text-field__resizer">
-                                    <textarea class="mdc-text-field__input" rows="5" cols="40" aria-label="Label"></textarea>
+                                    <textarea class="mdc-text-field__input" id="message" name="message" rows="5" cols="40" aria-label="Label"></textarea>
                                 </span>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-start-5 sm:col-end-9">
-                                <button class="mdc-button w-full bg-primary py-6 mdc-card">
-                                    <span class="mdc-button__ripple"></span>
-                                    <span class="mdc-button__label text-white">Submit</span>
-                                </button>
+                            <button class="mdc-button w-full bg-primary py-6 mdc-card">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="mdc-button__label text-white">Submit</span>
+                            </button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="col-span-12 sm:col-span-7">B</div>
+        <div class="col-span-12 sm:col-span-7">
+            <h3 class="font-semibold text-2xl mb-8 text-center capitalize">For further inquiries:</h3>
+
+            <div class="grid grid-cols-12 gap-4 my-8">
+                <div class="col-span-12 sm:col-span-4">
+                    <div class="mdc-card p-6 h-full">
+                        <div class="max-w-sm mx-auto mb-2">
+                            <img src="./images/phone-primary-box.svg" alt="">
+                        </div>
+                        <h4 class="font-semibold text-lg mb-3 text-center capitalize">Call center number</h4>
+                        <p class="text-center text-sm">+234&nbsp;7084069904</p>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-4">
+                    <div class="mdc-card p-6 h-full">
+                        <div class="max-w-sm mx-auto mb-2">
+                            <img src="./images/location-primary-box.svg" alt="">
+                        </div>
+                        <h4 class="font-semibold text-lg mb-3 text-center capitalize">Address</h4>
+                        <p class="text-center text-sm">148, Ikorodu road, shomolu</p>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-4">
+                    <div class="mdc-card p-6 h-full">
+                        <div class="max-w-sm mx-auto mb-2">
+                            <img src="./images/email-primary-box.svg" alt="">
+                        </div>
+                        <h4 class="font-semibold text-lg mb-3 text-center capitalize">Email</h4>
+                        <p class="text-center text-sm">Info@Vanlagos.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
