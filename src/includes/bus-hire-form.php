@@ -40,14 +40,6 @@
                 </select>
             </div>
         </div>
-
-        <!-- <div class="col-span-8">
-                                            <label for="drop_off"
-                                                class="block font-semibold mb-2 cursor-pointer">Drop-off</label>
-                                            <input type="text" id="drop_off" placeholder="Input your address"
-                                                class="block w-full px-2 py-3 rounded-md shadow-sm ring-1 ring-gray-300 focus-within:ring-2 sm:max-w-md">
-                                        </div> -->
-
         <div class="col-span-12 sm:col-span-8">
             <label for="drop_off" class="block font-semibold mb-2 cursor-pointer">Drop-off</label>
             <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
@@ -59,16 +51,6 @@
                     placeholder="Input your address">
             </div>
         </div>
-        <!-- <div class="col-span-4">
-                                            <label for="drop_off_state"
-                                                class="block font-semibold mb-2 cursor-pointer">State</label>
-                                            <select name="drop_off_state" id="drop_off_state"
-                                                class="block w-full px-2 py-3 rounded-md shadow-sm ring-1 ring-gray-300 focus-within:ring-2 sm:max-w-md">
-                                                <option value="lagos">Lagos</option>
-                                                <option value="ogun">Ogun</option>
-                                            </select>
-                                        </div> -->
-
 
         <div class="col-span-12 sm:col-span-4">
             <label for="drop_off_state" class="block font-semibold mb-2 cursor-pointer">State</label>
@@ -84,14 +66,6 @@
                 </select>
             </div>
         </div>
-
-
-        <!-- <div class="col-span-4">
-                                            <label for="pick_up_date"
-                                                class="block font-semibold mb-2 cursor-pointer">Pick-up Date</label>
-                                            <input type="date" name="pick_up_date" id="pick_up_date"
-                                                class="block w-full px-2 py-3 rounded-md shadow-sm ring-1 ring-gray-300 focus-within:ring-2 sm:max-w-md">
-                                        </div> -->
         <div class="col-span-6 sm:col-span-4">
             <label for="pick_up_date" class="block font-semibold mb-2 cursor-pointer">Pick-up Date</label>
             <div class="calendar | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
