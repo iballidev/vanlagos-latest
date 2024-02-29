@@ -68,3 +68,15 @@
     @include mixins.after("\f0d7", inherit);
   }
 }
+
+.payment-card-logos{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--clr-light-300);
+  border-radius: 3px;
+  padding: .5em 1em;
+  li{
+    max-width: 50px;
+  }
+}

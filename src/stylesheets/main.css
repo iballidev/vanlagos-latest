@@ -106,6 +106,18 @@ html {
   font-size: inherit;
 }
 
+.payment-card-logos {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--clr-light-300);
+  border-radius: 3px;
+  padding: 0.5em 1em;
+}
+.payment-card-logos li {
+  max-width: 50px;
+}
+
 .top-header {
   background-color: var(--clr-dark);
   color: var(--clr-bright);
