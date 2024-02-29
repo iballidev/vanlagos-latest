@@ -35,7 +35,7 @@
 
     <!-- <nav class="bg-light"> -->
     <!-- <nav class="bg-gray-800 sm:bg-light"> -->
-    <nav class="bg-gray-800 sm:bg-white">
+    <nav class="bg-gray-800 sm:bg-[var(--clr-light)]">
 
         <div x-data="{ isOpen: false }">
             <!-- mobile nav state begins -->

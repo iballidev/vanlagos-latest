@@ -43,3 +43,9 @@
         }
     }
 }
+
+.mdc-tab-scroller__scroll-area {
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    overflow-x: auto;
+}
