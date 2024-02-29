@@ -1,99 +1,126 @@
 @use "../_partials/mixins";
 
 .grouped-control {
-    background-color: var(--clr-bright);
-    display: flex;
+  background-color: var(--clr-bright);
+  display: flex;
+  width: 100%;
+  border-radius: 0.3rem;
+  input {
+    background: transparent;
+    height: 100%;
+    display: block;
     width: 100%;
-    border-radius: 0.3rem;
-    input {
-        background: transparent;
-        height: 100%;
-        display: block;
-        width: 100%;
-        flex-basis: 85%;
-        padding: 8px;
-        & + .button {
-            // background-color: blue;
-            display: flex;
-            height: 100%;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            flex-basis: 15%;
+    flex-basis: 85%;
+    padding: 8px;
+    & + .button {
+      // background-color: blue;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 15%;
 
-            // place-content: center;
-            &::after {
-                content: url("../icons/material-symbols_send-outline-rounded.svg");
-                display: block;
-                margin-top: 5px;
-            }
-        }
+      // place-content: center;
+      &::after {
+        content: url("../icons/material-symbols_send-outline-rounded.svg");
+        display: block;
+        margin-top: 5px;
+      }
     }
+  }
 }
 
 .form-tab-navs {
-    
-    .tab-btn,
-    .vh-tab-btn{
-        background-color: var(--clr-light);
-        color: var(--clr-light-500) !important;
-    }
-    .tab-btn,
-    .vh-tab-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 1.5em 1em;
-        border-radius: 0;
-
-        &.active {
-            position: relative;
-            &::after {
-                content: "";
-                display: block;
-                height: 3px;
-                padding-bottom: 0;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
-        }
-    }
-
+  .tab-btn,
+  .vh-tab-btn {
+    background-color: var(--clr-light);
+    color: var(--clr-light-500) !important;
+  }
+  .tab-btn,
+  .vh-tab-btn {
     display: flex;
-    gap: 3px;
-    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5em 1em;
+    border-radius: 0;
 
-    .tab-btn {
-        &.active {
-            color: var(--clr-accent) !important;
-            &::after {
-                background-color: var(--clr-accent);
-            }
-        }
-    }
-    .vh-tab-btn {
-        &.active {
-            color: var(--clr-primary) !important;
-            &::after {
-                background-color: var(--clr-primary);
-            }
-        }
-    }
-
-    
-}
-
-.custom-select {
-}
-
-.drop-select-icon {
-    position: relative;
-    display: flex;
-    &::after {
-        @include mixins.after("\f0d7", inherit);
+    &.active {
+      position: relative;
+      &::after {
+        content: "";
         display: block;
+        height: 3px;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
     }
+  }
+
+  display: flex;
+  gap: 3px;
+  overflow: hidden;
+
+  .tab-btn {
+    &.active {
+      color: var(--clr-accent) !important;
+      &::after {
+        background-color: var(--clr-accent);
+      }
+    }
+  }
+  .vh-tab-btn {
+    &.active {
+      color: var(--clr-primary) !important;
+      &::after {
+        background-color: var(--clr-primary);
+      }
+    }
+  }
+}
+
+.required {
+  display: flex;
+  &::after {
+    content: "*";
+    display: block;
+    color: var(--clr-danger);
+  }
+}
+
+.select {
+  display: flex;
+  position: relative;
+  &::after {
+    @include mixins.after("\f0d7", inherit);
+  }
+}
+
+
+.calendar {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  input {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    &:focus {
+      border: none;
+    }
+  }
+  &::after {
+    @include mixins.after("\f073", inherit);
+    position: absolute;
+    right: 1em;
+    top: 0.7em;
+    z-index: 0;
+  }
 }

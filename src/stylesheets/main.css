@@ -86,26 +86,6 @@ html {
   transform: translateY(50%);
 }
 
-.required {
-  display: flex;
-}
-.required::after {
-  content: "*";
-  display: block;
-  color: var(--clr-danger);
-}
-
-.select {
-  display: flex;
-  position: relative;
-}
-.select::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: inherit;
-}
-
 .payment-card-logos {
   display: inline-flex;
   align-items: center;
@@ -221,16 +201,51 @@ html {
   background-color: var(--clr-primary);
 }
 
-.drop-select-icon {
-  position: relative;
+.required {
   display: flex;
 }
-.drop-select-icon::after {
+.required::after {
+  content: "*";
+  display: block;
+  color: var(--clr-danger);
+}
+
+.select {
+  display: flex;
+  position: relative;
+}
+.select::after {
   content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: inherit;
-  display: block;
+}
+
+.calendar {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.calendar input {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.calendar input:focus {
+  border: none;
+}
+.calendar::after {
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: inherit;
+  position: absolute;
+  right: 1em;
+  top: 0.7em;
+  z-index: 0;
 }
 
 .mdc-theme--primary {

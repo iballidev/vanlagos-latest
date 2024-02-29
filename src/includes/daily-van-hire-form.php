@@ -13,7 +13,7 @@
         </div>
         <div class="col-span-12 sm:col-span-4">
             <label for="pick_up_state" class="block font-semibold mb-2 cursor-pointer">State</label>
-            <div class="drop-select-icon | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+            <div class="select | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                 <span class="mdc-notched-outline">
                     <span class="mdc-notched-outline__leading"></span>
                     <span class="mdc-notched-outline__trailing"></span>
@@ -38,7 +38,7 @@
         </div>
         <div class="col-span-12 sm:col-span-4">
             <label for="drop_off_state" class="block font-semibold mb-2 cursor-pointer">State</label>
-            <div class="drop-select-icon | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+            <div class="select | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                 <span class="mdc-notched-outline">
                     <span class="mdc-notched-outline__leading"></span>
                     <span class="mdc-notched-outline__trailing"></span>
@@ -52,7 +52,7 @@
         </div>
         <div class="col-span-6 sm:col-span-4">
             <label for="pick_up_date" class="block font-semibold mb-2 cursor-pointer">Pick-up Date</label>
-            <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+            <div class="calendar | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                 <span class="mdc-notched-outline">
                     <span class="mdc-notched-outline__leading"></span>
                     <span class="mdc-notched-outline__trailing"></span>
@@ -64,7 +64,7 @@
         <div class="col-span-6 sm:col-span-4">
             <label for="pick_up_time" class="block font-semibold mb-2 cursor-pointer">Pick-up Time</label>
 
-            <div class="drop-select-icon | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+            <div class="select | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                 <span class="mdc-notched-outline">
                     <span class="mdc-notched-outline__leading"></span>
                     <span class="mdc-notched-outline__trailing"></span>
@@ -82,7 +82,7 @@
         <div class="col-span-12 sm:col-span-4">
             <label for="number_of_days" class="block font-semibold mb-2 cursor-pointer">No of Days</label>
 
-            <div class="drop-select-icon | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
+            <div class="select | mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                 <span class="mdc-notched-outline">
                     <span class="mdc-notched-outline__leading"></span>
                     <span class="mdc-notched-outline__trailing"></span>

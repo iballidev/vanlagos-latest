@@ -84,7 +84,7 @@
                                             <div class="col-span-12">
                                                 <label for="country"
                                                     class="block font-semibold cursor-pointer mb-2 required">Country</label>
-                                                <div class="mdc-text-field mdc-text-field--outlined w-full select">
+                                                <div class="select | mdc-text-field mdc-text-field--outlined w-full">
                                                     <select id="country" name="country"
                                                         class=" mdc-text-field__input error" aria-label="Label"
                                                         required>
@@ -103,7 +103,7 @@
                                             <div class="col-span-12">
                                                 <label for="state"
                                                     class="block font-semibold cursor-pointer mb-2 required">State</label>
-                                                <div class="mdc-text-field mdc-text-field--outlined w-full select">
+                                                <div class="select | mdc-text-field mdc-text-field--outlined w-full">
                                                     <select id="state" name="state" class=" mdc-text-field__input error"
                                                         aria-label="Label" required>
                                                         <option selected>Choose a state</option>

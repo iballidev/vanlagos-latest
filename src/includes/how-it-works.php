@@ -93,7 +93,7 @@
     <div class="mx-auto max-w-7xl px-2 py-6 sm:px-6 lg:px-8">
         <div class="flex items-center justify-center sm:justify-between flex-wrap gap-4">
             <p class="font-semibold text-xl">Experience comfort, reliability, and convenience with us. Your journey starts here.</p>
-            <a href="#" class="bg-accent mdc-button p-6">
+            <a href="./pricing.php" class="bg-accent mdc-button p-6">
                 <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label text-white uppercase">Hire Now</span>
             </a>
