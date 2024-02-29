@@ -52,14 +52,14 @@
   transform: translateY(50%);
 }
 
-.payment-card-logos{
+.payment-card-logos {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   border: 1px solid var(--clr-light-300);
   border-radius: 3px;
-  padding: .5em 1em;
-  li{
+  padding: 0.5em 1em;
+  li {
     max-width: 50px;
   }
 }
