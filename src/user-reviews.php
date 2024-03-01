@@ -22,7 +22,7 @@
                         <tr
                             class="border-b dark:border-gray-700">
 
-                            <td class="px-6 py-4" colspan="5">
+                            <td colspan="5">
 
                                 <table x-data="{ isOpen: false }"
                                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -167,29 +167,11 @@
                         <tr
                             class="border-b dark:border-gray-700">
 
-                            <td class="px-6 py-4" colspan="5">
+                            <td colspan="5">
 
                                 <table x-data="{ isOpen: false }"
                                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    <thead
-                                        class="text-md text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                                        <tr>
-                                            <th scope="col" class="px-6 py-3">
-                                                Service
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                                Rating
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                                Comment
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                                Date
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                            </th>
-                                        </tr>
-                                    </thead>
+                                
                                     <tbody>
                                         <tr
                                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800">
@@ -307,29 +289,11 @@
                         <tr
                             class="border-b dark:border-gray-700">
 
-                            <td class="px-6 py-4" colspan="5">
+                            <td colspan="5">
 
                                 <table x-data="{ isOpen: false }"
                                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    <thead
-                                        class="text-md text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                                        <tr>
-                                            <th scope="col" class="px-6 py-3">
-                                                Service
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                                Rating
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                                Comment
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                                Date
-                                            </th>
-                                            <th scope="col" class="px-6 py-3">
-                                            </th>
-                                        </tr>
-                                    </thead>
+                                    
                                     <tbody>
                                         <tr
                                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800">
