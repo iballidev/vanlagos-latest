@@ -3,7 +3,7 @@
         <div class="mdc-tab-scroller__scroll-area">
             <div class="mdc-tab-scroller__scroll-content">
 
-                <a href="#" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <a href="./user-profile.php" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons" aria-hidden="true">person</span>
                         <span class="mdc-tab__text-label hidden sm:block">Profile</span>
@@ -14,7 +14,7 @@
                     <span class="mdc-tab__ripple"></span>
                 </a>
 
-                <a href="#" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <a href="./user-bookings.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons" aria-hidden="true">book</span>
                         <span class="mdc-tab__text-label hidden sm:block">Bookings</span>
@@ -71,5 +71,3 @@
         </div>
     </div>
 </div>
-
-<div class="loader"></div>

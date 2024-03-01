@@ -274,16 +274,30 @@ html {
 }
 .mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__leading,
 .mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__notch,
-.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__trailing, .mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__leading,
+.mdc-text-field--outlined input.error + .mdc-notched-outline .mdc-notched-outline__trailing,
+.mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__leading,
 .mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__notch,
 .mdc-text-field--outlined select.error + .mdc-notched-outline .mdc-notched-outline__trailing {
   border-color: red;
 }
+.mdc-text-field--outlined.small {
+  height: 35px;
+}
 
 .mdc-tab-scroller__scroll-area {
-  -webkit-overflow-scrolling: touch;
-  display: flex;
   overflow-x: auto;
+}
+
+.mdc-radio .mdc-radio__native-control:enabled:checked + .mdc-radio__background .mdc-radio__outer-circle {
+  border-color: var(--mdc-theme-primary, #018786);
+}
+
+.mdc-radio .mdc-radio__native-control:enabled + .mdc-radio__background .mdc-radio__inner-circle {
+  border-color: var(--mdc-theme-primary, #018786);
+}
+
+.mdc-radio .mdc-radio__background::before {
+  background-color: var(--mdc-theme-primary, #018786);
 }
 
 .pricing-card table tr td,
@@ -329,8 +343,6 @@ html {
 }
 .table tr th, .table tr td {
   padding: 0.5em;
-}
-.table tr th:first-child, .table tr td:first-child {
   text-align: left;
 }
 
@@ -360,9 +372,26 @@ html {
     transform: rotate(1turn);
   }
 }
+.page-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-light);
+  z-index: 99999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.page-loader.show {
+  display: flex;
+}
+
 :root {
   /* COLORS */
-  --clr-primary: hsl(194, 81%, 60%);
+  --clr-primary: #46c5ec;
   --clr-accent: hsl(33, 100%, 50%);
   --clr-dark: #414562;
   --clr-dark-200: #424662;
@@ -371,10 +400,9 @@ html {
   --clr-light: #f6f6f6;
   --clr-light-300: #b0b0b0;
   --clr-light-500: #8a8a8a;
-  --clr-danger: #FF5722;
-  --mdc-theme-primary: var(--clr-accent);
-  /* Primary color */
-  --mdc-theme-secondary: var(--clr-primary);
+  --clr-danger: #ff5722;
+  --mdc-theme-primary: var(--clr-primary);
+  --mdc-theme-secondary: var(--clr-accent);
   /* Secondary color */
   --mdc-theme-background: #ffffff;
   /* Background color */

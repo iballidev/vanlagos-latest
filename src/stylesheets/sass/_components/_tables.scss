@@ -14,9 +14,10 @@
     tr{
         th,td{
             padding: .5em;
-            &:first-child{
-                text-align: left;
-            }
+            text-align: left;
+            // &:first-child{
+            //     text-align: left;
+            // }
         }
     }
 }

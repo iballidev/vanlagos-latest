@@ -5,14 +5,20 @@
         <h1 class="ff-headline font-semibold uppercase text-2xl text-center bg-dark text-white p-4 rounded-t-lg">
             Sign In
         </h1>
-        <!-- <p class="bg-red-500 py-2 text-center text-white">Kindly fill out all informations</p> -->
+
         <div class="p-6">
+            <!-- error alert -->
+            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                role="alert">
+                <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+            </div>
+
             <form action="">
                 <ul class="grid grid-cols-1 gap-y-4">
                     <li class="col-span-1">
-                        <label for="username" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
+                        <label for="email_address" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
                         <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
-                            <input type="text" id="username" name="username"
+                            <input type="text" id="email_address" name="email_address"
                                 class="border border-red-500 error mdc-text-field__input" aria-label="Label" required>
                             <span class="mdc-notched-outline">
                                 <span class="mdc-notched-outline__leading"></span>

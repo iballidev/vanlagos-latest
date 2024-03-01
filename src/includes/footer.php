@@ -47,6 +47,10 @@
 </footer>
 
 
+<div class="page-loader show">
+    <div class="loader"></div>
+</div>
+
 
 <!-- JQuery -->
 <!-- <script src="./libs/jquery-3.7.1.js"></script> -->

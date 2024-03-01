@@ -5,8 +5,12 @@
         <h1 class="ff-headline font-semibold uppercase text-2xl text-center bg-dark text-white p-4 rounded-t-lg">
             Sign Up
         </h1>
-        <p class="bg-red-500 py-2 text-center text-white">Kindly fill out all informations</p>
         <div class="p-6">
+        <!-- error alert -->
+        <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+        </div>
+
             <form action="">
                 <ul class="grid grid-cols-1 gap-y-4">
                     <li class="col-span-1">

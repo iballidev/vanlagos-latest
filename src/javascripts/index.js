@@ -3,6 +3,14 @@ import FormsToggler from "./form-toggler.js";
 import ViewportIntersection from "./viewport-intersection.js";
 
 document.addEventListener('DOMContentLoaded', function () {
+    /**cemove page loader */
+    const page_loader = document.querySelector(".page-loader");
+    page_loader?.classList.contains("show") ?
+        page_loader.classList.remove("show") :
+        null;
+
+
+    /**CREDITCARD field controls */
     let creditCard = new CreditCard();
     /**credit card value */
     const card_number_field = document.getElementById('card_number')
