@@ -19,8 +19,7 @@
                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
 
                     <tbody>
-                        <tr
-                            class="border-b dark:border-gray-700">
+                        <tr class="border-b dark:border-gray-700">
 
                             <td colspan="5">
 
@@ -71,7 +70,9 @@
                                             <td class="px-6 py-4">
                                                 <div class="flex items-center justify-end w-full">
                                                     <button @click="isOpen = !isOpen" type="button"
-                                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">Review</button>
+                                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">
+                                                        <span x-show="!isOpen">Review</span>
+                                                        <span x-show="isOpen">Cancel</span> </button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -164,14 +165,31 @@
                         <!--  -->
 
 
-                        <tr
-                            class="border-b dark:border-gray-700">
+                        <tr class="border-b dark:border-gray-700">
 
                             <td colspan="5">
 
                                 <table x-data="{ isOpen: false }"
                                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                
+                                    <thead
+                                        class="text-md text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                        <tr>
+                                            <th scope="col" class="px-6 py-3">
+                                                Service
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Rating
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Comment
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Date
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                            </th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr
                                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800">
@@ -198,7 +216,9 @@
                                             <td class="px-6 py-4">
                                                 <div class="flex items-center justify-end w-full">
                                                     <button @click="isOpen = !isOpen" type="button"
-                                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">Review</button>
+                                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">
+                                                        <span x-show="!isOpen">Review</span>
+                                                        <span x-show="isOpen">Cancel</span> </button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -286,14 +306,31 @@
                                 </table>
                             </td>
                         </tr>
-                        <tr
-                            class="border-b dark:border-gray-700">
+                        <tr class="border-b dark:border-gray-700">
 
                             <td colspan="5">
 
                                 <table x-data="{ isOpen: false }"
                                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    
+                                    <thead
+                                        class="text-md text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                        <tr>
+                                            <th scope="col" class="px-6 py-3">
+                                                Service
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Rating
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Comment
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Date
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                            </th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr
                                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800">
@@ -320,7 +357,11 @@
                                             <td class="px-6 py-4">
                                                 <div class="flex items-center justify-end w-full">
                                                     <button @click="isOpen = !isOpen" type="button"
-                                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">Review</button>
+                                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">
+                                                        <span x-show="!isOpen">Review</span>
+                                                        <span x-show="isOpen">Cancel</span>
+
+                                                    </button>
                                                 </div>
                                             </td>
                                         </tr>

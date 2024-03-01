@@ -149,6 +149,7 @@
 
             <div class="my-4"></div>
 
+            <!-- pagination -->
             <nav aria-label="Page navigation example" class="text-end">
                 <ul class="inline-flex -space-x-px text-sm">
                     <li>

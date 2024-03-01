@@ -98,6 +98,10 @@ html {
   max-width: 50px;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .top-header {
   background-color: var(--clr-dark);
   color: var(--clr-bright);
