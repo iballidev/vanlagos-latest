@@ -10,9 +10,10 @@
             <li class="col-span-6 sm:col-span-3">
                 <h6 class="sm:text-lg font-semibold mb-2 sm:mb-6">Quicklinks</h6>
                 <ul class="leading-6 sm:leading-7">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="./about-us.php">About Us</a></li>
+                    <li><a href="./pricing.php">Pricing</a></li>
+                    <li><a href="./terms-and-conditions.php">Terms & Conditions</a></li>
+                    <li><a href="./privacy-policy.php">Privacy Policy</a></li>
                 </ul>
             </li>
             <li class="col-span-6 sm:col-span-3">

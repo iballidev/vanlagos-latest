@@ -1,8 +1,10 @@
 import CreditCard from "./credit-card.js";
 import FormsToggler from "./form-toggler.js";
+import RatingStarToValue from "./rating-value-to-star.js";
 import ViewportIntersection from "./viewport-intersection.js";
 
 document.addEventListener('DOMContentLoaded', function () {
+    
     /**cemove page loader */
     const page_loader = document.querySelector(".page-loader");
     page_loader?.classList.contains("show") ?
@@ -19,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     /**expiry date value */
     const expiration_date_field = document.getElementById('expiration_date');
     creditCard.configureCardExpiryDate(expiration_date_field);
-
 
 
     /**toggle hero main hire forms */
@@ -46,6 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
     /**handle display animations */
     const viewport_intersect = new ViewportIntersection();
     viewport_intersect.handleAnimateOnViewportIntercept();
+
+    /**handle rating value to star */
+    const rating_star_to_value = new RatingStarToValue();
+    rating_star_to_value;
 
 });
 
