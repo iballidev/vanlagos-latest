@@ -15,9 +15,7 @@ class ViewportIntersection {
         };
         const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
             entries.forEach((entry) => {
-                console.log("entry: ", entry.target)
                 let dataDelay = entry.target.getAttribute("data-delay");
-                console.log("dataDelay: ", dataDelay)
                 if (!entry.isIntersecting) return;
 
                 if (dataDelay) {

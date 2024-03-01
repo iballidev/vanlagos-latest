@@ -1,4 +1,5 @@
 import CreditCard from "./credit-card.js";
+import DatePicker from "./date-picker.js";
 import FormsToggler from "./form-toggler.js";
 import RatingStarToValue from "./rating-value-to-star.js";
 import ViewportIntersection from "./viewport-intersection.js";
@@ -51,6 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
     /**handle rating value to star */
     const rating_star_to_value = new RatingStarToValue();
     rating_star_to_value;
+
+    
+    /**handle date_picker */
+    const date_picker = new DatePicker();
+    date_picker;
 
 });
 

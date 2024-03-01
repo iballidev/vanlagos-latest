@@ -2,7 +2,6 @@
 /**Forms toggler */
 class FormsToggler {
     handleToggleHeroForms = (tabs, tab_content) => {
-        console.log("tabs: ", tabs);
         tabs.length ? tabs.forEach((tab) => {
             tab.addEventListener("click", () => {
                 tabs.forEach((t) => t.classList.remove("active"));

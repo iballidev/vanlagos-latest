@@ -14,7 +14,7 @@
             My Reviews
         </h1>
         <div class="p-2 sm:p-4">
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <div class="relative overflow-x-auto mdc-card">
                 <table
                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
 

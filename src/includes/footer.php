@@ -3,7 +3,12 @@
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-12">
         <ul class="grid grid-cols-12 gap-4 sm:gap-8">
             <li class="col-span-12 sm:col-span-3">
-                <h6 class="sm:text-lg font-semibold mb-2 sm:mb-6">Foot Title</h6>
+                <h6 class="sm:text-lg font-semibold mb-2 sm:mb-6">
+                    <a href="./">
+                        <img class="h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-alt.svg"
+                            alt="Your Company">
+                    </a>
+                </h6>
                 <p class="leading-6">Vanlagos.com is a reliable vehicle hiring company that provides premium services to
                     our customers at an affordable and competitive market price.</p>
             </li>
@@ -67,24 +72,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const datepicker =
-        document.querySelectorAll(".datepicker");
-    console.log(datepicker);
-
-    for (let i = 0; i < datepicker.length; i++) {
-        const element = datepicker[i];
-        console.log("element: ", element);
-        var picker = new Pikaday({
-            field: element,
-            format: 'MM/DD/YYYY', // You can change the date format as per your requirements
-        });
-
-
-    }
-});
-</script>
 
 <script src="./javascripts/main.jquery.js"></script>
 <script src="./javascripts/index.js" type="module"></script>

@@ -42,8 +42,9 @@
         }
       }
     }
+
   }
-  &.small{
+  &.small {
     height: 35px;
   }
 }
@@ -66,5 +67,5 @@
   border-color: var(--mdc-theme-primary, #018786);
 }
 .mdc-radio .mdc-radio__background::before {
-    background-color: var(--mdc-theme-primary, #018786);
+  background-color: var(--mdc-theme-primary, #018786);
 }

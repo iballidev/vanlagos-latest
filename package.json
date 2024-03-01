@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwindcss": "npx tailwindcss -i ./src/stylesheets/tailwindcss/input.css -o ./src/stylesheets/tailwindcss/output.css --watch",
     "scss": "sass src/stylesheets/sass/main.scss src/stylesheets/main.css --watch",
-    "tsc": "tsc src/javascripts/main.ts --watch",
     "start": "webpack serve",
     "sandbox-theming": "sass src/sandbox/material-design-theming/style.scss src/sandbox/material-design-theming/style.css --watch",    
     "build": "webpack"

@@ -24,7 +24,6 @@ class RatingStarToValue {
             for (let i = 0; i < star_rating.length; i++) {
                 const s_rating = star_rating[i];
                 var items = s_rating?.children;
-                var items = s_rating?.children;
                 for (let i = 0; i < items?.length; i++) {
                     const element = items[i];
                     element.firstElementChild.classList.add("text-accent");

@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <button class="mdc-button w-full bg-primary py-6 mdc-card">
+                            <button class="mdc-button bg-primary py-4 px-6 mdc-card">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white">Submit</span>
                             </button>

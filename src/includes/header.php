@@ -73,7 +73,12 @@
                             <!-- <img class="h-8 w-auto ml-10 sm:ml-0"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                 alt="Your Company"> -->
-                            <a href="./"><img class="h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-2.svg"
+                            <a href="./">
+                                <img class="hidden sm:block h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-2.svg"
+                                    alt="Your Company">
+                            </a>
+                            <a href="./">
+                                <img class="block sm:hidden h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-alt.svg"
                                     alt="Your Company">
                             </a>
                         </div>
@@ -81,7 +86,7 @@
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <a href="./"
-                                    class="bg-gray-100 text-dark hover:text-gray-700 rounded-md px-3 py-2 text-sm font-medium"
+                                    class="bg-gray-100 text-accent hover:text-accent-700 rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Home</a>
                                 <a href="./about-us.php"
                                     class="text-dark hover:bg-gray-100 hover:text-gray-700 rounded-md px-3 py-2 text-sm font-medium">About
@@ -137,8 +142,8 @@
                                     <!-- Active: "bg-gray-100", Not Active: "" -->
                                     <a href="./user-profile.php" class="block px-4 py-2 text-sm text-gray-700"
                                         role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                                    <a href="./user-settings.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-1">Settings</a>
+                                    <a href="./user-settings.php" class="block px-4 py-2 text-sm text-gray-700"
+                                        role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
                                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
                                         tabindex="-1" id="user-menu-item-2">Sign out</a>
                                 </div>
