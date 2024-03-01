@@ -15,17 +15,17 @@
         </h1>
         <div class="p-4" x-data="{ isEditProfile: false }">
             <dl x-show="!isEditProfile"
-                class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                class="text-gray-900 divide-y divide-gray-200">
                 <div class="flex flex-col pb-3">
-                    <dt class="mb-1 text-gray-500 md:text-sm dark:text-gray-400">Email address</dt>
+                    <dt class="mb-1 text-gray-500 md:text-sm">Email address</dt>
                     <dd class="text-md font-semibold">yourname@flowbite.com</dd>
                 </div>
                 <div class="flex flex-col py-3">
-                    <dt class="mb-1 text-gray-500 md:text-sm dark:text-gray-400">Home/Business address</dt>
+                    <dt class="mb-1 text-gray-500 md:text-sm">Home/Business address</dt>
                     <dd class="text-md font-semibold">92 Miles Drive, Newark, NJ 07103, California, USA</dd>
                 </div>
                 <div class="flex flex-col pt-3">
-                    <dt class="mb-1 text-gray-500 md:text-sm dark:text-gray-400">Phone number</dt>
+                    <dt class="mb-1 text-gray-500 md:text-sm">Phone number</dt>
                     <dd class="text-md font-semibold">+00 123 456 789 / +12 345 678</dd>
                 </div>
             </dl>
