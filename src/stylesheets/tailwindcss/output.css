@@ -710,10 +710,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.-ms-16 {
-  margin-inline-start: -4rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -758,6 +754,14 @@ video {
   margin-inline-start: 0px;
 }
 
+.ms-6 {
+  margin-inline-start: 1.5rem;
+}
+
+.ms-8 {
+  margin-inline-start: 2rem;
+}
+
 .ms-auto {
   margin-inline-start: auto;
 }
@@ -772,42 +776,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ms-16 {
-  margin-inline-start: 4rem;
-}
-
-.ms-4 {
-  margin-inline-start: 1rem;
-}
-
-.-ms-20 {
-  margin-inline-start: -5rem;
-}
-
-.-ms-24 {
-  margin-inline-start: -6rem;
-}
-
-.ms-6 {
-  margin-inline-start: 1.5rem;
-}
-
-.-ms-28 {
-  margin-inline-start: -7rem;
-}
-
-.-ms-2 {
-  margin-inline-start: -0.5rem;
-}
-
-.ms-2 {
-  margin-inline-start: 0.5rem;
-}
-
-.ms-8 {
-  margin-inline-start: 2rem;
 }
 
 .block {
@@ -898,6 +866,14 @@ video {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.min-w-96 {
+  min-width: 24rem;
+}
+
 .max-w-24 {
   max-width: 6rem;
 }
@@ -920,6 +896,10 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-sm {
@@ -1266,11 +1246,6 @@ video {
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
-.bg-red-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1460,6 +1435,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .capitalize {
@@ -1658,6 +1637,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.first-letter\:uppercase::first-letter {
+  text-transform: uppercase;
+}
+
 .placeholder\:text-gray-400::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1830,6 +1813,10 @@ video {
     grid-column-end: 9;
   }
 
+  .sm\:-ms-28 {
+    margin-inline-start: -7rem;
+  }
+
   .sm\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -1840,14 +1827,6 @@ video {
 
   .sm\:ml-6 {
     margin-left: 1.5rem;
-  }
-
-  .sm\:-ms-28 {
-    margin-inline-start: -7rem;
-  }
-
-  .sm\:-ms-\[26\] {
-    margin-inline-start: -26;
   }
 
   .sm\:block {

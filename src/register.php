@@ -14,7 +14,7 @@
             <form action="">
                 <ul class="grid grid-cols-1 gap-y-4">
                     <li class="col-span-1">
-                        <label for="email_address" class="block font-semibold mb-2 cursor-pointer">Email Address</label>
+                        <label for="email_address" class="block font-semibold mb-2 cursor-pointer lowercase first-letter:uppercase">Email Address</label>
                         <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                             <input type="text" id="email_address" name="email_address"
                                 class="mdc-text-field__input error" aria-label="Label">
@@ -25,7 +25,7 @@
                         </div>
                     </li>
                     <li class="col-span-1">
-                        <label for="password" class="block font-semibold mb-2 cursor-pointer">Password</label>
+                        <label for="password" class="block font-semibold mb-2 cursor-pointer lowercase first-letter:uppercase">Password</label>
                         <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                             <input type="password" id="password" name="password" class="mdc-text-field__input error"
                                 aria-label="Label">
@@ -36,7 +36,7 @@
                         </div>
                     </li>
                     <li class="col-span-1">
-                        <label for="confirm_password" class="block font-semibold mb-2 cursor-pointer">Confirm
+                        <label for="confirm_password" class="block font-semibold mb-2 cursor-pointer lowercase first-letter:uppercase">Confirm
                             Password</label>
                         <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                             <input type="text" id="confirm_password" name="confirm_password"

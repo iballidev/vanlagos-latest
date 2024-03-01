@@ -34,7 +34,7 @@
                                             <th scope="col" class="px-6 py-3">
                                                 Rating
                                             </th>
-                                            <th scope="col" class="px-6 py-3">
+                                            <th scope="col" class="px-6 py-3 min-w-96">
                                                 Comment
                                             </th>
                                             <th scope="col" class="px-6 py-3">
@@ -180,7 +180,7 @@
                                             <th scope="col" class="px-6 py-3">
                                                 Rating
                                             </th>
-                                            <th scope="col" class="px-6 py-3">
+                                            <th scope="col" class="px-6 py-3 min-w-96">
                                                 Comment
                                             </th>
                                             <th scope="col" class="px-6 py-3">
@@ -321,7 +321,7 @@
                                             <th scope="col" class="px-6 py-3">
                                                 Rating
                                             </th>
-                                            <th scope="col" class="px-6 py-3">
+                                            <th scope="col" class="px-6 py-3 min-w-96">
                                                 Comment
                                             </th>
                                             <th scope="col" class="px-6 py-3">
