@@ -99,7 +99,7 @@
 
 
         <div class="col-span-12">
-            <button class="mdc-button w-full bg-primary py-6 mdc-card">
+            <button class="mdc-button w-full bg-primary py-6">
                 <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label text-white">Hire Now</span>
             </button>

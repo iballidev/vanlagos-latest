@@ -5,8 +5,7 @@
             <li class="col-span-12 sm:col-span-3">
                 <h6 class="sm:text-lg font-semibold mb-2 sm:mb-6">
                     <a href="./">
-                        <img class="h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-alt.svg"
-                            alt="Your Company">
+                        <img class="h-8 w-auto ml-10 sm:ml-0" src="./images/brand-logo-alt.svg" alt="Your Company">
                     </a>
                 </h6>
                 <p class="leading-6">Vanlagos.com is a reliable vehicle hiring company that provides premium services to
@@ -64,7 +63,7 @@
 
 <!-- material design 3 -->
 <script>
-// mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+    // mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
 </script>
 <!-- <script type="module" src="./libs/material-design/indes.js"></script> -->
 
@@ -75,6 +74,8 @@
 
 <script src="./javascripts/main.jquery.js"></script>
 <script src="./javascripts/index.js" type="module"></script>
+    <!-- mdc bundle js -->  
+<script src="../dist/bundle.js" async></script>
 </body>
 
 </html>

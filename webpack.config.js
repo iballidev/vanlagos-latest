@@ -29,7 +29,7 @@ function materialImporter(url, prev) {
 }
 
 module.exports = [{
-    entry: ['./src/stylesheets/sass/main.scss', './src/javascripts/mdc.js'],
+    entry: ['./app.scss', './app.js'],
     output: {
         // This is necessary for webpack to compile
         // But we never use style-bundle.js

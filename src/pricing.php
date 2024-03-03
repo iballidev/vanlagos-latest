@@ -12,6 +12,50 @@
     </div>
 </div>
 
+<button type="button" id="show-dialog-button" class="foo-button mdc-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Button</span>
+</button>
+
+<div class="mdc-dialog mdc-dialog--fullscreen">
+    <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+            <div class="mdc-dialog__content" id="my-dialog-content">
+                Discard draft?
+                <!--  -->
+                <ul class="mdc-list">
+                    <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdc-dialog__actions">
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Cancel</span>
+                </button>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Discard</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="mdc-dialog__scrim"></div>
+</div>
+
+
+<!--  -->
+
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
 
@@ -39,7 +83,7 @@
                 </table>
                 <!--  -->
                 <div class="sm:px-8">
-                    <a href="./van-booking.php" class="mdc-button w-full bg-primary py-6 mdc-card">
+                    <a href="./van-booking.php" class="mdc-button w-full bg-primary py-6">
                         <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                     </a>
@@ -68,7 +112,11 @@
                     </tbody>
                 </table>
                 <!--  -->
-                <a href="./bus-booking.php" class="mdc-button w-full bg-primary py-6 mdc-card">
+                <!-- <a href="./bus-booking.php" class="mdc-button w-full bg-primary py-6">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
+                </a> -->
+                <a href="./bus-booking.php" class="mdc-button w-full bg-primary py-6">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                 </a>
@@ -96,7 +144,7 @@
                     </tbody>
                 </table>
                 <!--  -->
-                <a href="./car-booking.php" class="mdc-button w-full bg-primary py-6 mdc-card">
+                <a href="./car-booking.php" class="mdc-button w-full bg-primary py-6">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                 </a>

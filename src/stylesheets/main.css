@@ -251,10 +251,6 @@ html {
   z-index: 0;
 }
 
-.mdc-theme--primary {
-  color: red;
-}
-
 .material-icons.text-green-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74/var(--tw-text-opacity));
@@ -405,11 +401,6 @@ html {
   --clr-light-300: #b0b0b0;
   --clr-light-500: #8a8a8a;
   --clr-danger: #ff5722;
-  --mdc-theme-primary: var(--clr-primary);
-  --mdc-theme-secondary: var(--clr-accent);
-  /* Secondary color */
-  --mdc-theme-background: #ffffff;
-  /* Background color */
 }
 
 .bg-primary {
@@ -561,14 +552,6 @@ html {
   .hero-height {
     min-height: 566px;
   }
-}
-
-.mdc-button:not(:disabled) {
-  color: unset;
-}
-
-.mdc-theme--primary {
-  color: red;
 }
 
 /* Default state */

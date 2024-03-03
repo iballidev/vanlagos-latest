@@ -64,7 +64,7 @@ include(__DIR__ . "./includes/header.php");
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-start-5 sm:col-end-9">
-                            <button class="mdc-button w-full bg-primary py-6 mdc-card">
+                            <button class="mdc-button w-full bg-primary py-6">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white">Submit</span>
                             </button>

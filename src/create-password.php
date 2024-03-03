@@ -22,7 +22,7 @@
                         <!-- <input type="submit" value="Log In" class="bg-primary text-white rounded w-full p-4 mb-4"> -->
                         <!--  -->
                         
-                            <button class="mdc-button w-full bg-primary py-6 mdc-card">
+                            <button class="mdc-button w-full bg-primary py-6">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white uppercase">Create</span>
                             </button>

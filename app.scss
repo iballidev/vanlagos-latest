@@ -1,0 +1,31 @@
+@use "@material/button/mdc-button";
+@use "@material/button";
+@use "@material/dialog";
+@use "@material/radio/styles";
+@use "@material/form-field";
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/card";
+@use "@material/checkbox";
+
+
+@include checkbox.core-styles;
+@include form-field.core-styles;
+
+@include card.core-styles;
+
+@include textfield.core-styles;
+
+@include form-field.core-styles;
+
+.foo-button {
+  @include button.container-fill-color(#cdc226);
+}
+
+.primary-btn {
+  @include button.container-fill-color(var(--clr-primary));
+}
+
+@include dialog.core-styles;
