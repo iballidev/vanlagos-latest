@@ -1,4 +1,6 @@
 <?php include(__DIR__ . "./includes/header.php"); ?>
+<?php include(__DIR__ . "./includes/dialog-van-hire.php"); ?>
+<?php include(__DIR__ . "./includes/dialog-bus-hire.php"); ?>
 
 <div class="bg-banner-1">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -12,46 +14,6 @@
     </div>
 </div>
 
-<button type="button" id="show-dialog-button" class="foo-button mdc-button">
-    <div class="mdc-button__ripple"></div>
-    <span class="mdc-button__label">Button</span>
-</button>
-
-<div class="mdc-dialog mdc-dialog--fullscreen">
-    <div class="mdc-dialog__container">
-        <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
-            <div class="mdc-dialog__content" id="my-dialog-content">
-                Discard draft?
-                <!--  -->
-                <ul class="mdc-list">
-                    <li class="mdc-list-item" tabindex="0">
-                        <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__text">Single-line item</span>
-                    </li>
-                    <li class="mdc-list-item">
-                        <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__text">Single-line item</span>
-                    </li>
-                    <li class="mdc-list-item">
-                        <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__text">Single-line item</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="mdc-dialog__actions">
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">
-                    <div class="mdc-button__ripple"></div>
-                    <span class="mdc-button__label">Cancel</span>
-                </button>
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
-                    <div class="mdc-button__ripple"></div>
-                    <span class="mdc-button__label">Discard</span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="mdc-dialog__scrim"></div>
-</div>
 
 
 <!--  -->
@@ -87,6 +49,11 @@
                         <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                     </a>
+                    <div class="my-2"></div>
+                    <button class="mdc-button w-full primary-btn py-6" id="show-van-hire-dialog-button">
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -120,6 +87,11 @@
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                 </a>
+                <div class="my-2"></div>
+                <button class="mdc-button w-full primary-btn py-6" id="show-bus-hire-dialog-button">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
+                </button>
             </div>
         </div>
         <div class="col-span-12 sm:col-span-1">
@@ -155,4 +127,39 @@
 
 </div>
 
+<div class="mdc-dialog mdc-dialog--fullscreen" id="van-hire-dialog">
+    <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
+            aria-describedby="my-dialog-content">
+            <div class="mdc-dialog__content" id="my-dialog-content">
+                <h1>Van Hire Dialog</h1>
+                <ul class="mdc-list">
+                    <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdc-dialog__actions">
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Cancel</span>
+                </button>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Discard</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="mdc-dialog__scrim"></div>
+</div>
 <?php include(__DIR__ . "./includes/footer.php"); ?>

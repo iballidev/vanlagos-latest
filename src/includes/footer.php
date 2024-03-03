@@ -61,20 +61,13 @@
 <!-- <script src="./libs/jquery-3.7.1.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-<!-- material design 3 -->
-<script>
-    // mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
-</script>
-<!-- <script type="module" src="./libs/material-design/indes.js"></script> -->
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 
 <script src="./javascripts/main.jquery.js"></script>
 <script src="./javascripts/index.js" type="module"></script>
-    <!-- mdc bundle js -->  
+    <!-- material design component bundle js -->  
 <script src="../dist/bundle.js" async></script>
 </body>
 
