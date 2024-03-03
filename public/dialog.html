@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material Design Component | Locally</title>
+    <link rel="stylesheet" href="bundle.css" />
+</head>
+
+<body>
+    <h1>Vanlagos latest</h1>
+
+    <button id="show-dialog-button" class="foo-button mdc-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Button</span>
+    </button>
+
+    <div class="mdc-dialog mdc-dialog--fullscreen">
+        <div class="mdc-dialog__container">
+            <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
+                aria-describedby="my-dialog-content">
+                <div class="mdc-dialog__content" id="my-dialog-content">
+                    Discard draft?
+                    <!--  -->
+                    <ul class="mdc-list">
+                        <li class="mdc-list-item" tabindex="0">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Single-line item</span>
+                        </li>
+                        <li class="mdc-list-item">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Single-line item</span>
+                        </li>
+                        <li class="mdc-list-item">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Single-line item</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdc-dialog__actions">
+                    <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Cancel</span>
+                    </button>
+                    <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Discard</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+
+    <script src="bundle.js" async></script>
+
+    <script type="module">
+        console.log("hello")
+        // import { MDCDialog } from '@material/dialog';
+        // const dialog = new MDCDialog(document.querySelector('.mdc-dialog'));
+
+        // import { MDCList } from '@material/list';
+        // const list = new MDCList(document.querySelector('.mdc-dialog .mdc-list'));
+
+        // dialog.listen('MDCDialog:opened', () => {
+        //     list.layout();
+        // });
+
+        // console.log("hello")
+        // dialog.listen('MDCDialog:opened', function () {
+        //     // Assuming contentElement references a common parent element with the rest of the page's content
+        //     contentElement.setAttribute('aria-hidden', 'true');
+        // });
+        // dialog.listen('MDCDialog:closing', function () {
+        //     contentElement.removeAttribute('aria-hidden');
+        // });
+
+
+    </script>
+</body>
+
+</html>

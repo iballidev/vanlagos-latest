@@ -1,9 +1,9 @@
 <div class="top-header hidden sm:block">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex py-2 items-center justify-between">
-            <ul>
+            <ul class="text-sm">
                 <li>9, Tinubu Street, off Coker road, illupeju Lagos.</li>
-                <li> info@Vanlagos.com</li>
+                <li> info@vanlagos.com</li>
             </ul>
 
             <ul>

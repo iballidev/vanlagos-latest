@@ -4,10 +4,18 @@
 @use "./_abstract";
 @use "./_pages";
 
-.mdc-button:not(:disabled) {
-      color: unset;
+
+/* Default state */
+input {
+  border-bottom: 1px solid #b0bec5; /* Default border color */
 }
-    
-.mdc-theme--primary{
-    color: red;
+
+/* Focused state */
+input:focus {
+  border-bottom: 2px solid #2196f3; /* Focused border color */
+}
+
+/* Error state */
+input.error {
+  border-bottom: 2px solid #ff5722; /* Error border color */
 }

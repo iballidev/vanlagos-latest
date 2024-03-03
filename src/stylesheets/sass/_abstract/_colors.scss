@@ -1,63 +1,108 @@
 :root {
-    /* COLORS */
-    --clr-primary: hsl(194, 81%, 60%);
-    // --clr-primary-300: rgba(0, 83, 206, .8);
-    // --clr-primary: rgb(0, 83, 206);
-    // --clr-primary-600: rgb(0, 59, 147);
-    --clr-accent: hsl(33, 100%, 50%);
-    --clr-dark: #414562;
-    --clr-dark-200: #424662;
-    --clr-bright: #ffffff;
-    --clr-light: #F6F6F6;
-    --clr-light-500: hsl(0, 0%, 54%);
+  /* COLORS */
+  --clr-primary: #46c5ec;
+  // --clr-primary-300: rgba(0, 83, 206, .8);
+  // --clr-primary: rgb(0, 83, 206);
+  // --clr-primary-600: rgb(0, 59, 147);
+  --clr-accent: hsl(33, 100%, 50%);
+  --clr-dark: #414562;
+  --clr-dark-200: #424662;
+  --clr-dark-600: #5b5b5b;
+  --clr-bright: #ffffff;
+  --clr-light: #f6f6f6;
+  --clr-light-300: #b0b0b0;
+  --clr-light-500: #8a8a8a;
+  --clr-danger: #ff5722;
+
+  // // --mdc-theme-primary: var(--clr-accent);
+  // --mdc-theme-primary: var(--clr-primary);
+  // // /* Primary color */
+  // // --mdc-theme-secondary: var(--clr-primary);
+  // --mdc-theme-secondary: var(--clr-accent);
+  // /* Secondary color */
+  // --mdc-theme-background: #ffffff;
+  // /* Background color */
 }
 
 .bg-primary {
-    background-color: var(--clr-primary);
+  background-color: var(--clr-primary);
 }
 
 .text-primary {
-    color: var(--clr-primary);
+  color: var(--clr-primary);
 }
 
 .bg-dark {
-    background-color: var(--clr-dark);
+  background-color: var(--clr-dark);
 }
 
 .text-dark {
-    color: var(--clr-dark);
+  color: var(--clr-dark);
 }
 
+.bg-danger {
+  background-color: var(--clr-danger);
+}
+
+.text-danger {
+  color: var(--clr-danger);
+}
 
 .bg-dark-200 {
-    background-color: var(--clr-dark-200);
+  background-color: var(--clr-dark-200);
 }
 
 .text-dark-200 {
-    color: var(--clr-dark-200);
+  color: var(--clr-dark-200);
+}
+
+.bg-dark-600 {
+  background-color: var(--clr-dark-600);
+}
+
+.text-dark-600 {
+  color: var(--clr-dark-600);
 }
 
 .bg-accent {
-    background-color: var(--clr-accent);
+  background-color: var(--clr-accent);
 }
 
 .text-accent {
-    color: var(--clr-accent);
+  color: var(--clr-accent);
 }
 
+.bg-bright {
+  background-color: var(--clr-bright);
+}
+
+.text-bright {
+  color: var(--clr-bright);
+}
 
 .bg-light {
-    background-color: var(--clr-light);
+  background-color: var(--clr-light);
 }
 
 .text-light {
-    color: var(--clr-light);
+  color: var(--clr-light);
 }
 
 .bg-light-500 {
-    background-color: var(--clr-light-500);
+  background-color: var(--clr-light-500);
 }
 
 .text-light-500 {
-    color: var(--clr-light-500);
+  color: var(--clr-light-500);
+}
+.bg-light-300 {
+  background-color: var(--clr-light-300);
+}
+
+.text-light-300 {
+  color: var(--clr-light-300);
+}
+
+.border-primary {
+  border-color: var(--clr-primary);
 }
