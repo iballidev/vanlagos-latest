@@ -1,7 +1,7 @@
 
 import { MDCDialog } from '@material/dialog';
 
-class PricingDialog {
+class AppDialog {
     constructor(trigger, mdc_dialog, content_component) {
         this.trigger = trigger;
         this.mdc_dialog = mdc_dialog;
@@ -9,6 +9,7 @@ class PricingDialog {
     }
 
     display = () => {
+        console.log("app-display.js")
         const dialog = this.mdc_dialog ? new MDCDialog(this.mdc_dialog) : null;
 
         dialog?.listen('MDCDialog:opened', () => {
@@ -51,4 +52,4 @@ class PricingDialog {
 }
 
 
-export default PricingDialog;
+export default AppDialog;
