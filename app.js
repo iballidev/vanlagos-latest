@@ -6,62 +6,65 @@ import { MDCCheckbox } from '@material/checkbox';
 import { MDCList } from '@material/list';
 import { MDCTextField } from '@material/textfield';
 import PricingDialog from './material/pricing-dialog';
-import {MDCTabBar} from '@material/tab-bar';
-
-const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
+import { MDCTabBar } from '@material/tab-bar';
 
 
-var foo_button = document.querySelector('.foo-button')
-const ripple = foo_button ? new MDCRipple(foo_button) : null;
-var mdc_button = document.querySelector('.mdc-button')
+document.addEventListener('DOMContentLoaded', function () {
+    const mdc_tab_bar = document.querySelector('.mdc-tab-bar')
+    const tabBar = mdc_tab_bar ? new MDCTabBar(mdc_tab_bar) : null;
 
-const buttonRipple = mdc_button ? new MDCRipple(mdc_button) : null;
+    var foo_button = document.querySelector('.foo-button')
+    const ripple = foo_button ? new MDCRipple(foo_button) : null;
+    var mdc_button = document.querySelector('.mdc-button')
 
-
-var mdc_button_all = document.querySelectorAll('.mdc-button')
-for (let i = 0; i < mdc_button_all?.length; i++) {
-    const element = mdc_button_all[i];
-    const buttonRipple = new MDCRipple(element)
-}
+    const buttonRipple = mdc_button ? new MDCRipple(mdc_button) : null;
 
 
-const mdc_dialog = document.querySelector('.mdc-dialog');
-const van_hire_dialog = document.querySelector('.van-hire-dialog');
-const bus_hire_dialog = document.querySelector('.bus-hire-dialog');
+    var mdc_button_all = document.querySelectorAll('.mdc-button')
+    for (let i = 0; i < mdc_button_all?.length; i++) {
+        const element = mdc_button_all[i];
+        const buttonRipple = new MDCRipple(element)
+    }
 
 
-
-const mdc_list = document.querySelector('.mdc-dialog .mdc-list')
-const list = mdc_list ? new MDCList(mdc_list) : null;
-
-/**Dialog */
-const pricing_dialog = new PricingDialog(document.getElementById('show-dialog-button'), mdc_dialog, [list]);
-pricing_dialog.display()
-pricing_dialog.deactivate_scrim_effect()
-/**Van Hire Pricing Dialog */
-const van_hire_pricing_dialog = new PricingDialog(document.getElementById('show-van-hire-dialog-button'), van_hire_dialog, []);
-van_hire_pricing_dialog.display()
-van_hire_pricing_dialog.deactivate_scrim_effect()
-/**Bus Hire Pricing Dialog */
-const bus_hire_pricing_dialog = new PricingDialog(document.getElementById('show-bus-hire-dialog-button'), bus_hire_dialog, []);
-bus_hire_pricing_dialog.display()
-bus_hire_pricing_dialog.deactivate_scrim_effect()
+    const mdc_dialog = document.querySelector('.mdc-dialog');
+    const van_hire_dialog = document.querySelector('.van-hire-dialog');
+    const bus_hire_dialog = document.querySelector('.bus-hire-dialog');
 
 
 
-/**radio button */
-const mdc_radio = document.querySelector('.mdc-radio')
-const radio = mdc_radio ? new MDCRadio(mdc_radio) : null;
-const mdc_form_field = document.querySelector('.mdc-form-field')
-const formField = mdc_form_field ? new MDCFormField(mdc_form_field) : null;
-formField ? formField.input = radio : null;
+    const mdc_list = document.querySelector('.mdc-dialog .mdc-list')
+    const list = mdc_list ? new MDCList(mdc_list) : null;
+
+    /**Dialog */
+    const pricing_dialog = new PricingDialog(document.getElementById('show-dialog-button'), mdc_dialog, [list]);
+    pricing_dialog.display()
+    pricing_dialog.deactivate_scrim_effect()
+    /**Van Hire Pricing Dialog */
+    const van_hire_pricing_dialog = new PricingDialog(document.getElementById('show-van-hire-dialog-button'), van_hire_dialog, []);
+    van_hire_pricing_dialog.display()
+    van_hire_pricing_dialog.deactivate_scrim_effect()
+    /**Bus Hire Pricing Dialog */
+    const bus_hire_pricing_dialog = new PricingDialog(document.getElementById('show-bus-hire-dialog-button'), bus_hire_dialog, []);
+    bus_hire_pricing_dialog.display()
+    bus_hire_pricing_dialog.deactivate_scrim_effect()
 
 
-/**text field */
-const mdc_text_field = document.querySelector('.mdc-text-field')
-const textField = mdc_text_field ? new MDCTextField(mdc_text_field) : null;
+
+    /**radio button */
+    const mdc_radio = document.querySelector('.mdc-radio')
+    const radio = mdc_radio ? new MDCRadio(mdc_radio) : null;
+    const mdc_form_field = document.querySelector('.mdc-form-field')
+    const formField = mdc_form_field ? new MDCFormField(mdc_form_field) : null;
+    formField ? formField.input = radio : null;
 
 
-const mdc_checkbox = document.querySelector('.mdc-checkbox')
-const checkbox = mdc_checkbox ? new MDCCheckbox(mdc_checkbox) : null;
-formField ? formField.input = checkbox : null;
+    /**text field */
+    const mdc_text_field = document.querySelector('.mdc-text-field')
+    const textField = mdc_text_field ? new MDCTextField(mdc_text_field) : null;
+
+
+    const mdc_checkbox = document.querySelector('.mdc-checkbox')
+    const checkbox = mdc_checkbox ? new MDCCheckbox(mdc_checkbox) : null;
+    formField ? formField.input = checkbox : null;
+})

@@ -123,7 +123,7 @@
                                 <!--  -->
                             </div>
                         </div>
-                        <a href="./login.php" class="overflow-hidden ml-2 pill mdc-button primary-btn hover:bg-blue-400 text-white rounded-md px-3 py-2 text-sm font-medium capitalize">
+                        <a href="./login.php" class="overflow-hidden ml-2 pill mdc-button primary-btn hover:bg-blue-400 text-white rounded-md px-3 py-1 text-sm text-sm font-medium capitalize">
                             Sign In / Sign Up
                             <span class="mdc-button__ripple"></span>
                         </a>
