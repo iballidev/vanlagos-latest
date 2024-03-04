@@ -727,6 +727,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.-ml-4 {
+  margin-left: -1rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -771,10 +775,6 @@ video {
   margin-inline-start: 0px;
 }
 
-.ms-6 {
-  margin-inline-start: 1.5rem;
-}
-
 .ms-8 {
   margin-inline-start: 2rem;
 }
@@ -793,6 +793,14 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.-ml-2 {
+  margin-left: -0.5rem;
+}
+
+.-ml-3 {
+  margin-left: -0.75rem;
 }
 
 .block {
