@@ -5,7 +5,7 @@ import { MDCRadio } from '@material/radio';
 import { MDCCheckbox } from '@material/checkbox';
 import { MDCList } from '@material/list';
 import { MDCTextField } from '@material/textfield';
-import PricingDialog from './material/pricing-dialog';
+import AppDialog from './material/app-dialog';
 import { MDCTabBar } from '@material/tab-bar';
 
 
@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var mdc_button_all = document.querySelectorAll('.mdc-button')
     for (let i = 0; i < mdc_button_all?.length; i++) {
         const element = mdc_button_all[i];
-        const buttonRipple = new MDCRipple(element)
+        const buttonRipple = element ? new MDCRipple(element) : null;
     }
 
 
-    const mdc_dialog = document.querySelector('.mdc-dialog');
+    const mdc_dialog = document.querySelectorAll('.mdc-dialog');
     const van_hire_dialog = document.querySelector('.van-hire-dialog');
     const bus_hire_dialog = document.querySelector('.bus-hire-dialog');
 
@@ -35,17 +35,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const mdc_list = document.querySelector('.mdc-dialog .mdc-list')
     const list = mdc_list ? new MDCList(mdc_list) : null;
+    const listRipple = list ? new MDCRipple(list) : null;
 
     /**Dialog */
-    const pricing_dialog = new PricingDialog(document.getElementById('show-dialog-button'), mdc_dialog, [list]);
-    pricing_dialog.display()
-    pricing_dialog.deactivate_scrim_effect()
+    console.log("dialog place")
+    for (let i = 0; i < mdc_dialog.length; i++) {
+        const element = mdc_dialog[i];
+        console.log("element: ", element)
+
+    }
+    const dialog_button = new AppDialog(document.getElementById('show-dialog-button'), mdc_dialog, [list]);
+    dialog_button.display()
+    dialog_button.deactivate_scrim_effect()
     /**Van Hire Pricing Dialog */
-    const van_hire_pricing_dialog = new PricingDialog(document.getElementById('show-van-hire-dialog-button'), van_hire_dialog, []);
+    const van_hire_pricing_dialog = new AppDialog(document.getElementById('show-van-hire-dialog-button'), van_hire_dialog, []);
     van_hire_pricing_dialog.display()
     van_hire_pricing_dialog.deactivate_scrim_effect()
     /**Bus Hire Pricing Dialog */
-    const bus_hire_pricing_dialog = new PricingDialog(document.getElementById('show-bus-hire-dialog-button'), bus_hire_dialog, []);
+    const bus_hire_pricing_dialog = new AppDialog(document.getElementById('show-bus-hire-dialog-button'), bus_hire_dialog, []);
     bus_hire_pricing_dialog.display()
     bus_hire_pricing_dialog.deactivate_scrim_effect()
 

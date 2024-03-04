@@ -1,7 +1,7 @@
 
 import { MDCDialog } from '@material/dialog';
 
-class PricingDialog {
+class AppDialog {
     constructor(trigger, mdc_dialog, content_component) {
         this.trigger = trigger;
         this.mdc_dialog = mdc_dialog;
@@ -51,4 +51,4 @@ class PricingDialog {
 }
 
 
-export default PricingDialog;
+export default AppDialog;

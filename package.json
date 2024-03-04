@@ -31,6 +31,7 @@
     "webpack-dev-server": "^5.0.2"
   },
   "dependencies": {
+    "@material/list": "^14.0.0",
     "material-components-web": "^14.0.0",
     "ts-loader": "^9.5.1"
   }
