@@ -206,7 +206,7 @@
                                                     <div class="mdc-touch-target-wrapper" style="margin-left: -.9em;">
                                                         <div class="mdc-radio mdc-radio--touch">
                                                             <input class="mdc-radio__native-control" type="radio"
-                                                                id="fragile_yes" name="is_fragile" checked>
+                                                                id="fragile_yes" name="is_fragile">
                                                             <div class="mdc-radio__background">
                                                                 <div class="mdc-radio__outer-circle"></div>
                                                                 <div class="mdc-radio__inner-circle"></div>
@@ -222,7 +222,7 @@
                                                     <div class="mdc-touch-target-wrapper">
                                                         <div class="mdc-radio mdc-radio--touch">
                                                             <input class="mdc-radio__native-control" type="radio"
-                                                                id="fragile_no" name="is_fragile" checked>
+                                                                id="fragile_no" name="is_fragile">
                                                             <div class="mdc-radio__background">
                                                                 <div class="mdc-radio__outer-circle"></div>
                                                                 <div class="mdc-radio__inner-circle"></div>

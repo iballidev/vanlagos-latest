@@ -1,11 +1,28 @@
 @use "@material/theme" with (
+  // $on-*: #414562
   $primary: #46c5ec,
-  $on-primary: #414562
+  $on-primary: #ffffff,
+  $secondary: #ff8c00,
+  $on-secondary: #ffffff,
+
+  // 1. Primary
+  // 2. Primary Variant
+  // 3. Secondary
+  // 4. Secondary Variant
+  // 5. Background
+  // 6. Surface
+  // 7. Error
+  // 8. On Primary
+  // 9. On Secondary
+  // 10. On Background
+  // 11. On Surface
+  // 12. On Error
 );
 
 @use "@material/button/mdc-button";
 @use "@material/button";
 @use "@material/dialog";
+@use "@material/radio";
 @use "@material/radio/styles";
 @use "@material/form-field";
 @use "@material/floating-label/mdc-floating-label";
@@ -28,6 +45,8 @@
 
 @include form-field.core-styles;
 
+@include dialog.core-styles;
+
 .foo-button {
   @include button.container-fill-color(#cdc226);
 }
@@ -37,4 +56,14 @@
   @include button.ink-color(var(--clr-bright));
 }
 
-@include dialog.core-styles;
+.my_radios {
+  @include radio.ink-color(#46c5ec);
+  @include radio.focus-indicator-color(#46c5ec);
+  @include radio.checked-stroke-color(#46c5ec);
+  @include radio.ripple-size(1rem);
+}
+
+.mdc-radio .mdc-radio__ripple::before,
+.mdc-radio .mdc-radio__ripple::after {
+  background-color: #46c5ec;
+}

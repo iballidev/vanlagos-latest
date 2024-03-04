@@ -1,48 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material Design Component | Locally</title>
+    <link rel="stylesheet" href="bundle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Material Design Component | Locally</title>
-  <link rel="stylesheet" href="bundle.css" />
-</head>
+  <body>
+    <h1>Vanlagos latest from Index.html</h1>
 
-<body>
-  <h1>Vanlagos latest from Index.html</h1>
+    <button class="foo-button mdc-button">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Button</span>
+    </button>
 
-  <button class="foo-button mdc-button">
-    <div class="mdc-button__ripple"></div>
-    <span class="mdc-button__label">Button</span>
-  </button>
+    <button class="primary-btn mdc-button">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Primary button</span>
+    </button>
 
-  <button class="primary-btn mdc-button">
-    <div class="mdc-button__ripple"></div>
-    <span class="mdc-button__label">Primary button</span>
-  </button>
-
-  <div class="mdc-tab-bar" role="tablist">
-    <div class="mdc-tab-scroller">
-      <div class="mdc-tab-scroller__scroll-area">
-        <div class="mdc-tab-scroller__scroll-content">
-          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
-            <span class="mdc-tab__content">
-              <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
-              <span class="mdc-tab__text-label">Favorites</span>
-            </span>
-            <span class="mdc-tab-indicator mdc-tab-indicator--active">
-              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-            </span>
-            <span class="mdc-tab__ripple"></span>
-          </button>
+    <div class="mdc-tab-bar" role="tablist">
+      <div class="mdc-tab-scroller">
+        <div class="mdc-tab-scroller__scroll-area">
+          <div class="mdc-tab-scroller__scroll-content">
+            <button
+              class="mdc-tab mdc-tab--active"
+              role="tab"
+              aria-selected="true"
+              tabindex="0"
+            >
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__icon material-icons" aria-hidden="true"
+                  >favorite</span
+                >
+                <span class="mdc-tab__text-label">Favorites</span>
+              </span>
+              <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                <span
+                  class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                ></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <hr class="my-4" />
 
+    <form action="">
+      <fieldset>
+        <legend class="block font-semibold cursor-pointer">Fragile</legend>
+        <div class="flex items-center">
+          <div class="flex items-center">
+            <div
+              class="mdc-touch-target-wrapper my_radios"
+              style="margin-left: -0.9em"
+            >
+              <div class="mdc-radio mdc-radio--touch">
+                <input
+                  class="mdc-radio__native-control"
+                  type="radio"
+                  id="fragile_yes"
+                  name="is_fragile"
+                />
+                <div class="mdc-radio__background">
+                  <div class="mdc-radio__outer-circle"></div>
+                  <div class="mdc-radio__inner-circle"></div>
+                </div>
+                <div class="mdc-radio__ripple"></div>
+              </div>
+            </div>
+            <label for="fragile_yes" class="block font-semibold cursor-pointer">
+              Yes
+            </label>
+          </div>
+          <div class="flex items-center">
+            <div class="mdc-touch-target-wrapper my_radios">
+              <div class="mdc-radio mdc-radio--touch">
+                <input
+                  class="mdc-radio__native-control"
+                  type="radio"
+                  id="fragile_no"
+                  name="is_fragile"
+                />
+                <div class="mdc-radio__background">
+                  <div class="mdc-radio__outer-circle"></div>
+                  <div class="mdc-radio__inner-circle"></div>
+                </div>
+                <div class="mdc-radio__ripple"></div>
+              </div>
+            </div>
+            <label for="fragile_no" class="block font-semibold cursor-pointer">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </form>
 
-  <script src="bundle.js" async></script>
-</body>
-
+    <script src="bundle.js" async></script>
+  </body>
 </html>
