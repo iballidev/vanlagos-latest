@@ -45,10 +45,10 @@
                 </table>
                 <!--  -->
                 <div class="sm:px-8">
-                    <a href="./van-booking.php" class="mdc-button w-full bg-primary py-6">
+                    <!-- <a href="./van-booking.php" class="mdc-button w-full bg-primary py-6">
                         <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
-                    </a>
+                    </a> -->
                     <div class="my-2"></div>
                     <button class="mdc-button w-full primary-btn py-6" id="show-van-hire-dialog-button">
                         <span class="mdc-button__ripple"></span>
@@ -83,10 +83,6 @@
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
                 </a> -->
-                <a href="./bus-booking.php" class="mdc-button w-full bg-primary py-6">
-                    <span class="mdc-button__ripple"></span>
-                    <span class="mdc-button__label text-white text-xl capitalize">Hire Now</span>
-                </a>
                 <div class="my-2"></div>
                 <button class="mdc-button w-full primary-btn py-6" id="show-bus-hire-dialog-button">
                     <span class="mdc-button__ripple"></span>

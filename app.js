@@ -6,6 +6,9 @@ import { MDCCheckbox } from '@material/checkbox';
 import { MDCList } from '@material/list';
 import { MDCTextField } from '@material/textfield';
 import PricingDialog from './material/pricing-dialog';
+import {MDCTabBar} from '@material/tab-bar';
+
+const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 
 
 var foo_button = document.querySelector('.foo-button')
@@ -18,7 +21,6 @@ const buttonRipple = mdc_button ? new MDCRipple(mdc_button) : null;
 var mdc_button_all = document.querySelectorAll('.mdc-button')
 for (let i = 0; i < mdc_button_all?.length; i++) {
     const element = mdc_button_all[i];
-    console.log("element: ", element)
     const buttonRipple = new MDCRipple(element)
 }
 
