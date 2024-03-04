@@ -16,10 +16,10 @@
         <div class="p-2 sm:p-4">
             <div class="relative overflow-x-auto mdc-card">
                 <table
-                    class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
 
                     <tbody>
-                        <tr class="border-b dark:border-gray-700">
+                        <tr class="border-b">
 
                             <td colspan="5">
                                 <!-- user car hire review -->
@@ -31,14 +31,14 @@
                         <!--  -->
 
 
-                        <tr class="border-b dark:border-gray-700">
+                        <tr class="border-b">
 
                             <td colspan="5">
                                 <!-- user van hire review -->
                                 <?php include(__DIR__ . "./includes/user-van-hire-review.php"); ?>
                             </td>
                         </tr>
-                        <tr class="border-b dark:border-gray-700">
+                        <tr class="border-b">
 
                             <td colspan="5">
                                 <!-- user bus hire review -->

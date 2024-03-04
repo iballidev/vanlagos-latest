@@ -1,6 +1,6 @@
 <table x-data="{ isOpen: false }"
-    class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-    <thead class="text-md text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
+    <thead class="text-md text-gray-700 uppercase bg-gray-50 ">
         <tr>
             <th scope="col" class="px-6 py-3">
                 Service
@@ -21,7 +21,7 @@
     <tbody>
 
         <!-- preview row -->
-        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800">
+        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50">
             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
                 Van Hire
             </th>
@@ -62,7 +62,7 @@
             x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
             x-transition:leave-start="transform opacity-100 scale-100"
             x-transition:leave-end="transform opacity-0 scale-95"
-            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 border-b dark:border-gray-700">
 
             <td class="px-6 py-4 text-left" colspan="5">
 
