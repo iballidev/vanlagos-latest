@@ -9,7 +9,7 @@
     <div class="my-4"></div>
 
     <div class="mdc-card">
-        <h1 class="ff-headline font-semibold capitalize text-xl bg-emerald-600 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
+        <h1 class="ff-headline font-semibold capitalize text-xl bg-gray-400 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
             Booking History
         </h1>
         <div class="p-2 sm:p-4">
@@ -53,7 +53,7 @@
                     <tbody>
                         <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                <a href="user-booking-details.php?id=123" class="text-primary">Bus Hire</a>
+                                <a href="driver-booking-details.php?id=123" class="text-primary">Bus Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 4
@@ -80,7 +80,7 @@
 
                         <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                <a href="user-booking-details.php?id=214" class="text-primary">Van Hire</a>
+                                <a href="driver-booking-details.php?id=214" class="text-primary">Van Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 1
@@ -99,7 +99,7 @@
 
                         <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                <a href="user-booking-details.php?id=435" class="text-primary">Van Hire</a>
+                                <a href="driver-booking-details.php?id=435" class="text-primary">Van Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 2
@@ -118,7 +118,7 @@
 
                         <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                <a href="user-booking-details.php?id=184" class="text-primary">Van Hire</a>
+                                <a href="driver-booking-details.php?id=184" class="text-primary">Van Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 2
