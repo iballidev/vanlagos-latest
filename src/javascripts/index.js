@@ -73,8 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     /**handle countdown timer */
-    const countdown_timer = new CountdownTimer(document.getElementById('time-value'), document.getElementById('stop-counter-button'));
+    const time_value = parseInt(document.getElementById('time-value')?.value);
+    const counter_cancel_btn = document.getElementById('counter-cancel-button')
+    const countdown_timer = new CountdownTimer(time_value,);
     countdown_timer;
+    counter_cancel_btn?.addEventListener('click', () => countdown_timer.stopCountdown()); /**cancel timer */
 
 });
 
