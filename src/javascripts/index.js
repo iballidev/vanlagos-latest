@@ -1,3 +1,4 @@
+import CountdownTimer from "./countdown-timer.js";
 import CreditCard from "./credit-card.js";
 import DatePicker from "./date-picker.js";
 import FormsToggler from "./form-toggler.js";
@@ -69,6 +70,11 @@ document.addEventListener('DOMContentLoaded', function () {
     /**handle date_picker */
     const date_picker = new DatePicker();
     date_picker;
+
+
+    /**handle countdown timer */
+    const countdown_timer = new CountdownTimer(document.getElementById('time-value'), document.getElementById('stop-counter-button'));
+    countdown_timer;
 
 });
 
