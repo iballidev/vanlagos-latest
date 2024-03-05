@@ -291,7 +291,6 @@
                     Summary
                 </h1>
                 <div class="p-2 sm:p-6">
-
                     <table class="style-regular table align-end-cells-right">
                         <tbody>
                             <tr>

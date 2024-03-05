@@ -5,12 +5,24 @@ import RatingStarToValue from "./rating-value-to-star.js";
 import ViewportIntersection from "./viewport-intersection.js";
 
 document.addEventListener('DOMContentLoaded', function () {
-    
+
     /**remove page loader */
     const page_loader = document.querySelector(".page-loader");
     page_loader?.classList.contains("show") ?
         page_loader.classList.remove("show") :
         null;
+
+
+    /**window back */
+    const window_back_btn = document.querySelectorAll(".window-back-btn");
+    for (let i = 0; i < window_back_btn.length; i++) {
+        const element = window_back_btn[i];
+        element.addEventListener("click", () => {
+            console.log("go back!")
+            history.back();
+        })
+
+    }
 
 
     /**CREDITCARD field controls */
@@ -53,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const rating_star_to_value = new RatingStarToValue();
     rating_star_to_value;
 
-    
+
     /**handle date_picker */
     const date_picker = new DatePicker();
     date_picker;

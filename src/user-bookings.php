@@ -31,8 +31,7 @@
                 </div>
             </div>
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table
-                    class=" align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
+                <table class=" align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
                     <thead class="text-md text-gray-700 uppercase bg-gray-50 ">
                         <tr>
                             <th scope="col" class="px-6 py-3">
@@ -56,12 +55,12 @@
                         <tr
                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                Bus Hire
+                                <a href="user-booking-details.php?id=123" class="text-primary">Bus Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 4
                             </td>
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 font-semibold">
                                 N16,000
                             </td>
                             <td class="px-6 py-4">
@@ -85,12 +84,12 @@
                         <tr
                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                Van Hire
+                                <a href="user-booking-details.php?id=214" class="text-primary">Van Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 1
                             </td>
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 font-semibold">
                                 N5,000
                             </td>
                             <td class="px-6 py-4">
@@ -106,12 +105,12 @@
                         <tr
                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                Van Hire
+                                <a href="user-booking-details.php?id=435" class="text-primary">Van Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 2
                             </td>
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 font-semibold">
                                 N10,000
                             </td>
                             <td class="px-6 py-4">
@@ -127,12 +126,12 @@
                         <tr
                             class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                                Van Hire
+                                <a href="user-booking-details.php?id=184" class="text-primary">Van Hire</a>
                             </th>
                             <td class="px-6 py-4">
                                 2
                             </td>
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 font-semibold">
                                 N10,000
                             </td>
                             <td class="px-6 py-4">
