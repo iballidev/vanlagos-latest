@@ -65,12 +65,12 @@
                             Information</h2>
                         <div class="p-4">
                             <div class="mb-4">
-                                <h3 class="font-semibold">Payment method</h3>
+                                <h3 class="font-bold">Payment method</h3>
                                 <p>Pay with cards, Bank Transfer or USSD</p>
                             </div>
 
                             <div class="mb-4">
-                                <h3 class="font-semibold">Payment Details</h3>
+                                <h3 class="font-bold">Payment Details</h3>
 
                                 <table class="style-regular table align-end-cells-right">
                                     <tbody>
@@ -106,8 +106,21 @@
                         <h2 class="font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">
                             Time Remaining
                         </h2>
-                        <div class="p-4">Bottom</div>
+                        <div class="p-4">
+                            <button class="mdc-button primary-btn px-4" id="start-counter-button">Start</button>
+                            <div class="my-4"></div>
+                            <!-- timer value -->
+                            <input type="tel" value="400" id="time-value" hidden>
+                            <!--  -->
+                            <div id="timer"
+                                class="flex justify-between border p-4 rounded-lg text-center font-bold text-2xl">
+                                00:00:00</div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="col-span-12 flex">
+                    <button class="mdc-button danger-btn mx-auto px-4" id="stop-counter-button">Cancel</button>
                 </div>
             </div>
         </div>
@@ -117,6 +130,79 @@
 
 
 
+
+    <script>
+    // Set the countdown time in seconds
+    var countdownTime = 300; // 300 for 5 minutes
+    let time_value = document.getElementById('time-value');
+
+    // countdownTime = parseInt(time_value.value)
+
+    let timer = countdownTime;
+    let isCancelled = false;
+    let isStart = false;
+
+    let timer_screen = document.getElementById('timer');
+    /**default counter screen style */
+    timer_screen ? timer_screen.innerHTML =
+        `<span>0hr</span>:<span>0min</span>:<span>0sec</span>` :
+        null;
+
+    !timer_screen.classList.contains("text-gray-300") ? timer_screen.classList.add("text-gray-300") : null;
+
+
+    function updateTimerDisplay() {
+        if (isCancelled) return
+        const hours = Math.floor(timer / 3600);
+        const minutes = Math.floor((timer % 3600) / 60);
+        const seconds = timer % 60;
+
+        !timer_screen.classList.contains("text-green-600") ? timer_screen.classList.add("text-green-600") : null;
+
+        if (timer < 300) {
+            !timer_screen.classList.contains("text-danger") ? timer_screen.classList.add("text-danger") : null;
+            timer_screen.classList.contains("text-green-600") ? timer_screen.classList.remove("text-green-600") : null;
+        } else {
+            timer_screen.classList.contains("text-danger") ? timer_screen.classList.remove("text-danger") : null;
+            !timer_screen.classList.contains("text-green-600") ? timer_screen.classList.add("text-green-600") : null;
+        }
+
+        /**update counter screen style */
+        timer_screen ? timer_screen.innerHTML =
+            `<span>${hours}hr</span>:<span>${String(minutes).padStart(2, '0')}min</span>:<span>${String(seconds).padStart(2, '0')}sec</span>` :
+            null;
+    }
+
+    function startCountdown() {
+        // if (!isStart) return;
+
+        updateTimerDisplay();
+
+        const countdownInterval = setInterval(function() {
+            if (timer > 0) {
+                timer--;
+                updateTimerDisplay();
+            } else {
+                clearInterval(countdownInterval);
+                isCancelled ? alert("Countdown Timer Cancelled!") : alert("Countdown Timer Expired!");
+            }
+        }, 1000); // Update every second
+    }
+
+    function stopCountdown() {
+        let time_used = countdownTime - timer
+        time_used = time_used / 60
+        alert(`time used: ${time_used.toFixed(3).toString()} minutes`);
+        isCancelled = true;
+        updateTimerDisplay();
+    }
+
+    document.querySelector("#stop-counter-button")?.addEventListener('click', stopCountdown);
+    document.querySelector("#start-counter-button")?.addEventListener('click', startCountdown);
+
+    // Start the countdown when the page loads
+    // document.addEventListener('DOMContentLoaded', startCountdown);
+    </script>
 
 </div>
 

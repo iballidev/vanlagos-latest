@@ -62,6 +62,17 @@
   border: 1px solid #46c5ec;
 }
 
+.danger-btn {
+  @include button.container-fill-color(#FA5252);
+  @include button.ink-color(#ffffff);
+}
+
+.danger-btn-inverse {
+  @include button.container-fill-color(#ffffff);
+  @include button.ink-color(#FA5252);
+  border: 1px solid #FA5252;
+}
+
 .my_radios {
   @include radio.ink-color(#46c5ec);
   @include radio.focus-indicator-color(#46c5ec);

@@ -4967,6 +4967,21 @@ svg.mdc-button__icon {
 .primary-btn-inverse:not(:disabled) {
   color: #46c5ec;
 }
+.danger-btn:not(:disabled) {
+  background-color: #FA5252;
+}
+.danger-btn:not(:disabled) {
+  color: #ffffff;
+}
+.danger-btn-inverse {
+  border: 1px solid #FA5252;
+}
+.danger-btn-inverse:not(:disabled) {
+  background-color: #ffffff;
+}
+.danger-btn-inverse:not(:disabled) {
+  color: #FA5252;
+}
 .my_radios {
   padding: calc((1rem - 20px) / 2);
 }
