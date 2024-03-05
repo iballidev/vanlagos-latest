@@ -146,14 +146,14 @@
                     </div>
                     <div class="col-span-12 sm:col-span-6">
                         <div class="flex gap-2 items-center">
-                            <button type="submit" class="mdc-button bg-primary py-4 px-8 mdc-card">
+                            <button type="submit" class="mdc-button bg-primary py-4 px-8">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white capitalize">Save profile</span>
                             </button>
                             <button x-show="isEditProfile" @click="isEditProfile = !isEditProfile" type="button"
-                                class="mdc-button border border-primary py-4 px-8 mdc-card">
+                                class="mdc-button primary-btn-inverse py-4 px-8">
                                 <span class="mdc-button__ripple"></span>
-                                <span class="mdc-button__label text-primary capitalize">Cancel</span>
+                                <span class="mdc-button__label capitalize">Cancel</span>
                             </button>
                         </div>
                     </div>
@@ -161,9 +161,9 @@
             </form>
             <div>
                 <button x-show="!isEditProfile" @click="isEditProfile = !isEditProfile" type="button"
-                    class="mdc-button border border-primary py-4 px-8 mdc-card mt-8">
+                    class="mdc-button primary-btn-inverse py-4 px-8 mt-4">
                     <span class="mdc-button__ripple"></span>
-                    <span class="mdc-button__label text-primary capitalize">Edit
+                    <span class="mdc-button__label capitalize">Edit
                         profile</span>
                 </button>
             </div>

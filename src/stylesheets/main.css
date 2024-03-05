@@ -389,6 +389,10 @@ html {
   display: flex;
 }
 
+.loader {
+  background: var(--clr-primary);
+}
+
 :root {
   /* COLORS */
   --clr-primary: #46c5ec;

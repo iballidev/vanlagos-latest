@@ -6,7 +6,7 @@ import ViewportIntersection from "./viewport-intersection.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     
-    /**cemove page loader */
+    /**remove page loader */
     const page_loader = document.querySelector(".page-loader");
     page_loader?.classList.contains("show") ?
         page_loader.classList.remove("show") :

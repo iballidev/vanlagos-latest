@@ -52,8 +52,14 @@
 }
 
 .primary-btn {
-  @include button.container-fill-color(var(--clr-primary));
-  @include button.ink-color(var(--clr-bright));
+  @include button.container-fill-color(#46c5ec);
+  @include button.ink-color(#ffffff);
+}
+
+.primary-btn-inverse {
+  @include button.container-fill-color(#ffffff);
+  @include button.ink-color(#46c5ec);
+  border: 1px solid #46c5ec;
 }
 
 .my_radios {
@@ -65,5 +71,65 @@
 
 .mdc-radio .mdc-radio__ripple::before,
 .mdc-radio .mdc-radio__ripple::after {
+  background-color: #46c5ec;
+}
+
+.mdc-radio
+  .mdc-radio__native-control:enabled:checked
+  + .mdc-radio__background
+  .mdc-radio__outer-circle {
+  // border-color: var(--mdc-theme-primary, #018786); // default
+  border-color: var(--mdc-theme-primary, #46c5ec) !important;
+}
+
+.mdc-radio
+  .mdc-radio__native-control:enabled
+  + .mdc-radio__background
+  .mdc-radio__inner-circle {
+  // border-color: var(--mdc-theme-primary, #018786); // default
+  border-color: var(--mdc-theme-primary, #46c5ec) !important;
+}
+
+//
+
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::before,
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::after {
+  background-color: #46c5ec;
+  background-color: var(--mdc-ripple-color, var(--mdc-theme-primary, #46c5ec));
+}
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:indeterminate
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+  ~ .mdc-checkbox__background {
+  border-color: #46c5ec;
+  border-color: var(
+    --mdc-checkbox-checked-color,
+    var(--mdc-theme-primary, #46c5ec)
+  );
+  background-color: #46c5ec;
+  background-color: var(
+    --mdc-checkbox-checked-color,
+    var(--mdc-theme-primary, #46c5ec)
+  );
+}
+
+.mdc-checkbox .mdc-checkbox__ripple::before,
+.mdc-checkbox .mdc-checkbox__ripple::after {
+  background-color: #46c5ec;
+}
+
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::before,
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::after {
+  background-color: #46c5ec !important;
+  background-color: var(--mdc-ripple-color, var(--mdc-theme-primary, #46c5ec));
+}
+
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::before,
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::after {
   background-color: #46c5ec;
 }
