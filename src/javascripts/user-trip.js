@@ -32,7 +32,6 @@ class UserTrip {
 
 
     updateTimerDisplay = (count) => {
-        // console.log("count: ", count)
         if (isCancelled || this.isStopped) return
         const hours = Math.floor(count / 3600);
         const minutes = Math.floor((count % 3600) / 60);
