@@ -127,8 +127,8 @@
                 </div>
 
                 <div class="col-span-12 flex justify-center gap-2">
-                    <button class="mdc-button primary-btn px-4" id="counter-start-button">Start</button>
-                    <button class="mdc-button danger-btn-inverse px-4" id="counter-cancel-button">Cancel</button>
+                    <button class="mdc-button primary-btn px-6" id="counter-start-button">Start</button>
+                    <button class="mdc-button danger-btn-inverse px-6 hidden" id="counter-stop-button">Stop</button>
                 </div>
             </div>
         </div>

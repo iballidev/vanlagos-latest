@@ -127,11 +127,14 @@
                 </div>
 
                 <div class="col-span-12 flex">
-                    <button class="mdc-button danger-btn mx-auto px-4" id="counter-cancel-button">Cancel</button>
+                    <button class="mdc-button danger-btn mx-auto px-4 hidden" id="counter-cancel-button">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- this button is to demonstrate starting a trip from the driver module (by the driver) -->
+    <button id="counter-start-button" class="mdc-button primary-btn px-6 flex flex-row my-4">Click her to start counter from Driver module</button>
 
     <div class="my-4"></div>
 
