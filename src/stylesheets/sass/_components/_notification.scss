@@ -1,0 +1,39 @@
+.new-notification-list {
+    // background-color: red !important;
+    .date {
+        &::after {
+            content: "|";
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        & + ul {
+            li {
+                display: flex;
+                align-items: center;
+                // gap: 5px;
+                a {
+                    display: block;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    &::before {
+                        content: "";
+                        display: block;
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 50%;
+                        background-color: var(--clr-danger);
+                    }
+
+                    &:visited {
+                        &::before {
+                            background-color: rgb(249 250 251);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
