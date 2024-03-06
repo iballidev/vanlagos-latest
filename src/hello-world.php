@@ -7,4 +7,4 @@
 
 </div>
 
-<?php include(__DIR__ . "./includes/footer.php"); ?>user-booking-details
+<?php include(__DIR__ . "./includes/footer.php"); ?>

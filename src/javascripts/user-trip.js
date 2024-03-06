@@ -22,7 +22,8 @@ class UserTrip {
             `<span>${dash}hr</span>:<span> ${dash}min</span>:<span>${dash}sec</span>` :
             null;
 
-        !this.timer_screen.classList.contains("text-gray-300") ? this.timer_screen.classList.add("text-gray-300") : null;
+            if(this.timer_screen)
+                !this.timer_screen.classList.contains("text-gray-300") ? this.timer_screen.classList.add("text-gray-300") : null;
 
         // Start the countdown
         if (!isStarted) return

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform and Transition</title>
+
+    <style>
+      .test-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4em;
+        gap: 30px;
+
+        a {
+          display: block;
+          &::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background-color: red;
+            width: 100%;
+            transform: scaleX(0);
+            transition: width 1s;
+            transform-origin: right;
+            transition: all 1s ease-in-out;
+          }
+        }
+
+        li {
+          &:hover {
+            a {
+              &::after {
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="test-nav">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About us</a>
+      </li>
+      <li>
+        <a href="#">Contact us</a>
+      </li>
+    </ul>
+  </body>
+</html>
