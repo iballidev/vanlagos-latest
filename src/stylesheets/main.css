@@ -410,6 +410,34 @@ html {
   transition: all 1s;
 }
 
+.new-notification-list .date::after {
+  content: "|";
+  display: block;
+  margin-bottom: 3px;
+}
+.new-notification-list .date + ul li {
+  display: flex;
+  align-items: center;
+}
+.new-notification-list .date + ul li a {
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.new-notification-list .date + ul li a::before {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: var(--clr-danger);
+}
+.new-notification-list .date + ul li a:visited::before {
+  background-color: rgb(249, 250, 251);
+}
+
 :root {
   /* COLORS */
   --clr-primary: #46c5ec;
