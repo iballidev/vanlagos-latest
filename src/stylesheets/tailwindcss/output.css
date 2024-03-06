@@ -647,10 +647,6 @@ video {
   inset-inline-start: 1.5rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .top-8 {
   top: 2rem;
 }
@@ -1005,6 +1001,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-y-10 {
@@ -1446,12 +1446,12 @@ video {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1731,6 +1731,14 @@ video {
 .even\:bg-gray-50:nth-child(even) {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.visited\:bg-gray-50:visited {
+  background-color: rgb(249 250 251 );
+}
+
+.visited\:text-gray-800:visited {
+  color: rgb(31 41 55 );
 }
 
 .focus-within\:ring-2:focus-within {
