@@ -2,15 +2,28 @@ import CreditCard from "./credit-card.js";
 import DatePicker from "./date-picker.js";
 import FormsToggler from "./form-toggler.js";
 import RatingStarToValue from "./rating-value-to-star.js";
+import { DriverTrip, UserTrip } from "./user-trip.js";
 import ViewportIntersection from "./viewport-intersection.js";
 
 document.addEventListener('DOMContentLoaded', function () {
-    
-    /**cemove page loader */
+
+    /**remove page loader */
     const page_loader = document.querySelector(".page-loader");
     page_loader?.classList.contains("show") ?
         page_loader.classList.remove("show") :
         null;
+
+
+    /**window back */
+    const window_back_btn = document.querySelectorAll(".window-back-btn");
+    for (let i = 0; i < window_back_btn.length; i++) {
+        const element = window_back_btn[i];
+        element.addEventListener("click", () => {
+            console.log("go back!")
+            history.back();
+        })
+
+    }
 
 
     /**CREDITCARD field controls */
@@ -53,10 +66,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const rating_star_to_value = new RatingStarToValue();
     rating_star_to_value;
 
-    
+
     /**handle date_picker */
     const date_picker = new DatePicker();
     date_picker;
+
+
+    /**handle countdown timer */
+    const counter_cancel_btn = document.getElementById('counter-cancel-button');
+    const counter_stop_btn = document.getElementById('counter-stop-button');
+    const counter_start_btn = document.getElementById('counter-start-button');
+    const time_value = parseInt(document.getElementById('time-value')?.value);
+
+    const driverTrip = new DriverTrip(time_value);
+    const userTrip = new UserTrip(time_value);
+
+    /**user cancel trip */
+    counter_cancel_btn?.addEventListener('click', () => userTrip.cancelCountdown());
+    /**driver start trip */
+    counter_start_btn?.addEventListener('click', () => driverTrip.startTrip());
+    /**driver end trip */
+    counter_stop_btn?.addEventListener('click', () => driverTrip.endTrip());
 
 });
 

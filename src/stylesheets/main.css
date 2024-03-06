@@ -389,6 +389,27 @@ html {
   display: flex;
 }
 
+.loader {
+  background: var(--clr-primary);
+}
+
+.tick-icon.hide .tick-animate-wrap::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+.tick-icon .tick-animate-wrap::after {
+  content: "";
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 1s;
+}
+
 :root {
   /* COLORS */
   --clr-primary: #46c5ec;
@@ -400,7 +421,7 @@ html {
   --clr-light: #f6f6f6;
   --clr-light-300: #b0b0b0;
   --clr-light-500: #8a8a8a;
-  --clr-danger: #ff5722;
+  --clr-danger: #FA5252;
 }
 
 .bg-primary {
@@ -566,7 +587,7 @@ input:focus {
 
 /* Error state */
 input.error {
-  border-bottom: 2px solid #ff5722; /* Error border color */
+  border-bottom: 2px solid #FA5252; /* Error border color */
 }
 
 /*# sourceMappingURL=main.css.map */

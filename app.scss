@@ -1,11 +1,28 @@
 @use "@material/theme" with (
+  // $on-*: #414562
   $primary: #46c5ec,
-  $on-primary: #414562
+  $on-primary: #ffffff,
+  $secondary: #ff8c00,
+  $on-secondary: #ffffff,
+
+  // 1. Primary
+  // 2. Primary Variant
+  // 3. Secondary
+  // 4. Secondary Variant
+  // 5. Background
+  // 6. Surface
+  // 7. Error
+  // 8. On Primary
+  // 9. On Secondary
+  // 10. On Background
+  // 11. On Surface
+  // 12. On Error
 );
 
 @use "@material/button/mdc-button";
 @use "@material/button";
 @use "@material/dialog";
+@use "@material/radio";
 @use "@material/radio/styles";
 @use "@material/form-field";
 @use "@material/floating-label/mdc-floating-label";
@@ -28,13 +45,102 @@
 
 @include form-field.core-styles;
 
+@include dialog.core-styles;
+
 .foo-button {
   @include button.container-fill-color(#cdc226);
 }
 
 .primary-btn {
-  @include button.container-fill-color(var(--clr-primary));
-  @include button.ink-color(var(--clr-bright));
+  @include button.container-fill-color(#46c5ec);
+  @include button.ink-color(#ffffff);
 }
 
-@include dialog.core-styles;
+.primary-btn-inverse {
+  @include button.container-fill-color(#ffffff);
+  @include button.ink-color(#46c5ec);
+  border: 1px solid #46c5ec;
+}
+
+.danger-btn {
+  @include button.container-fill-color(#FA5252);
+  @include button.ink-color(#ffffff);
+}
+
+.danger-btn-inverse {
+  @include button.container-fill-color(#ffffff);
+  @include button.ink-color(#FA5252);
+  border: 1px solid #FA5252;
+}
+
+.my_radios {
+  @include radio.ink-color(#46c5ec);
+  @include radio.focus-indicator-color(#46c5ec);
+  @include radio.checked-stroke-color(#46c5ec);
+  @include radio.ripple-size(1rem);
+}
+
+.mdc-radio .mdc-radio__ripple::before,
+.mdc-radio .mdc-radio__ripple::after {
+  background-color: #46c5ec;
+}
+
+.mdc-radio
+  .mdc-radio__native-control:enabled:checked
+  + .mdc-radio__background
+  .mdc-radio__outer-circle {
+  // border-color: var(--mdc-theme-primary, #018786); // default
+  border-color: var(--mdc-theme-primary, #46c5ec) !important;
+}
+
+.mdc-radio
+  .mdc-radio__native-control:enabled
+  + .mdc-radio__background
+  .mdc-radio__inner-circle {
+  // border-color: var(--mdc-theme-primary, #018786); // default
+  border-color: var(--mdc-theme-primary, #46c5ec) !important;
+}
+
+//
+
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::before,
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::after {
+  background-color: #46c5ec;
+  background-color: var(--mdc-ripple-color, var(--mdc-theme-primary, #46c5ec));
+}
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:indeterminate
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+  ~ .mdc-checkbox__background {
+  border-color: #46c5ec;
+  border-color: var(
+    --mdc-checkbox-checked-color,
+    var(--mdc-theme-primary, #46c5ec)
+  );
+  background-color: #46c5ec;
+  background-color: var(
+    --mdc-checkbox-checked-color,
+    var(--mdc-theme-primary, #46c5ec)
+  );
+}
+
+.mdc-checkbox .mdc-checkbox__ripple::before,
+.mdc-checkbox .mdc-checkbox__ripple::after {
+  background-color: #46c5ec;
+}
+
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::before,
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::after {
+  background-color: #46c5ec !important;
+  background-color: var(--mdc-ripple-color, var(--mdc-theme-primary, #46c5ec));
+}
+
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::before,
+.mdc-checkbox.mdc-checkbox--selected .mdc-checkbox__ripple::after {
+  background-color: #46c5ec;
+}

@@ -9,7 +9,6 @@ class AppDialog {
     }
 
     display = () => {
-        console.log("app-display.js")
         const dialog = this.mdc_dialog ? new MDCDialog(this.mdc_dialog) : null;
 
         dialog?.listen('MDCDialog:opened', () => {
@@ -20,20 +19,24 @@ class AppDialog {
             }
         });
 
-        dialog?.listen('MDCDialog:opened', function () {
+        dialog?.listen('MDCDialog:opened', function (e) {
             // Assuming contentElement references a common parent element with the rest of the page's content
             // contentElement.setAttribute('aria-hidden', 'true');
-            console.log('Dialog opened');
+            // console.log("e: ", e)
+            // console.log('Dialog opened');
 
         });
-        dialog?.listen('MDCDialog:closing', function () {
+
+        dialog?.listen('MDCDialog:closing', function (e) {
             // contentElement.removeAttribute('aria-hidden');
-            console.log('Dialog closing');
-
+            // console.log("e: ", e.detail.action)
+            // console.log('Dialog closing');
         });
+
         this.trigger?.addEventListener('click', () => {
             dialog?.open();
         });
+
 
     }
 
@@ -49,6 +52,7 @@ class AppDialog {
 
 
     }
+
 }
 
 

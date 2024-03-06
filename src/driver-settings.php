@@ -1,14 +1,14 @@
 <?php include(__DIR__ . "./includes/header.php"); ?>
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <!-- user account navigation -->
-    <?php include(__DIR__ . "./includes/user-account-navigation.php") ?>
+    <!-- driver account navigation -->
+    <?php include(__DIR__ . "./includes/driver-account-navigation.php") ?>
     <!--  -->
     <div class="my-4"></div>
 
     <div class="mdc-card">
         <h1
-            class="ff-headline font-semibold capitalize text-xl bg-dark text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
+            class="ff-headline font-semibold capitalize text-xl bg-gray-400 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
             Change Password
         </h1>
         <!--  -->
@@ -79,7 +79,7 @@
     <!--  -->
     <div class="mdc-card">
         <h1
-            class="ff-headline font-semibold capitalize text-xl bg-dark text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
+            class="ff-headline font-semibold capitalize text-xl bg-gray-400  text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
             Delete Account
         </h1>
         <!--  -->
