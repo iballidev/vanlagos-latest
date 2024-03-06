@@ -971,6 +971,10 @@ video {
   place-content: center;
 }
 
+.content-between {
+  align-content: space-between;
+}
+
 .items-start {
   align-items: flex-start;
 }

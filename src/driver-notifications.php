@@ -7,8 +7,12 @@
     <div class="my-4"></div>
 
     <div class="mdc-card">
-        <h1 class="ff-headline font-semibold capitalize text-xl bg-gray-400 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
-            Notifications
+        <h1 class="ff-headline font-semibold capitalize text-xl bg-gray-400 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg flex items-center justify-between">
+            <span>Notifications</span>
+
+            <span>
+                <button class="text-sm font-normal uppercase">Clear all</button>
+            </span>
         </h1>
 
         <ul class="new-notification-list | flex flex-col gap-6 p-4 bg-gray-50 text-sm">
