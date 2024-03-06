@@ -127,8 +127,8 @@
                 </div>
 
                 <div class="col-span-12 flex justify-center gap-2">
-                    <button class="mdc-button primary-btn px-6" id="counter-start-button">Start</button>
-                    <button class="mdc-button danger-btn-inverse px-6 hidden" id="counter-stop-button">Stop</button>
+                    <button class="mdc-button primary-btn px-6 capitalize" id="counter-start-button">Start trip</button>
+                    <button class="mdc-button danger-btn-inverse px-6 capitalize hidden" id="counter-stop-button">End trip</button>
                 </div>
             </div>
         </div>
