@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /node_modules
 /src/libs/jquery-3.7.1.js
 /src/libs
@@ -7,3 +8,6 @@ tsconfig.json
 /src/javascripts/countdown-timer.js
 /public
 webpack.config.js
+=======
+/node_modules
+>>>>>>> development

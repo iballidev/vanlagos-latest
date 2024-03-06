@@ -70,8 +70,15 @@ class UserTrip {
 
     preview = () => {
         let time_used = this.countdownTime - time_count;
-        time_used = time_used / 60
-        alert(`time used: ${time_used.toFixed(3).toString()} minutes`);
+        // time_used = time_used / 60
+        // alert(`time used: ${time_used.toFixed(3).toString()} minutes`);
+
+        let hours = Math.floor(time_used / 3600);
+        let minutes = Math.floor((time_used % 3600) / 60);
+        let seconds = time_used % 60;
+
+
+        alert(`time used: ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
     }
 }
 
@@ -89,7 +96,7 @@ class DriverTrip extends UserTrip {
         isStarted = true;
         this.startCountdown(time_count, this.updateTimerDisplay);
         this.counter_stop_btn?.classList.contains("hidden") ? this.counter_stop_btn.classList.remove("hidden") : null;
-     }
+    }
 
     startCountdown = (time_count, updateTimerDisplay) => {
         if (!isStarted) return;
@@ -114,12 +121,16 @@ class DriverTrip extends UserTrip {
     }
 
     stopCountdown = () => {
-        if (!isStarted) return;
-        this.isStopped = true;
-        isStarted = false;
         this.updateTimerDisplay(time_count);
         this.counter_stop_btn?.classList.add("hidden");
         this.preview();
+    }
+
+    endTrip = () => {
+        if (!isStarted) return;
+        this.isStopped = true;
+        isStarted = false;
+        this.stopCountdown();
     }
 
 }
