@@ -1,4 +1,3 @@
-import CountdownTimer from "./countdown-timer.js";
 import CreditCard from "./credit-card.js";
 import DatePicker from "./date-picker.js";
 import FormsToggler from "./form-toggler.js";
@@ -78,21 +77,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const counter_stop_btn = document.getElementById('counter-stop-button');
     const counter_start_btn = document.getElementById('counter-start-button');
     const time_value = parseInt(document.getElementById('time-value')?.value);
-    // const countdown_timer = new CountdownTimer(time_value);
-
-    // countdown_timer;
-    // counter_start_btn?.addEventListener('click', () => countdown_timer.startTrip()); /**start timer */
-    // counter_stop_btn?.addEventListener('click', () => countdown_timer.stopCountdown()); /**stop timer */
-    // counter_cancel_btn?.addEventListener('click', () => countdown_timer.cancelCountdown()); /**cancel timer */
-
 
     const driverTrip = new DriverTrip(time_value);
     const userTrip = new UserTrip(time_value);
 
-    // const userTrip = new UserTrip(time_value);
-    counter_cancel_btn?.addEventListener('click', () => userTrip.cancelCountdown());    
+    /**user cancel trip */
+    counter_cancel_btn?.addEventListener('click', () => userTrip.cancelCountdown());
+    /**driver start trip */
     counter_start_btn?.addEventListener('click', () => driverTrip.startTrip());
-    counter_stop_btn?.addEventListener('click', () => console.log("stop trip"));
+    /**driver end trip */
+    counter_stop_btn?.addEventListener('click', () => driverTrip.endTrip());
 
 });
 
