@@ -1,13 +1,13 @@
 class RatingStarToValue {
     constructor() {
-        var star_rating_container = document.querySelectorAll(".star-rating-container");
+        this.star_rating_container = document.querySelectorAll(".star-rating-container");
         this.max_rating = 5;
 
-        for (let i = 0; i < star_rating_container.length; i++) {
-            const sr_container = star_rating_container[i];
+        for (let i = 0; i < this.star_rating_container.length; i++) {
+            const sr_container = this.star_rating_container[i];
 
             let content = `<ul class="star-rating | flex items-center">`;
-            for (let l = 0; l < max_rating; l++) {
+            for (let l = 0; l < this.max_rating; l++) {
                 content += `<li>`;
                 content += `<span class="material-icons text-base">`;
                 content += `star`;
@@ -36,20 +36,26 @@ class RatingStarToValue {
             // }
         }
 
-        this.service_rating(this.max_rating);
+        this.service_rating();
     }
 
 
 
-    service_rating = (max_rating) => {
-
+    service_rating = () => {
         var sr_containers = document.querySelectorAll(".star-rating-container");
+
         for (let j = 0; j < sr_containers.length; j++) {
             const sr_container = sr_containers[j];
-            // console.log("sr_container: ", sr_container)
             var star_rating = sr_container.querySelector(".star-rating")
-            console.log("star_rating: ", star_rating)
-            console.log("max_rating: ", this.max_rating)
+            var count_val = star_rating ? sr_container?.nextElementSibling.value : null;
+
+            let star_rating_list = star_rating.children;
+            for (let k = 0; k < star_rating_list.length; k++) {
+                const li = star_rating_list[k];
+                if(k < parseInt(count_val))
+                    li.firstElementChild.classList.add("text-accent");
+
+            }
         }
 
 
