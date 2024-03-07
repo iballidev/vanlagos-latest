@@ -1,5 +1,4 @@
-<table x-data="{ isOpen: false }"
-    class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
+<table x-data="{ isOpen: false }" class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
     <thead class="text-md text-gray-700 uppercase bg-gray-50 ">
         <tr>
             <th scope="col" class="px-6 py-3">
@@ -27,17 +26,18 @@
             </th>
             <td class="px-6 py-4">
                 <!-- review data -->
-                <div class="star-rating-container"></div>
-                <input type="tel" name="" id="" value="5" readonly hidden>
+                <div class="star-rating-container" id="car-rating-container" data-input="car-rating-score"></div>
+                <input type="tel" name="" id="" value="0" readonly hidden id="car-rating-score">
             </td>
             <td class="px-6 py-4">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                    aliquid neque,
-                    aspernatur quisquam earum, repellat illum, libero aut quibusdam
-                    saepe
-                    hic sunt
-                    soluta rerum inventore! Unde quidem minus neque veritatis.
+                    Perferendis modi quae inventore beatae voluptatem alias, corporis harum impedit, sunt
+                    repellendus fugiat ut aperiam qui quo aliquam sed minus. Veniam quod quidem perferendis, animi vel
+                    ex accusantium rem impedit iure eligendi, nulla illo consectetur repudiandae? Ducimus maiores id
+                    aut, quibusdam accusamus, beatae consectetur quas dolorem molestiae placeat quia? Sint ipsa libero
+                    eum neque delectus quidem rem reprehenderit magnam optio impedit ratione sapiente, in excepturi,
+                    minus adipisci aperiam, eos dolores doloremque veniam quae earum. Impedit accusamus ea maiores esse
+                    facilis? Iusto quod temporibus rem fugit repudiandae corporis, laudantium earum?
                 </p>
             </td>
             <td class="px-6 py-4">
