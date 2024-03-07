@@ -20,14 +20,14 @@ class RatingStarToValue {
 
             var star_rating = document.querySelectorAll(".star-rating-container .star-rating");
             var count_val = star_rating ? sr_container?.nextElementSibling.value : null;
-
+            const val = parseInt(count_val);
             for (let i = 0; i < star_rating.length; i++) {
                 const s_rating = star_rating[i];
                 var items = s_rating?.children;
                 for (let i = 0; i < items?.length; i++) {
                     const element = items[i];
                     element.firstElementChild.classList.add("text-accent");
-                    if (i == parseInt(count_val) - 1) {
+                    if (i == val - 1) {
                         break;
                     }
                 }

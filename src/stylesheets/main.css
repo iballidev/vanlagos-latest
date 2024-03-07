@@ -410,8 +410,15 @@ html {
   transition: all 1s;
 }
 
+.new-notification-list .date {
+  color: var(--clr-light-500);
+}
 .new-notification-list .date::after {
-  content: "|";
+  content: "\f142";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: inherit;
+  color: var(--clr-light-300);
   display: block;
   margin-bottom: 3px;
 }

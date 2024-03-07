@@ -23,7 +23,7 @@
 
                             <td colspan="5">
                                 <!-- user car hire review -->
-                                <?php include(__DIR__ . "./includes/user-car-hire-review.php"); ?>
+                                <?php include __DIR__ . "./includes/user-car-hire-review.php"; ?>
                             </td>
                         </tr>
 

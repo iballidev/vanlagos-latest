@@ -1,8 +1,11 @@
+@use "../_partials/mixins";
 .new-notification-list {
     // background-color: red !important;
     .date {
+        color: var(--clr-light-500);
         &::after {
-            content: "|";
+            @include mixins.after("\f142", inherit);
+            color: var(--clr-light-300);
             display: block;
             margin-bottom: 3px;
         }
