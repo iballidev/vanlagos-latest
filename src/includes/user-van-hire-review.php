@@ -78,7 +78,7 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <label for="password" class="block font-semibold mb-2 cursor-pointer">Rating</label>
+                            <label for="" class="block font-semibold mb-2 cursor-pointer">Rating</label>
                             <div class="mdc-text-field mdc-text-field--outlined w-full select">
                                 <select id="state" name="state" class=" mdc-text-field__input" aria-label="Label"
                                     required>
