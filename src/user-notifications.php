@@ -10,7 +10,6 @@
         <h1 class="ff-headline font-semibold capitalize text-xl bg-dark text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
             Notifications
         </h1>
-        <!--  -->
 
         <ul class="new-notification-list | flex flex-col gap-6 p-4 bg-gray-50 text-sm">
             <li>

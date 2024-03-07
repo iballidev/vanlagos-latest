@@ -28,7 +28,7 @@
                 <!-- review data -->
                 <div class="star-rating-container" id="car-rating-container" data-input="car-rating-score"></div>
                 <!-- <input type="tel" name="" id="" value="0" readonly hidden id="car-rating-score"> -->
-                <input type="tel" name="" id="" value="0">
+                <input type="tel" name="" id="" value="4">
             </td>
             <td class="px-6 py-4">
                 <p>
