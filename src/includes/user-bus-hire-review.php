@@ -1,5 +1,4 @@
-<table x-data="{ isOpen: false }"
-    class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
+<table x-data="{ isOpen: false }" class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
     <thead class="text-md text-gray-700 uppercase bg-gray-50 ">
         <tr>
             <th scope="col" class="px-6 py-3">
@@ -23,21 +22,23 @@
         <!-- preview row -->
         <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50">
             <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white font-bold">
-                Van Hire
+                Bus Hire
             </th>
             <td class="px-6 py-4">
                 <!-- review data -->
                 <div class="star-rating-container"></div>
-                <input type="tel" name="" id="" value="1" readonly hidden>
+                <!-- <input type="tel" name="" id="" value="0" readonly hidden> -->
+                <input type="tel" name="" id="" value="3">
             </td>
             <td class="px-6 py-4">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                    aliquid neque,
-                    aspernatur quisquam earum, repellat illum, libero aut quibusdam
-                    saepe
-                    hic sunt
-                    soluta rerum inventore! Unde quidem minus neque veritatis.
+                    Blanditiis aperiam quam, illum in soluta odio ab asperiores facere explicabo eius quibusdam! Quis,
+                    neque optio, blanditiis a fugiat beatae reprehenderit quaerat, inventore magni modi asperiores ipsam
+                    mollitia labore consequatur esse minus est! Officia eius explicabo dignissimos ad suscipit?
+                    Laboriosam eius accusantium ipsum, ducimus id inventore quam ad animi hic assumenda placeat
+                    aspernatur. Qui repellat accusantium fugiat, minima alias quas animi delectus accusamus eum. Ducimus
+                    doloremque eos, accusamus, voluptates quasi quia nesciunt molestias suscipit natus, voluptatibus
+                    magni quaerat voluptatum dolor ea et alias incidunt facere hic. Maiores minus reiciendis aut. Modi.
                 </p>
             </td>
             <td class="px-6 py-4">
@@ -71,8 +72,8 @@
                         <li class="col-span-1">
                             <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                 <input type="text" id="email_address" name="email_address"
-                                    class="border border-red-500 mdc-text-field__input" aria-label="Label"
-                                    value="Van Hire" readonly>
+                                    class="mdc-text-field__input" aria-label="Label"
+                                    value="Bus Hire" readonly>
                                 <span class="mdc-notched-outline">
                                     <span class="mdc-notched-outline__leading"></span>
                                     <span class="mdc-notched-outline__trailing"></span>
@@ -116,7 +117,7 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <button class="mdc-button bg-primary bg-primary py-4 px-6 mdc-card">
+                            <button class="mdc-button primary-btn py-4 px-6">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white">Submit</span>
                             </button>

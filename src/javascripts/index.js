@@ -41,13 +41,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const main_toggleHeroForms = new FormsToggler();
     main_toggleHeroForms.handleToggleHeroForms(
         document.querySelectorAll(".tab-btn"),
-        document.querySelectorAll(".tab-content")
+        document.querySelectorAll(".tab-content"),
+        "active"
     );
     /**toogle daily-hourly forms */
     const toggle_daily_hourly_Forms = new FormsToggler();
     toggle_daily_hourly_Forms.handleToggleHeroForms(
         document.querySelectorAll(".vh-tab-btn"),
-        document.querySelectorAll(".vh-tab-content")
+        document.querySelectorAll(".vh-tab-content"),
+        "active"
+    );
+
+    /**toogle service reviews */
+    const toggle_service_reviews = new FormsToggler();
+    toggle_service_reviews.handleToggleHeroForms(
+        document.querySelectorAll(".rv-tab-btn"),
+        document.querySelectorAll(".rv-tab-content"),
+        "mdc-tab--active"
     );
 
     /**toggle payment methods */
