@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./includes/header.php"); ?>
+<?php include __DIR__ . "./includes/header.php"; ?>
 <div class="bg-light">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <ul class="breadcrumb py-2">
@@ -17,4 +17,4 @@
     </div>
 </div>
 
-<?php include(__DIR__ . "./includes/footer.php"); ?>
+<?php include __DIR__ . "./includes/footer.php"; ?>

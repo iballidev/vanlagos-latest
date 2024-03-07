@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./includes/header.php"); ?>
+<?php include __DIR__ . "./includes/header.php"; ?>
 
 <section>
     <div class="hero">
@@ -129,4 +129,4 @@
 <?php include(__DIR__ . "./includes/how-it-works.php"); ?>
 
 
-<?php include(__DIR__ . "./includes/footer.php"); ?>
+<?php include __DIR__ . "./includes/footer.php"; ?>
