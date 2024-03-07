@@ -2,13 +2,13 @@
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
-    <!-- driver account navigation -->
-    <?php include(__DIR__ . "./includes/driver-account-navigation.php") ?>
+    <!-- user account navigation -->
+    <?php include __DIR__ . "./includes/user-account-navigation.php"; ?>
     <!--  -->
     <div class="my-4"></div>
 
     <div class="mdc-card">
-        <h1 class="flex items-center ff-headline font-semibold capitalize text-xl bg-gray-400 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
+        <h1 class="flex items-center ff-headline font-semibold capitalize text-xl bg-dark text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
             <?php include __DIR__ . "./includes/back-button.php"; ?>
             Booking History
         </h1>
@@ -126,14 +126,15 @@
                     </div>
                 </div>
 
-                <div class="col-span-12 flex justify-center gap-2">
-                    <button class="mdc-button primary-btn px-6 capitalize">Hire Again</button>
-                    <button class="mdc-button primary-btn px-6 capitalize" id="counter-start-button">Start trip</button>
-                    <button class="mdc-button danger-btn-inverse px-6 capitalize hidden" id="counter-stop-button">End trip</button>
+                <div class="col-span-12 flex">
+                    <button class="mdc-button danger-btn mx-auto px-4 hidden" id="counter-cancel-button">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- this button is to demonstrate starting a trip from the driver module (by the driver) -->
+    <button id="counter-start-button" class="mdc-button primary-btn px-6 flex flex-row my-4">Click her to start counter from Driver module</button>
 
     <div class="my-4"></div>
 

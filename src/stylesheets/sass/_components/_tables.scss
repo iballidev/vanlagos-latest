@@ -22,6 +22,12 @@
     }
 }
 
+.table-bordered{
+    th, td{
+        border: 1px solid var(--clr-light-300);
+    }
+}
+
 .align-end-cells-right{    
     tr{
         th,td{

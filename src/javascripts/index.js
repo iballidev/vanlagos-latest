@@ -60,6 +60,14 @@ document.addEventListener('DOMContentLoaded', function () {
         "mdc-tab--active"
     );
 
+    /**toogle driver bookings reviews */
+    const toggle_driver_bookings = new FormsToggler();
+    toggle_driver_bookings.handleToggleHeroForms(
+        document.querySelectorAll(".db-tab-btn"),
+        document.querySelectorAll(".db-tab-content"),
+        "mdc-tab--active"
+    );
+
     /**toggle payment methods */
     const toggle_payment_methods = new FormsToggler();
     toggle_payment_methods.handleToggleHeroForms(
