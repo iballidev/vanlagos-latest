@@ -68,7 +68,7 @@
                         <li class="col-span-1">
                             <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                 <input type="text" id="email_address" name="email_address"
-                                    class="border border-red-500 mdc-text-field__input" aria-label="Label"
+                                    class="mdc-text-field__input" aria-label="Label"
                                     value="Car Hire" readonly>
                                 <span class="mdc-notched-outline">
                                     <span class="mdc-notched-outline__leading"></span>
