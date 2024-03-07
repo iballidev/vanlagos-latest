@@ -28,7 +28,8 @@
             <td class="px-6 py-4">
                 <!-- review data -->
                 <div class="star-rating-container"></div>
-                <input type="tel" name="" id="" value="1" readonly hidden>
+                <!-- <input type="tel" name="" id="" value="1" readonly hidden> -->
+                <input type="tel" name="" id="" value="1">
             </td>
             <td class="px-6 py-4">
                 <p>

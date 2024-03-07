@@ -26,10 +26,21 @@
                     <span class="mdc-tab__ripple"></span>
                 </a>
 
-                <a href="./user-reviews.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <a href="./hire-service-reviews.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons text-md" aria-hidden="true">reviews</span>
                         <span class="mdc-tab__text-label hidden sm:block text-sm capitalize">Reviews</span>
+                    </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                </a>
+
+                <a href="./old-user-reviews.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                    <span class="mdc-tab__content">
+                        <span class="mdc-tab__icon material-icons text-md" aria-hidden="true">reviews</span>
+                        <span class="mdc-tab__text-label hidden sm:block text-sm capitalize">Reviews(Old)</span>
                     </span>
                     <span class="mdc-tab-indicator mdc-tab-indicator--active">
                         <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>

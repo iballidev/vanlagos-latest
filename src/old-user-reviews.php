@@ -19,17 +19,6 @@
                     class="align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
 
                     <tbody>
-                        <tr class="border-b">
-
-                            <td colspan="5">
-                                <!-- user car hire review -->
-                                <?php include(__DIR__ . "./includes/user-car-hire-review.php"); ?>
-                            </td>
-                        </tr>
-
-
-                        <!--  -->
-
 
                         <tr class="border-b">
 
@@ -45,6 +34,14 @@
                                 <?php include(__DIR__ . "./includes/user-bus-hire-review.php"); ?>
                             </td>
                         </tr>
+                        <tr class="border-b">
+
+                            <td colspan="5">
+                                <!-- user car hire review -->
+                                <?php include(__DIR__ . "./includes/user-car-hire-review.php"); ?>
+                            </td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
