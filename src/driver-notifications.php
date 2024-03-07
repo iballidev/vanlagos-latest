@@ -16,9 +16,9 @@
         </h1>
 
         <ul class="new-notification-list | flex flex-col gap-6 p-4 bg-gray-50 text-sm">
-            <li class="mdc-card p-4">
+            <li class="p-4">
                 <div class="date | font-bold">01 March 2025</div>
-                <ul class="bg-white rounded p-4 rounded-md flex flex-col">
+                <ul class="bg-white mdc-card p-4 rounded-md flex flex-col">
                     <li>
                         <a target="_blank" href="https://amazon.com" class="p-4 mb-2 text-sm text-blue-800 rounded-lg bg-blue-50 visited:text-gray-800 visited:bg-gray-50" role="alert">
                             <span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
@@ -41,9 +41,9 @@
                     </li>
                 </ul>
             </li>
-            <li class="mdc-card p-4">
+            <li class="p-4">
                 <div class="date | font-bold">02 March 2025</div>
-                <ul class="bg-white rounded p-4 rounded-md flex flex-col">
+                <ul class="bg-white mdc-card p-4 rounded-md flex flex-col">
                     <li>
                         <a target="_blank" href="https://tiktok.com" class="p-4 mb-2 text-sm text-blue-800 rounded-lg bg-blue-50 visited:text-gray-800 visited:bg-gray-50" role="alert">
                             <span class="font-medium">Info alert!</span> Change a few things up and try submitting again.

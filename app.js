@@ -64,10 +64,10 @@ const _delete_account_dialog = new ConfirmationDialog(
     delete_account_dialog,
     []
 );
-_delete_account_dialog.display(call_func);
+_delete_account_dialog.display(handleDeleteAccount);
 _delete_account_dialog.deactivate_scrim_effect();
 /**call function after confirmation is true */
-function call_func() {
+function handleDeleteAccount() {
     alert("call api")
 }
 
