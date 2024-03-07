@@ -60,7 +60,7 @@
             x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
             x-transition:leave-start="transform opacity-100 scale-100"
             x-transition:leave-end="transform opacity-0 scale-95"
-            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 border-b dark:border-gray-700">
             <td class="px-6 py-4 text-left" colspan="5">
 
                 <form action="" method="post">
@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <button class="mdc-button bg-primary py-4 px-6 mdc-card">
+                            <button class="mdc-button primary-btn py-4 px-6">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white">Submit</span>
                             </button>

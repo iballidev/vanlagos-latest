@@ -28,7 +28,7 @@
             <td class="px-6 py-4">
                 <!-- review data -->
                 <div class="star-rating-container"></div>
-                <input type="tel" name="" id="" value="4" readonly hidden>
+                <input type="tel" name="" id="" value="1" readonly hidden>
             </td>
             <td class="px-6 py-4">
                 <p>
@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <button class="mdc-button bg-primary bg-primary py-4 px-6 mdc-card">
+                            <button class="mdc-button primary-btn py-4 px-6">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white">Submit</span>
                             </button>

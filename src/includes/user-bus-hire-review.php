@@ -27,7 +27,7 @@
             <td class="px-6 py-4">
                 <!-- review data -->
                 <div class="star-rating-container"></div>
-                <input type="tel" name="" id="" value="2" readonly hidden>
+                <input type="tel" name="" id="" value="0" readonly hidden>
             </td>
             <td class="px-6 py-4">
                 <p>
@@ -71,7 +71,7 @@
                         <li class="col-span-1">
                             <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
                                 <input type="text" id="email_address" name="email_address"
-                                    class="border border-red-500 mdc-text-field__input" aria-label="Label"
+                                    class="mdc-text-field__input" aria-label="Label"
                                     value="Bus Hire" readonly>
                                 <span class="mdc-notched-outline">
                                     <span class="mdc-notched-outline__leading"></span>
@@ -116,7 +116,7 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <button class="mdc-button bg-primary bg-primary py-4 px-6 mdc-card">
+                            <button class="mdc-button primary-btn py-4 px-6">
                                 <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-white">Submit</span>
                             </button>
