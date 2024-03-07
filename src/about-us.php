@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./includes/header.php"); ?>
+<?php include __DIR__ . "./includes/header.php"; ?>
 
 <div class="bg-banner-1">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -92,4 +92,4 @@
 
 <?php include(__DIR__ . "./includes/how-it-works.php"); ?>
 
-<?php include(__DIR__ . "./includes/footer.php"); ?>
+<?php include __DIR__ . "./includes/footer.php"; ?>

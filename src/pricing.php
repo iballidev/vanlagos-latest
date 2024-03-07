@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./includes/header.php"); ?>
+<?php include __DIR__ . "./includes/header.php"; ?>
 <?php include(__DIR__ . "./includes/dialog-van-hire.php"); ?>
 <?php include(__DIR__ . "./includes/dialog-bus-hire.php"); ?>
 
@@ -158,4 +158,4 @@
     </div>
     <div class="mdc-dialog__scrim"></div>
 </div>
-<?php include(__DIR__ . "./includes/footer.php"); ?>
+<?php include __DIR__ . "./includes/footer.php"; ?>

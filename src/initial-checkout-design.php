@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./includes/header.php"); ?>
+<?php include __DIR__ . "./includes/header.php"; ?>
 
 <div class="mx-auto max-w-7xl px-2 mt-4 sm:px-6 lg:px-8">
 
@@ -474,4 +474,4 @@
     </div>
 </div>
 
-<?php include(__DIR__ . "./includes/footer.php"); ?>
+<?php include __DIR__ . "./includes/footer.php"; ?>
