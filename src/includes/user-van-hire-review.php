@@ -29,7 +29,7 @@
                 <!-- review data -->
                 <div class="star-rating-container"></div>
                 <!-- <input type="tel" name="" id="" value="1" readonly hidden> -->
-                <input type="tel" name="" id="" value="0">
+                <input type="tel" name="" id="" value="5">
             </td>
             <td class="px-6 py-4">
                 <p>
@@ -68,7 +68,7 @@
                     <ul class="grid grid-cols-1 gap-y-4">
                         <li class="col-span-1">
                             <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label block">
-                                <input type="text" id="email_address" name="email_address"
+                                <input type="text" id="van-hire-service-rating" name="van-hire-service-rating"
                                     class="mdc-text-field__input" aria-label="Label"
                                     value="Bus Hire" readonly>
                                 <span class="mdc-notched-outline">
@@ -78,9 +78,9 @@
                             </div>
                         </li>
                         <li class="col-span-1">
-                            <label for="" class="block font-semibold mb-2 cursor-pointer">Rating</label>
+                            <label for="van-hire-rating" class="block font-semibold mb-2 cursor-pointer">Rating</label>
                             <div class="mdc-text-field mdc-text-field--outlined w-full select">
-                                <select id="state" name="state" class=" mdc-text-field__input" aria-label="Label"
+                                <select id="van-hire-rating" name="van-hire-rating" class=" mdc-text-field__input" aria-label="Label"
                                     required>
                                     <option selected>Select Rating</option>
                                     <option value="1">1</option>
@@ -97,7 +97,7 @@
                         </li>
                         <li class="col-span-1">
                             <div class="col-span-12">
-                                <label for="other_notes" class="block font-semibold mb-2 cursor-pointer">
+                                <label for="van-hire-rating-comment" class="block font-semibold mb-2 cursor-pointer">
                                     Comment
                                 </label>
                                 <div
@@ -107,7 +107,7 @@
                                         <span class="mdc-notched-outline__trailing rounded-r-md"></span>
                                     </span>
                                     <span class="mdc-text-field__resizer">
-                                        <textarea class="mdc-text-field__input" id="other_notes" name="other_notes"
+                                        <textarea class="mdc-text-field__input" id="van-hire-rating-comment" name="van-hire-rating-comment"
                                             rows="5" cols="40" aria-label="Label"></textarea>
                                     </span>
                                 </div>
