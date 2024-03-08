@@ -6,5 +6,5 @@ fiveserver.config.js
 tsconfig.json
 /src/javascripts/countdown-timer.js
 /public
-/trash
 webpack.config.js
+/trash
