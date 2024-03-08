@@ -1,6 +1,6 @@
 <ul class="flex flex-col gap-4">
     <li>
-        <a href="#">
+        <a href="driver-booking-details.php">
             <div class="mdc-card p-4">
                 <div class="mdc-card__primary-action" tabindex="0">
                     <table class="text-sm">
@@ -8,7 +8,7 @@
                             <tr>
                                 <th rowspan="4">
                                     <div class="max-w-24">
-                                        <img src="./images/bus-icons-head.svg" alt="">
+                                        <img src="../images/bus-icons-head.svg" alt="">
                                     </div>
                                 </th>
                                 <td class="text-primary font-bold text-2xl">Bus Hire</td>
@@ -43,7 +43,7 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="driver-booking-details.php">
             <div class="mdc-card p-4">
                 <div class="mdc-card__primary-action" tabindex="0">
                     <table class="text-sm">
@@ -51,7 +51,7 @@
                             <tr>
                                 <th rowspan="4">
                                     <div class="max-w-24">
-                                        <img src="./images/bus-icons-head.svg" alt="">
+                                        <img src="../images/bus-icons-head.svg" alt="">
                                     </div>
                                 </th>
                                 <td class="text-primary font-bold text-2xl">Bus Hire</td>
@@ -85,7 +85,7 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="driver-booking-details.php">
             <div class="mdc-card p-4">
                 <div class="mdc-card__primary-action" tabindex="0">
                     <table class="text-sm">
@@ -93,7 +93,7 @@
                             <tr>
                                 <th rowspan="4">
                                     <div class="max-w-24">
-                                        <img src="./images/bus-icons-head.svg" alt="">
+                                        <img src="../images/bus-icons-head.svg" alt="">
                                     </div>
                                 </th>
                                 <td class="text-primary font-bold text-2xl">Van Hire</td>

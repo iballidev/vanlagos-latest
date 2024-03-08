@@ -9,7 +9,7 @@
 
     <div class="mdc-card">
         <h1 class="flex items-center ff-headline font-semibold capitalize text-xl bg-gray-400 text-white py-2 px-4 rounded-t-md sm:rounded-t-lg">
-            <?php include __DIR__ . "./includes/back-button.php"; ?>
+            <?php include __DIR__ . "../../includes/back-button.php"; ?>
             Booking History
         </h1>
         <div class="p-2 sm:p-4">
