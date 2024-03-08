@@ -38,7 +38,7 @@
                 </p>
                 <form action="">
                     <div class="grouped-control h-10">
-                        <input type="text" class="text-dark rounded focus:rounded-e-sm transparent">
+                        <input type="text" name="newsletter_request" class="text-dark rounded focus:rounded-e-sm transparent">
                         <!-- <input type="submit" value="Submit" class="button"> -->
                         <button class="button"></button>
                     </div>

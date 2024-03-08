@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .stars-container {
+      display: inline-block;
+      font-size: 24px;
+      color: #ddd; /* default star color */
+    }
+  </style>
+</head>
+<body>
+
+<div class="stars-container" id="starsContainer"></div>
+
+<script>
+  // Function to create ambient stars based on the specified number
+  function displayAmbientStars(numStars) {
+    const starsContainer = document.getElementById('starsContainer');
+    starsContainer.innerHTML = '';
+
+    // Create the specified number of gray stars
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('span');
+      star.innerHTML = '&#9733;'; // Unicode character for a solid star
+      starsContainer.appendChild(star);
+    }
+  }
+
+  // Example: Display 5 gray stars
+  displayAmbientStars(4);
+</script>
+
+</body>
+</html>
