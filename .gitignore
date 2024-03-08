@@ -1,10 +1,1 @@
 /node_modules
-/src/libs/jquery-3.7.1.js
-/src/libs
-/src/sandbox/
-fiveserver.config.js
-tsconfig.json
-/src/javascripts/countdown-timer.js
-/public
-webpack.config.js
-/trash
