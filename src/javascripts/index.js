@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /**Sandbox */
     let sandbox = new Sandbox();
-    sandbox.keyupTestRating()
+    sandbox.test_keyupRating()
 
 });
 
