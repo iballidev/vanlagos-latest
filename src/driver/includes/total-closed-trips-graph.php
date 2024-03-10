@@ -23,7 +23,8 @@ const amount_closed = () => {
             y: {
                 beginAtZero: true
             }
-        }
+        },
+        responsive: true,
     }
 
     const config = {
