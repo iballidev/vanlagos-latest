@@ -70,14 +70,6 @@
                                 <span
                                     class="font-semibold bg-blue-100 text-blue-800 text-xs me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Started</span>
                             </td>
-                            <!-- <td class="px-6 py-4">
-                                <div class="flex items-center justify-end w-full">
-                                    <button type="button"
-                                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">Cancel</button>
-                                    <button type="button"
-                                        class="mdc-card text-white bg-green-500 hover:bg-green-600 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">Completed</button>
-                                </div>
-                            </td> -->
                         </tr>
                         <!--  -->
 

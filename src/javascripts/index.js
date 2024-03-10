@@ -2,6 +2,7 @@ import CreditCard from "./credit-card.js";
 import DatePicker from "./date-picker.js";
 import FormsToggler from "./form-toggler.js";
 import RatingStarToValue from "./rating-value-to-star.js";
+import Sandbox from "./sandbox.js";
 import { DriverTrip, UserTrip } from "./user-trip.js";
 import ViewportIntersection from "./viewport-intersection.js";
 
@@ -105,6 +106,20 @@ document.addEventListener('DOMContentLoaded', function () {
     counter_start_btn?.addEventListener('click', () => driverTrip.startTrip());
     /**driver end trip */
     counter_stop_btn?.addEventListener('click', () => driverTrip.endTrip());
+
+
+
+
+
+
+
+
+
+
+
+    /**Sandbox */
+    let sandbox = new Sandbox();
+    sandbox.test_keyupRating()
 
 });
 

@@ -8,15 +8,15 @@
 
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="link to our twitter page">
                         <i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="link to our facebook page">
                         <i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="link to our instagram page">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>

@@ -47,7 +47,7 @@
             <td class="px-6 py-4">
                 <div class="flex items-center justify-end w-full">
                     <button @click="isOpen = !isOpen" type="button"
-                        class="mdc-card text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">
+                        class="text-dark bg-gray-300 hover:bg-dark-800 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2">
                         <span x-show="!isOpen">Review</span>
                         <span x-show="isOpen">Cancel</span> </button>
                 </div>
