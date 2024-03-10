@@ -1,15 +1,24 @@
 <div>
     <div class="flex">
-        <select name="booking-year" id="booking-year" class="cursor-pointer ms-auto max-w-28 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <select name="booking-year" id="booking-year"
+            class="cursor-pointer ms-auto max-w-28 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option value="2023">2023</option>
             <option value="2024">2024</option>
         </select>
     </div>
-    
+
     <hr class="my-2">
 
-    <canvas id="amount-cancelled"></canvas>
+    <div class="chart-container">
+        <canvas id="amount-cancelled"></canvas>
+    </div>
 </div>
+
+<style>
+.chart-container {
+    min-height: 300px;
+}
+</style>
 
 
 
@@ -121,7 +130,9 @@ class CompletedTrip {
                     display: true,
                     text: 'Completed Trips'
                 }
-            }
+            },
+            responsive: true,
+            maintainAspectRatio: false
 
         }
 
