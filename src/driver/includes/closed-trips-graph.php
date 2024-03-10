@@ -1,11 +1,12 @@
 <div>
-    <div class="text-end">
-        <select name="booking-year" id="booking-year">
+    <div class="flex">
+        <select name="booking-year" id="booking-year" class="cursor-pointer ms-auto max-w-28 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option value="2023">2023</option>
             <option value="2024">2024</option>
-            <option value="2025">2025</option>
         </select>
     </div>
+    
+    <hr class="my-2">
 
     <canvas id="amount-cancelled"></canvas>
 </div>
@@ -56,7 +57,7 @@ const bookings = [{
     year: "2024",
     bookings: [{
         month: "January",
-        trips: 4
+        trips: 50
     }, {
         month: "February",
         trips: 3
@@ -93,9 +94,10 @@ const bookings = [{
 
 class CompletedTrip {
     chart;
-    constructor() {
+    constructor(canvas) {
 
-        const ctx = document.getElementById('amount-cancelled');
+
+        const ctx = canvas;
         const data = {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
                 'September',
@@ -103,8 +105,7 @@ class CompletedTrip {
             ],
             datasets: [{
                 label: 'Number of Trips',
-                // data: [12, 19, 3, 5, 2, 7, 10, 3, 5, 10, 1, 4],
-                data: [12, 19, 3, 5, 2, 7, 10, 3, 5, 10, 1, 4],
+                data: [],
                 borderWidth: 1
             }]
         }
@@ -131,39 +132,40 @@ class CompletedTrip {
         };
 
         this.chart = new Chart(ctx, config);
+        let no_of_trips = [];
 
-        // this.update(bookings[0].year, bookings[0].bookings)
+        bookings[0].bookings.forEach(book => {
+            no_of_trips.push(book.trips);
+        });
+        this.update(bookings[0].year, no_of_trips)
 
     }
 
     update = (year, data) => {
-        // console.log("data: ", data)
-        // console.log("this.chart: ", this.chart)
-        // console.log("this.chart.data.datasets[0].data: ", this.chart.data.datasets[0].data)
         this.chart.options.plugins.title.text = `Completed Trips ${year}`;
         this.chart.data.datasets[0].data = data;
         this.chart.update();
     }
 }
 
-const completed = new CompletedTrip();
 
-const booking_year = document.querySelector("#booking-year");
-booking_year.addEventListener("change", (e) => {
+const closed_trips_graph = () => {
+    const ctx_closed_trips = document.getElementById('amount-cancelled');
+    const completed = new CompletedTrip(ctx_closed_trips);
+    const booking_year = document.querySelector("#booking-year");
 
-    console.log("e.target.value: ", e.target.value)
-    let selected_year = e.target.value;
+    booking_year.addEventListener("change", (e) => {
+        let selected_year = e.target.value;
+        let data = bookings.find((data) => data.year == selected_year);
+        let no_of_trips = [];
 
-    let data = bookings.find((data) => data.year == selected_year);
-    console.log("data: ", data)
-    let no_of_trips = [];
-    data.bookings.forEach(book => {
-        console.log("book: ", book.trips);
-        no_of_trips.push(book.trips)
-
+        data.bookings.forEach(book => {
+            console.log("book: ", book.trips);
+            no_of_trips.push(book.trips);
+        });
+        completed.update(selected_year, no_of_trips)
     });
-    console.log("no_of_trips: ", no_of_trips)
+}
 
-    completed.update(selected_year, no_of_trips)
-});
+closed_trips_graph();
 </script>

@@ -19,13 +19,13 @@
                 <div class="col-span-12 sm:col-span-4">
                     <div class="mdc-card flex-row gap-4 h-full p-4">
                         <span
-                            class="bg-blue-100 h-20 w-20 flex items-center justify-center | rounded-full text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">
+                            class="bg-blue-100 h-20 w-20 flex items-center justify-center | rounded-full text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-blue-400 border border-blue-400">
                             <span class="material-icons text-blue dark:text-white text-5xl">
                                 fact_check
                             </span>
                         </span>
                         <span>
-                            <h6 class="text-lg font-semibold">Current Trip</h6>
+                            <h6 class="text-lg font-semibold">Current Trips</h6>
                             <p class="text-2xl font-bold">1</p>
                         </span>
                     </div>
@@ -33,13 +33,13 @@
                 <div class="col-span-12 sm:col-span-4">
                     <div class="mdc-card flex-row gap-4 h-full p-4">
                         <span
-                            class="bg-blue-100 h-20 w-20 flex items-center justify-center | rounded-full text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">
+                            class="bg-blue-100 h-20 w-20 flex items-center justify-center | rounded-full text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-green-400 border border-green-400">
                             <span class="material-icons text-green dark:text-white text-5xl">
                                 fact_check
                             </span>
                         </span>
                         <span>
-                            <h6 class="text-lg font-semibold">Completed Trip</h6>
+                            <h6 class="text-lg font-semibold">Total Completed Trips</h6>
                             <p class="text-2xl font-bold">21</p>
                         </span>
                     </div>
@@ -47,13 +47,13 @@
                 <div class="col-span-12 sm:col-span-4">
                     <div class="mdc-card flex-row gap-4 h-full p-4">
                         <span
-                            class="bg-red-100 h-20 w-20 flex items-center justify-center | rounded-full text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">
+                            class="bg-red-100 h-20 w-20 flex items-center justify-center | rounded-full text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-red-400 border border-red-400">
                             <span class="material-icons text-red dark:text-white text-5xl">
                                 fact_check
                             </span>
                         </span>
                         <span>
-                            <h6 class="text-lg font-semibold">Cancelled Trip</h6>
+                            <h6 class="text-lg font-semibold">Total Cancelled Trips</h6>
                             <p class="text-2xl font-bold">3</p>
                         </span>
                     </div>
@@ -73,6 +73,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div class="my-4"></div>
 

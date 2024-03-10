@@ -95,8 +95,19 @@
 .select {
   display: flex;
   position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  select{
+    width: 100%;
+    padding-left: .5em;
+    cursor: pointer;
+  }
   &::after {
     @include mixins.after("\f0d7", inherit);
+    position: absolute;
+    margin-right: .5em;
+    right: .5em;
+    top: .65em;
   }
 }
 

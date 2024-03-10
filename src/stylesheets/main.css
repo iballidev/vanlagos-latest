@@ -216,12 +216,23 @@ html {
 .select {
   display: flex;
   position: relative;
+  padding-right: 0;
+  padding-left: 0;
+}
+.select select {
+  width: 100%;
+  padding-left: 0.5em;
+  cursor: pointer;
 }
 .select::after {
   content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: inherit;
+  position: absolute;
+  margin-right: 0.5em;
+  right: 0.5em;
+  top: 0.65em;
 }
 
 .calendar {

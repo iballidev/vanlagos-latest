@@ -11,10 +11,10 @@ const amount_closed = () => {
 
     const ctx = document.getElementById('amount-closed');
     const data = {
-        labels: ['Total', 'Closed'],
+        labels: ['Closed', 'Total'],
         datasets: [{
             label: '# of Votes',
-            data: [23, 19],
+            data: [23, 49],
             borderWidth: 1
         }]
     }
