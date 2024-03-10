@@ -3,8 +3,18 @@
         <div class="mdc-tab-scroller__scroll-area">
             <div class="mdc-tab-scroller__scroll-content">
 
-                <a href="./driver-profile.php" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true"
-                    tabindex="0">
+                <a href="./driver-dashboard.php" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                    <span class="mdc-tab__content">
+                        <span class="mdc-tab__icon material-icons text-md" aria-hidden="true">dashboard</span>
+                        <span class="mdc-tab__text-label hidden sm:block text-sm capitalize">Dashboard</span>
+                    </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                </a>
+
+                <a href="./driver-profile.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons text-md" aria-hidden="true">person</span>
                         <span class="mdc-tab__text-label hidden sm:block text-sm capitalize">Profile</span>
