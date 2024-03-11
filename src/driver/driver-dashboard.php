@@ -21,7 +21,7 @@
                         <span
                             class="bg-blue-100 h-20 w-20 flex items-center justify-center | rounded-full text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-blue-400 border border-blue-400">
                             <span class="material-icons text-blue dark:text-white text-5xl">
-                                fact_check
+                                pending_actions
                             </span>
                         </span>
                         <span>
@@ -49,7 +49,7 @@
                         <span
                             class="bg-red-100 h-20 w-20 flex items-center justify-center | rounded-full text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-red-400 border border-red-400">
                             <span class="material-icons text-red dark:text-white text-5xl">
-                                fact_check
+                                cancel
                             </span>
                         </span>
                         <span>
