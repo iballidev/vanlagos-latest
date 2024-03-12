@@ -1,65 +1,84 @@
 @use "../_partials/mixins";
 .new-notification-list {
-    // background-color: red !important;
-    .date {
-        color: var(--clr-light-500);
-        &::after {
-            @include mixins.after("\f142", inherit);
-            color: var(--clr-light-300);
-            display: block;
-            margin-bottom: 3px;
-        }
-
-        & + ul {
-            li {
-                display: flex;
-                align-items: center;
-                // gap: 5px;
-                a {
-                    display: block;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    &::before {
-                        content: "";
-                        display: block;
-                        height: 7px;
-                        width: 7px;
-                        border-radius: 50%;
-                        background-color: var(--clr-danger);
-                    }
-
-                    &:visited {
-                        &::before {
-                            background-color: rgb(249 250 251);
-                        }
-                    }
-                }
-            }
-        }
+  // background-color: red !important;
+  .date {
+    color: var(--clr-light-500);
+    &::after {
+      @include mixins.after("\f142", inherit);
+      color: var(--clr-light-300);
+      display: block;
+      margin-bottom: 3px;
     }
+
+    & + ul {
+      li {
+        display: flex;
+        align-items: center;
+        // gap: 5px;
+        a {
+          display: block;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          &::before {
+            content: "";
+            display: block;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background-color: var(--clr-danger);
+          }
+
+          &:visited {
+            &::before {
+              background-color: rgb(249 250 251);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .notification-list-2 {
-    li {
+  li {
+    &:not(&:last-child) {
+      border-bottom: 1px solid var(--clr-light-300);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      span:last-child {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        &:not(&:last-child) {
-            border-bottom: 1px solid var(--clr-light-300);
+        gap: 8px;
+        color: 1px solid var(--clr-light-500);
+        &:last-child::after {
+          content: "";
+          display: block;
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          background-color: var(--clr-accent);
         }
-
-        a{
-            & + span{
-                color: red !important;
-            }
-            &:visited{
-                text-decoration: underline;
-                & + span{
-                    color: red !important;
-                }
-            }
+      }
+      &:visited {
+        span {
+          &:last-child::after {
+            content: "*";
+            display: block;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: var(--clr-bright);
+          }
         }
+      }
     }
+  }
 }
