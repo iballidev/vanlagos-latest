@@ -106,7 +106,7 @@
                         <h2 class="flex justify-between items-center flex-wrap gap-y-4 font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">
                             Estimated time
                             <button class="push-notification-btn mdc-card mdc-button accent-btn px-6 capitalize text-gray-900">
-                                <span>Push to send Notification</span>
+                                <span><span class="hidden sm:block">Push to </span>send Notification</span>
                             </button>
                         </h2>
                         <div class="p-4">
