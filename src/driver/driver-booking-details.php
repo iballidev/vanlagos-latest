@@ -15,7 +15,7 @@
         <div class="p-2 sm:p-4">
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 sm:col-span-7">
-                    <div class="mdc-card">
+                    <div class="mdc-card h-full">
                         <h2 class="font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">Destination
                             Information</h2>
                         <div class="p-4">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-span-12 sm:col-span-5">
-                    <div class="mdc-card">
+                    <div class="mdc-card h-full">
                         <h2 class="font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">Payment
                             Information</h2>
                         <div class="p-4">
@@ -100,10 +100,14 @@
                         </div>
                     </div>
                 </div>
+                <!--  -->
                 <div class="col-span-12">
-                    <div class="mdc-card">
-                        <h2 class="font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">
-                            Time Remaining
+                    <div class="mdc-card h-full">
+                        <h2 class="flex justify-between items-center flex-wrap gap-y-4 font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">
+                            Estimated time
+                            <button class="push-notification-btn mdc-card mdc-button accent-btn px-6 capitalize text-gray-900">
+                                <span>Push to send Notification</span>
+                            </button>
                         </h2>
                         <div class="p-4">
 
@@ -120,16 +124,29 @@
                             <!-- timer value -->
                             <input type="tel" value="305" id="time-value" hidden>
                             <!--  -->
-                            <div id="timer" class="flex justify-between border p-4 rounded-lg text-center font-bold text-2xl">
-                                00:00:00</div>
+                            <div class="border p-4 rounded-lg text-light-500">
+                                <ul class="flex flex-col gap-4">
+                                    <li>
+                                        <p class="font-semibold text-sm">Destination yet to start</p>
+                                        <p class="font-bold text-md">No time yet, keep tab open to get new updates</p>
+                                    </li>
+                                    <li>
+                                        <p class="font-semibold text-sm">Destination cancelled</p>
+                                        <p class="font-bold text-md">Estimated time for the destination: _ _ _ _</p>
+                                    </li>
+                                    <li>
+                                        <p class="font-semibold text-sm">In progress</p>
+                                        <p class="font-bold text-md">Estimated time for the destination: 10 : 00PM - 02 : 00PM</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-span-12 flex justify-center gap-2">
-                    <button class="mdc-button primary-btn px-6 capitalize">Hire Again</button>
-                    <button class="mdc-button primary-btn px-6 capitalize" id="counter-start-button">Start trip</button>
-                    <button class="mdc-button danger-btn-inverse px-6 capitalize hidden" id="counter-stop-button">End trip</button>
+                    <button class="mdc-button primary-btn px-6 capitalize">Push to send Notification</button>
+                    <button class="mdc-button primary-btn px-6 capitalize">Start trip</button>
+                    <button class="mdc-button primary-btn px-6 capitalize">End trip</button>
                 </div>
             </div>
         </div>

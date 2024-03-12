@@ -1,19 +1,29 @@
+@use "../_partials/mixins";
+
 // .call-to-action{
 //     background-color: var();
 // }
 
-
 .payment-tab-btn {
-    color: var(--clr-accent) !important;
-    border: 1px solid var(--clr-primary);
-    background-color: var(--clr-light);
-    padding: 1.5em;
-    &.active {
-        color: var(--clr-bright) !important;
-        background-color: var(--clr-primary);
-        &::after {
-            background-color: var(--clr-primary);
-            display: none;
-        }
+  color: var(--clr-accent) !important;
+  border: 1px solid var(--clr-primary);
+  background-color: var(--clr-light);
+  padding: 1.5em;
+  &.active {
+    color: var(--clr-bright) !important;
+    background-color: var(--clr-primary);
+    &::after {
+      background-color: var(--clr-primary);
+      display: none;
     }
+  }
+}
+.push-notification-btn {
+  span {
+    display: flex;
+    gap: 5px;
+    &::before {
+      @include mixins.before("\f0a1", inherit)
+    }
+  }
 }
