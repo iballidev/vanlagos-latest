@@ -103,11 +103,11 @@
                 <!--  -->
                 <div class="col-span-12">
                     <div class="mdc-card h-full">
-                        <h2 class="flex justify-between items-center font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">
+                        <h2 class="flex justify-between items-center flex-wrap gap-y-4 font-semibold bg-light-500 text-white text-lg rounded-t-md p-2">
                             Estimated time
-
-
-                            <button class="mdc-button accent-btn px-6 capitalize">Push to send Notification</button>
+                            <button class="push-notification-btn mdc-card mdc-button accent-btn px-6 capitalize text-gray-900">
+                                <span>Push to send Notification</span>
+                            </button>
                         </h2>
                         <div class="p-4">
 

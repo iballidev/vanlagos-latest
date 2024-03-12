@@ -4982,6 +4982,21 @@ svg.mdc-button__icon {
 .danger-btn-inverse:not(:disabled) {
   color: #FA5252;
 }
+.accent-btn:not(:disabled) {
+  background-color: hsl(33, 100%, 50%);
+}
+.accent-btn:not(:disabled) {
+  color: #ffffff;
+}
+.accent-btn-inverse {
+  border: 1px solid hsl(33, 100%, 50%);
+}
+.accent-btn-inverse:not(:disabled) {
+  background-color: #ffffff;
+}
+.accent-btn-inverse:not(:disabled) {
+  color: hsl(33, 100%, 50%);
+}
 .my_radios {
   padding: calc((1rem - 20px) / 2);
 }
