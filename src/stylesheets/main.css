@@ -460,6 +460,24 @@ html {
   background-color: rgb(249, 250, 251);
 }
 
+.notification-list-2 li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notification-list-2 li:not(.notification-list-2 li:last-child) {
+  border-bottom: 1px solid var(--clr-light-300);
+}
+.notification-list-2 li a + span {
+  color: red !important;
+}
+.notification-list-2 li a:visited {
+  text-decoration: underline;
+}
+.notification-list-2 li a:visited + span {
+  color: red !important;
+}
+
 :root {
   /* COLORS */
   --clr-primary: #46c5ec;

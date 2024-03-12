@@ -46,7 +46,7 @@
                         <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                     </span>
                     <span class="mdc-tab__ripple"></span>
-                </a>
+                </a>  -->
                 <a href="./user-notifications.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
                             <span class="mdc-tab__icon material-icons text-md" aria-hidden="true">notifications</span>
@@ -57,7 +57,19 @@
                         <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                     </span>
                     <span class="mdc-tab__ripple"></span>
-                </a> -->
+                </a>
+
+                <a href="./user-notifications-2.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                    <span class="mdc-tab__content">
+                            <span class="mdc-tab__icon material-icons text-md" aria-hidden="true">notifications</span>
+                            <span class="bg-red-500 text-white text-xs px-2.5 py-0.5 rounded -ml-3">2</span>
+                        <span class="mdc-tab__text-label hidden sm:block text-sm capitalize">Notifications-2</span>
+                    </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                </a>
 
                 <!-- <a href="./user-security.php" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
