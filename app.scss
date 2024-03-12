@@ -73,6 +73,18 @@
   border: 1px solid #FA5252;
 }
 
+
+.accent-btn {
+  @include button.container-fill-color(hsl(33, 100%, 50%));
+  @include button.ink-color(#ffffff);
+}
+
+.accent-btn-inverse {
+  @include button.container-fill-color(#ffffff);
+  @include button.ink-color(hsl(33, 100%, 50%));
+  border: 1px solid hsl(33, 100%, 50%);
+}
+
 .my_radios {
   @include radio.ink-color(#46c5ec);
   @include radio.focus-indicator-color(#46c5ec);
