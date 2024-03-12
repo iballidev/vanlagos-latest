@@ -19,7 +19,7 @@
   }
 }
 .push-notification-btn {
-  span {
+  > span {
     display: flex;
     gap: 5px;
     &::before {

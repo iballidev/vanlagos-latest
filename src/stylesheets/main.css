@@ -129,11 +129,11 @@ html {
   display: none;
 }
 
-.push-notification-btn span {
+.push-notification-btn > span {
   display: flex;
   gap: 5px;
 }
-.push-notification-btn span::before {
+.push-notification-btn > span::before {
   content: "\f0a1";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
