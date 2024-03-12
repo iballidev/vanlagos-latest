@@ -26,7 +26,6 @@ class RatingStarToValue {
 
     service_rating = () => {
         var sr_containers = document.querySelectorAll(".star-rating-container");
-
         for (let j = 0; j < sr_containers.length; j++) {
             const sr_container = sr_containers[j];
             var star_rating = sr_container.querySelector(".star-rating")
