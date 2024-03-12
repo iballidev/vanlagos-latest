@@ -40,3 +40,26 @@
         }
     }
 }
+
+.notification-list-2 {
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(&:last-child) {
+            border-bottom: 1px solid var(--clr-light-300);
+        }
+
+        a{
+            & + span{
+                color: red !important;
+            }
+            &:visited{
+                text-decoration: underline;
+                & + span{
+                    color: red !important;
+                }
+            }
+        }
+    }
+}

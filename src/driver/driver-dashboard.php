@@ -99,7 +99,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <div class="relative overflow-x-auto mdc_card sm:rounded-lg">
                         <table class=" align-end-cells-right | w-full text-sm text-left rtl:text-right text-gray-500">
                             <thead class="text-md text-gray-700 uppercase bg-gray-50 ">
                                 <tr>
