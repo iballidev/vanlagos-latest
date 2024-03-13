@@ -503,6 +503,11 @@ html {
   background-color: var(--clr-bright);
 }
 
+.list-bullet {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
 :root {
   /* COLORS */
   --clr-primary: #46c5ec;
