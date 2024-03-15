@@ -479,12 +479,15 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  color: var(--clr-dark-200);
+}
+.notification-list-2 li a span:not(:last-child) {
+  color: var(--clr-accent);
 }
 .notification-list-2 li a span:last-child {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: 1px solid var(--clr-light-500);
 }
 .notification-list-2 li a span:last-child:last-child::after {
   content: "";
@@ -494,12 +497,10 @@ html {
   border-radius: 50%;
   background-color: var(--clr-accent);
 }
+.notification-list-2 li a:visited span:not(:last-child) {
+  color: var(--clr-dark-200);
+}
 .notification-list-2 li a:visited span:last-child::after {
-  content: "*";
-  display: block;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
   background-color: var(--clr-bright);
 }
 

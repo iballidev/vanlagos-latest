@@ -13,19 +13,19 @@
 
         <ul class="notification-list-2 | flex flex-col gap-4 w-full p-4 text-sm flex-nowrap">
             <li>
-                <a href="https://yahoo.com" class="block p-2 sm:p-4 mb-2 text-sm text-[#424662] visited:text-[#ff8c00]" role="alert">
+                <a href="https://yahoo.com" class="block p-2 sm:p-4 mb-2 text-sm visited:text-[#424662] text-[#ff8c00]" role="alert">
                     <span><strong>Reminder:&nbsp;</strong>Trip completed</span>
                     <span>1s</span>
                 </a>
             </li>
             <li>
-                <a href="https://aol.com" class="block p-2 sm:p-4 mb-2 text-sm text-[#424662] visited:text-[#ff8c00]" role="alert">
+                <a href="https://aol.com" class="block p-2 sm:p-4 mb-2 text-sm visited:text-[#424662] text-[#ff8c00]" role="alert">
                     <span><strong>Reminder:&nbsp;</strong>Your have started the trip: 4 hours left</span>
                 <span>3h</span>
                 </a>
             </li>
             <li>
-                <a href="https://ibrahimalli.com" class="block p-2 sm:p-4 mb-2 text-sm text-[#424662] visited:text-[#ff8c00]" role="alert">
+                <a href="https://jumia.com.ng" class="block p-2 sm:p-4 mb-2 text-sm visited:text-[#424662] text-[#ff8c00]" role="alert">
                     <span><strong>Reminder:&nbsp;</strong>Your have started the trip: 4 hours left</span>
                     <span>1d</span>
                 </a>
