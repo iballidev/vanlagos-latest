@@ -1525,9 +1525,9 @@ video {
   line-height: 1.25;
 }
 
-.text-\[\#424662\] {
+.text-\[\#ff8c00\] {
   --tw-text-opacity: 1;
-  color: rgb(66 70 98 / var(--tw-text-opacity));
+  color: rgb(255 140 0 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1638,6 +1638,11 @@ video {
 .text-yellow-800 {
   --tw-text-opacity: 1;
   color: rgb(133 77 14 / var(--tw-text-opacity));
+}
+
+.text-\[\#424662\] {
+  --tw-text-opacity: 1;
+  color: rgb(66 70 98 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1789,12 +1794,16 @@ video {
   background-color: rgb(249 250 251 );
 }
 
-.visited\:text-\[\#ff8c00\]:visited {
-  color: rgb(255 140 0 );
+.visited\:text-\[\#424662\]:visited {
+  color: rgb(66 70 98 );
 }
 
 .visited\:text-gray-800:visited {
   color: rgb(31 41 55 );
+}
+
+.visited\:text-\[\#ff8c00\]:visited {
+  color: rgb(255 140 0 );
 }
 
 .focus-within\:ring-2:focus-within {
