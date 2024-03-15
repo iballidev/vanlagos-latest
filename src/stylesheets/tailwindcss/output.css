@@ -1525,9 +1525,9 @@ video {
   line-height: 1.25;
 }
 
-.text-\[\#424662\] {
+.text-\[\#ff8c00\] {
   --tw-text-opacity: 1;
-  color: rgb(66 70 98 / var(--tw-text-opacity));
+  color: rgb(255 140 0 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1789,8 +1789,8 @@ video {
   background-color: rgb(249 250 251 );
 }
 
-.visited\:text-\[\#ff8c00\]:visited {
-  color: rgb(255 140 0 );
+.visited\:text-\[\#424662\]:visited {
+  color: rgb(66 70 98 );
 }
 
 .visited\:text-gray-800:visited {
